@@ -1,0 +1,214 @@
+\minitoc
+\newpage
+
+Ce chapitre présente les aspects techniques des synthèses des couches minces et des traitements effectués. Nous introduisons en premier lieu les méthodes de fabrication des différents échantillons, puis les méthodes de mesures, et enfin les outils d'analyse ou de simulation informatiques.\par 
+
+\section{Préparation des échantillons}
+Notre étude porte sur le démouillage de couches d'argent sur un substrat de silice amorphe. Plusieurs types d'échantillons ont été produits, selon les mesures expérimentales. Par exemple, si l'on s'intéresse aux mesures optiques, il convient de procéder au démouillage d'une couche d'argent sur un substrat transparent : nous travaillons donc sur du verre. En revanche, pour effectuer des mesures de microscopie \textit{in situ}, la transparence optique n'est pas requise, mais la finesse du substrat est recherchée, afin d'assurer un bon contact thermique : nous travaillons donc avec des wafers de silicium. Enfin, pour la microscopie à transmission (pour la cartographie ASTAR, voir section~\ref{sMethodeMesure}.\ref{sAstar}), nous avons utilisé des grilles dédiées en nitrure de silicium amorphe.\par 
+
+	\subsection{Préparation du substrat}
+\paragraph*{Wafers de silicium~:} Lorsque les propriétés optiques de nos échantillons ne sont pas en jeu, les substrat sont des wafers de silicium recouverts de leur oxyde natif ($\approx$2~~nm). Il s'agit de silicium (100) fourni par Neyco, d'une épaisseur de 500~\micro\meter{} et de diamètre 2”. Les wafers sont utilisés tels quels, sans nettoyage supplémentaire. Si aucune texture de substrat n'est requise, nous procédons au dépôt d'argent directement sur le wafer, mais il est également possible de procéder à la texturation de surface en déposant une couche de silice sol-gel (voir la section suivante).\par 
+
+\paragraph*{Verre~:} Si le substrat doit être transparent, nous utilisons du verre (Planilux) fourni par Saint-Gobain. Il est nettoyé par lavage au Cerox (solution aqueuse de bille micrométriques d'oxyde de cérium, 20~\% en masse), puis rincé à l'eau désionisée. Le verre est séché par flux d'azote. Après ce nettoyage, il sera toujours recouvert d'une sous-couche sol-gel (voir la section suivante). Si aucune texture n'est requise, nous embossons la couche avec un moule plan. Cette précaution est prise car la nature chimique de la surface du verre, qui n'est pas maîtrisée, dépend fortement de l'état de vieillissement, des conditions de nettoyage et des conditions de fabrication.\par 
+
+	\subsection{Texturation par nano-impression}
+La technique de nano-impression peut être employée aussi bien sur le verre que sur les wafers de silicium. Elle consiste à imprimer sur une couche sol-gel un motif (la texture) répliqué à partir d'une surface initiale (le master) par le biais d'un moule. Elle est illustrée sur le schéma~\ref{schemaSolGel}, que nous allons détailler. Initialement proposée par Chou \textit{et al.}~\cite{chou1996nanoimprint}, elle a été modifiée par Peroz \textit{et al.}~\cite{peroz2009nanoimprint}, puis Dubov \textit{et al.}~\cite{dubov2013superhydrophobic}, du laboratoire SVI.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{schemaSolGel}
+\caption{Schéma résumant la technique de nano-impression.}
+\label{schemaSolGel}
+\end{figure}
+		\subsubsection{Fabrication des moules}
+Les masters de silicium (étape 1 du schéma) sont fourni par la société Cemitec (Espagne), ce sont des masters gravés par la technique de lithographie électronique (EBL). La première étape consiste à les silaniser, c'est-à-dire à fonctionnaliser leur surface par greffage de silanes qui présentent des terminaisons hydrophobes. Cela permet de s'assurer que le moule que nous produirons par la suite n'y adhère pas.\par 
+Après un traitement UV-ozone de 30 min, les masters sont placés dans un dessicateur sous vide pendant une nuit (13~h) en présence de quelques gouttes d'agent silanisant (1H,1H,2H,2Hperfluorodecyltrichlorosilane, ABCR). Ensuite, ils sont retirés, rincés à l'isopropanol, puis à l'eau distillée et séchés.\par 
+Le PDMS (\textbf{P}oly\textbf{D}i\textbf{M}éthyle\textbf{S}iloxane, Sygard 184, Neyco) est mélangé à la spatule dans des proportions 10:1 avec un agent réticulant (fourni par Neyco), puis dégazé pour éliminer les bulles qui se sont formées pendant le mélange. Il est ensuite versé sur le master silanisé (étape~2), puis laissé à l'étuve à 80~$^\circ$C pendant une nuit.\par 
+Le démoulage s'effectue par simple retrait du PDMS (étape~3). Le moule est recuit à 150~$^\circ$C pendant 2 h pour éviter une éventuelle réaction postérieure du moule. Par la suite, le master peut servir pour fabriquer de nouveaux moules.\par 
+
+		\subsubsection{Embossage}
+L'impression du motif du moule se fait sur une couche obtenue par le procédé sol-gel. Un procédé sol-gel (pour solution-gélification) permet de synthétiser un matériau vitreux (dans notre cas, la silice) sans fusion. Nous pouvons rester à des températures inférieures à 100~$^\circ$C. Il s'agit de faire polymériser un précurseur initialement en solution, ce qui donne un gel. Ce gel est ensuite densifié pour former une phase vitreuse.\par 
+Les couches sol-gel sont préparées en mélangeant de l'éthanol, du MTEOS (\textbf{M}ethyl{-}\textbf{T}étra{-}\textbf{O}rtho{-}\textbf{S}ilicate) et une solution de HCl à pH~2 en proportions 2:1:1. Le mélange est chauffé à 60~$^\circ$C et agité pendant 30~min. Il est ensuite déposé par spin-coating sur le substrat (à une vitesse de 2000~tours.min$^{-1}$, et une accélération de 1000~tours.min$^{-1}$.s$^{-1}$, pendant une durée de 60~s). Pendant ce temps, les moules de PDMS sont nettoyés à l'aide de papier adhésif. Ils sont ensuite appliqués sur l'échantillon une fois sortis du spin-coater (étape~4). On y applique une force de 50~N tout en chauffant à 75~$^\circ$C pendant 1~h (presse ZWICK, étape~5). L'échantillon est refroidi avant de relâcher la force (étape~6 du schéma~\ref{schemaSolGel}).\par 
+
+	\subsection{Dépôt des couches d'argent}
+Le dépôt des couches d'argent s'effectue sur un bâti de pulvérisation cathodique magnétron en ligne (Lina350, Alcatel). La pulvérisation cathodique magnétron (parfois simplement appelée \og dépôt magnétron \fg) est fondée sur la création d'un plasma à partir du gaz, qui arrache des atomes ou des clusters d'atomes d'une source métallique, appelée \og cible \fg{}. Ces atomes et clusters se déposent sur la surface en regard. En général, le gaz est neutre (c'est notamment le cas pour l'argent), mais parfois il est choisi pour réagir avec les atomes dans le plasma, on parle alors de dépôt réactif. \par 
+Pour nos dépôts d'argent, la pression de gaz neutre (Ar) est de 8.10$^{-3}$~mbar, la vitesse de dépôt est de 1,3~nm.s$^{-1}$. La puissance électrique fournie à la cible est de 210~W. Un temps de pré-pulvérisation de 5~min est systématiquement respecté pour nettoyer la cible. Les échantillons sont disposés sur un plateau horizontal de 40 cm de côté, déposés sur un contreverre de 2~mm. Ils défilent devant la cible~: le temps d'exposition est régulé par la vitesse du plateau.\par 
+Le bâti permet d'effectuer des gradients de vitesse de défilement lors d'un dépôt~; en fonction de la position de l'échantillon sur le plateau, cela permet de déposer plusieurs épaisseurs avec le même plasma.\par 
+Un trait de feutre est effectué sur le contreverre avant le dépôt. Après le dépôt, le contreverre est rincé à l'isopropanol, ce qui solvate le feutre et permet de décrocher la couche d'argent déposée par-dessus~: nous obtenons une marche, dont la hauteur est mesurée par AFM. Nous considérons que les mesures d'épaisseur ont une incertitude de $\pm$2 nm. Pour réduire cette incertitude, les dépôts sont régulièrement calibrés sur des couches plus épaisses (100~nm).\par 
+
+\paragraph*{Remarque sur la reproductibilité des dépôts~:} Nous pouvons disposer plusieurs échantillons sur le plateau. Nous appellerons par la suite \og série d'échantillons \fg{} des échantillons dont la couche d'argent a été déposée en même temps. Si la vitesse de défilement est constante, tous les échantillons présentent la même épaisseur. Si la vitesse varie, l'épaisseur déposée n'est pas fixe, mais les échantillons font tout de même partie de la même série.\par 
+Ces précautions sont prises car nous avons pu constater, au cours de la thèse, que des paramètres de dépôt \textit{a priori} identiques donnaient lieu à des couches de morphologies différentes. Deux états initiaux mesurés par AFM après dépôt pour une couche de 40 nm sont présentés sur la figure~\ref{AFMdepotReproductibilite}. Ces dépôts ont été obtenus à deux mois d'intervalle, le premier (a) a une rugosité de 4,9 nm, et le second (b) de 7,1 nm.\par 
+Les raisons de ces variations tiennent sans doute au fait que l'emploi du bâti pour d'autres dépôts que celui de l'argent entraîne une pollution de la cible. Malgré l'étape de pré-pulvérisation, cette pollution peut influencer le dépôt. En termes de démouillage, cela peut influencer la cinétique (voir chapitre III), mais aussi légèrement la morphologie de la structure finale (densité et taille des particules). C'est pourquoi nous prenons la précaution de travailler avec une série d'échantillons lorsque nous souhaitons faire varier un paramètre de dépôt (épaisseur ou puissance).\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{AFMdepotReproductibilite}
+\caption{Cartographies AFM de couches d'argent de 40~nm mesurées après dépôt dans des conditions identiques, à deux mois d'intervalle. Sur l'image a), la rugosité mesurée est de 4,9 nm et sur l'image b), elle est de 7,1 nm.}
+\label{AFMdepotReproductibilite}
+\end{figure}
+
+	\subsection{Conservation}
+Les échantillons, s'ils ne sont pas utilisés dans la journée de leur production, sont conservés dans des poches scellées, sous gaz neutre (N$_2$, 0,7~atm). Ceci permet de s'assurer qu'il n'y a pas de pollution de l'argent par l'atmosphère et de limiter les risques de sulfuration (ou d'oxydation) de l'argent.\par 
+Même ainsi conservés, les échantillons sont utilisés dans les deux semaines qui suivent leur production. Ceci nous permet de limiter d'éventuels effets de vieillissement.\par 
+
+	\subsection{Chauffage}
+Lorsque les échantillons sont chauffés \textit{ex situ} (c'est-à-dire préalablement à leur caractérisation), la méthode de chauffage dépend du recuit. Pour les recuits courts (jusqu'à 15~~min), et si le substrat est un wafer de silicium, nous utilisons une platine chauffante Linkam THMS600. La rampe de vitesse maximale est appliquée (150~$^\circ$C.min$^{-1}$), de sorte que nous considérons que le temps de recuit est le temps effectivement passé à la température de consigne.\par 
+Pour les recuits plus longs ou sur des substrats plus épais, nous utilisons un four à moufle. Le four est préchauffé à la température de consigne, ainsi qu'une plaque de vitrocéramique qui sert de support. Le temps de recuit est pris comme le temps passé dans le four.\par 
+Les recuits \textit{in situ} seront décrits en même temps que les méthodes de mesure associées.\par 
+
+\section{Méthodes de mesure}
+\label{sMethodeMesure}
+La caractérisation de la couche d'argent est au centre de notre étude, ce qui nous a conduit à sonder sa morphologie, son orientation cristalline ou encore sa réponse optique. Nous allons ici présenter les différentes méthodes de caractérisation employées au cours de nos travaux.\par 
+	\subsection{Microscopie à force atomique (AFM)}
+L'AFM~\cite{binnig1986atomic} permet de sonder, à l'aide d'une pointe, la surface d'un échantillon afin d'obtenir une cartographie de la topographie à l'échelle du nanomètre.\par 
+L'AFM employé est un Bruker Dimension Icon. Outre ses fonctions standard, il permet de réaliser une imagerie \textit{in situ} grâce à une platine chauffante (fournie par Bruker) qui peut monter jusqu'à 250~$^\circ$C. Un profil de chauffe typique est représenté sur la figure~\ref{AFMrampe}~: il a été obtenu pour une consigne de 150~$^\circ$C. La vitesse de chauffe est très rapide entre 20 et 110~$^\circ$C, puis ralentit ensuite. Ce profil est observé quelle que soit la température de consigne. La vitesse de refroidissement a la forme d'une exponentielle décroissante. Lorsque nous effectuons un chauffage, nous considérons que la température de consigne est atteinte au bout d'une minute, et que le refroidissement est instantané. Cette convention est valable quelle que soit la température de consigne (le profil de chauffe étant toujours similaire).\par 
+La mesure de rugosité est implémentée directement par Bruker (logiciel NanoScope Analysis)~; elle est prise comme la moyenne arithmétique des écarts à la ligne moyenne ($R_a$).\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{AFMrampe}
+\caption{Calibration de la rampe de température de la platine chauffante de l'AFM, pour une température de consigne de 150~$^\circ$C.}
+\label{AFMrampe}
+\end{figure}
+
+	\subsection{Microscopie électronique à balayage (MEB)}
+Le MEB~\cite{oatley1966scanning} est une technique d'imagerie basée sur l'interaction d'un faisceau d'électrons avec une surface. Cette technique de microscopie nous permet de visualiser la morphologie de la couche d'argent. Son intérêt par rapport à l'AFM est un faible temps d'acquisition. Plusieurs types d'électrons sont détectables dans un MEB classique~; nous avons travaillé avec les électrons \og secondaires \fg, réputés sensibles à la morphologie de la surface.\par 
+Le MEB employé au laboratoire pour les études \textit{post mortem} est un Zeiss équipé d'une pointe FEG (Field-Emission Gun). Les échantillons sont métallisés par un dépôt magnétron de platine d'une épaisseur équivalente de 0,7 nm. La métallisation n'est effectuée que pour des analyses \textit{post mortem}, et après les éventuelles mesures optiques.\par 
+Les expériences de MEB \textit{in situ} ont été réalisées en collaboration avec Renaud Podor, de l'Institut de Chimie Séparative de Marcoule (ICSM). Une platine chauffante est introduite dans la chambre du microscope, elle permet d'atteindre des températures de l'ordre de 900~$^\circ$C~\footnote{L'emploi d'une autre platine permet d'atteindre des températures de l'ordre de 1300~$^\circ$C}. L'équipe de l'ICSM a implémenté un système de mesure plus fiable que le thermocouple constructeur, donnant une précision de l'ordre de deux degrés~\cite{podor2015development}.\par 
+Outre la possibilité de travailler \textit{in situ} et la grande résolution offerte par ce microscope, son intérêt réside également dans la possibilité de faire de l'imagerie sous atmosphère gazeuse contrôlée. Les mélanges gazeux utilisés pour nos travaux sont : Ar+4\%H$_2$, ainsi que des dilutions de O$_2$ dans N$_2$ (1000 ppm ou 100 ppm, Air Liquide, impuretés et écarts $<$5~ppm). Les pressions admissibles dans la chambre sont comprises entre 10 et 400~Pa. La pression résiduelle de la chambre (conditions dites \og sous vide \fg) est de type vide secondaire (de l'ordre de 10$^{-3}$~Pa).\par 
+Les conditions techniques d'acquisition (fréquence d'acquisition, tension d'accélération) ont été adaptées en fonction des expériences. Nous avons notamment constaté qu'un effet de faisceau pouvait apparaître, comme illustré sur la figure~\ref{MEBeffetFaisceau}. L'image a été prise au cours d'une session de MEB \textit{in situ} en observant le démouillage d'une couche d'argent de 40 nm sous vide. On voit distinctement que dans la zone délimitée, au centre, le démouillage est moins avancé que sur les bords. Cette zone centrale était précisément l'endroit ou la séquence d'images était enregistrée, à plus fort grossissement : le faisceau a ralenti le démouillage.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{MEBeffetFaisceau}
+\caption{Effet de faisceau observé lors d'un session de MEB \textit{in situ}. La couche d'argent de 40~nm, en train de démouiller sous vide à 400~$^\circ$C, a été observée d'abord à fort grossissement, dans la zone délimitée.}
+\label{MEBeffetFaisceau}
+\end{figure}
+Pour éviter cet effet, nous avons abaissé la tension et augmenté la vitesse de balayage lorsque nécessaire. En plus de ces précautions, le grossissement a été périodiquement réduit pendant l'expérience afin de vérifier que la zone analysée était semblable au reste de la couche (c'est ce contrôle qui est représenté sur la figure~\ref{MEBeffetFaisceau}).\par 
+	\subsection{Cartographie ASTAR}
+\label{sAstar}
+La cartographie ASTAR~\cite{rauch2008automatic} couple une image TEM (Transmission Electronic Microscopy) avec une analyse des orientations cristallines de la couche d'argent. Cela permet d'avoir accès à ces orientations à l'échelle locale.\par 
+Les cartographies ASTAR ont été réalisées en collaboration avec Sophie Bougon de l'ICMPE (Institut de Chimie et de Matériaux de Paris Est) sur un TEM JEOL 2000EX. L'ASTAR, aussi appelé ACOM (Automatic Cristal Orientation Mapping), est une technique où le faisceau d'électrons balaye la zone cartographiée~\cite{rauch2008automatic}. Pour chaque point de mesure, le cliché de diffraction en transmission est enregistré. Un logiciel compare le cliché à une banque de diffractogrammes théoriques obtenus en inclinant un cristal parfait (ici d'argent). Après optimisation, il en déduit l'orientation la plus probable du cristal de la zone analysée.\par 
+Le TEM est équipé d'un porte-échantillon chauffant qui permet de réaliser des recuits sous vide. Les couches d'argent sont donc déposées sur des grilles TEM en Si$_3$N$_4$. Afin de limiter les risques de perte de transmission, l'épaisseur des couches a été limitée à 15 ou 20 nm. Une étude préliminaire de la dynamique de démouillage en MEB~\textit{in situ} a démontré qu'elle était similaire sur Si$_3$N$_4$ (amorphe) et SiO$_x$, prouvant que la changement d'un substrat amorphe à un autre est sans effet notable.\par 
+Nous avons également observé des effets de faisceau, qui tendent à ralentir, voire inhiber le démouillage. Pour éviter cela, le faisceau était déplacé hors de la zone d'analyse pendant la chauffe.\par 
+
+	
+	\subsection{Diffraction des rayons X (DRX)}
+La DRX~\cite{warren1969x} permet d'obtenir des informations sur l'orientation cristalline d'une couche à l'échelle globale. Il s'agit d'observer les pics de diffraction des rayons X engendrés par les plans atomiques des domaines cristallins du matériau.\par 
+La DRX a été réalisée sur un diffractomètre Rigaku Smartlab en géométrie Bragg-Brentano ($\theta-2\theta$) normale au substrat. Les signaux obtenus ont été corrigés des effets de polarisation, du facteur de Lorentz et des effets de température. Les pics ont ensuite été modélisés par deux gaussiennes pour tenir compte du doublet $K_{\alpha 1}-K_{\alpha 2}$ du cuivre.
+	\subsection{Mesures optiques}
+La caractérisation optique des échantillons revêt une importance fondamentale dans nos travaux. Trois composantes principales nous intéressent : la transmission, la réflexion et l'absorption.\par 
+Les mesures optiques sont réalisées sur un spectrophotomètre Lambda950 (Perkin-Elmer). La gamme mesurée s'étend de 250 à 2000 nm. Les mesures s'effectuent en sphère intégrante. La transmission T est mesurée en incidence normale, la réflexion R à 8$^\circ$ et l'absorption A est calculée comme 1-R-T. Pour mesurer les propriétés optiques de petits échantillons, le faisceau est réduit par un iris et focalisé grâce à une lentille (fournis par Perkin-Elmer et adaptés à la machine).\par 
+Un changement de détecteur est opéré automatiquement à 840 nm, ce qui induit un bruit dans les spectres mesurés. Ce bruit n'a donc aucune origine physique.\par 
+
+	\subsection{Ellipsométrie}
+L'ellipsométrie est une méthode de caractérisation optique d'un échantillon. Elle repose sur l'analyse de la réflexion d'un faisceau optique polarisé. Le rapport des coefficients de réflexion en polarisations p (champ électrique parallèle au plan d'incidence de la lumière) et s (champ électrique perpendiculaire au plan d'incidence, et donc contenu dans la plan de la surface sur laquelle a lieu la réflexion) est obtenu et exprimé avec les paramètres $\Psi$ et $\Delta$, qui sont définis par $r_p/r_s = tan(\Psi)e^{i\Delta}$. L'analyse de ces paramètres permet de remonter jusqu'aux fonctions diélectriques des milieux rencontrés dans l'échantillon.\par 
+Les études d'ellipsométrie \textit{in situ} ont été réalisées en collaboration avec Morten Kildemo, de la NTNU (Norwegian University of Science and Technology, Institute of Physics). Les mesures ont été obtenues sur une platine chauffante adaptée à l'ellipsomètre RC2 (J. A. Woolam). L'alignement de l'échantillon a été réalisé tout au long de l'expérience pour compenser les déformations induites par la température. Les spectres ont été enregistrés entre 0,7 et 5,9 eV (durée d'acquisition de 2 à 10 s), à l'aide des spectrogaphes InGaS et Si sur le bras de détection.\par 
+La modélisation des réponses optiques a été effectuée grâce au logiciel CompleteEase (J. A. Woollam). Le substrat est considéré comme un cristal semi-infini de silicium (Si JAW~\cite{herzinger1998ellipsometric}) recouvert de 2~nm d'oxyde natif (SiO2 JAW~\cite{herzinger1998ellipsometric}). La fonction diélectrique du substrat a été calculée en tenant compte de la température. La couche supérieure d'argent, ajustée pour correspondre aux mesures, a une épaisseur laissée variable sans rugosité dans notre modèle. Bien que l'analyse soit effectuée sur toute la gamme d'énergie mesurée, nous concentrons la présentation des résultats en dessous de la première transition interbande de l'argent (3,9~eV~\cite{oates2005evolution}). Tous les modèles ont été ajustés sur les paramètres $\Psi$ et $\Delta$ mesurés. Nous présenterons par la suite les résultats par les fonctions diélectriques associées à ces ajustements. \par 
+
+\section{Méthodes d'analyse et modélisation informatique}
+Un grande quantité de données a été acquise par imagerie MEB, sous la forme d'images. Les séquences sont disponibles sous forme de vidéos (https://goo.gl/pRn6dh). Pour interpréter ces données, nous avons développé plusieurs algorithmes de traitement d'images que nous allons décrire dans cette section. Ces algorithmes ont été développés en langage Python (avec notamment les libraires \textit{numpy}, \textit{scipy}, \textit{skimage} et \textit{PIL}). La dernière section de cette partie sera dédiée aux conditions de simulations numériques qui interviennent dans la modélisation des propriétés optiques des structures d'argent.\par 
+	\subsection{Segmentation des images}
+La segmentation est l'étape qui nous permet de séparer une image en deux domaines distincts~: la zone du substrat découverte et la couche d'argent. Elle a été réalisée grâce à un code développé pendant la thèse. Un exemple de résultat est présenté sur la figure~\ref{ImageTraitement} de la page~\pageref{ImageTraitement}.\par 
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.6\textwidth]{ImageTraitement}
+\caption{Traitement appliqué à une image typique, au cours des différentes étapes de segmentation.}
+\label{ImageTraitement}
+\end{figure}
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.45\textwidth]{histogrammeNDG}
+\caption{Histogramme des niveaux de gris de l'image d'exemple de la figure~\ref{ImageTraitement}, avant et après application du filtre médian.}
+\label{histogrammeNDG}
+\end{figure}
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.75\textwidth]{otsuFiltre}
+\caption{Comparaison des résultats de segmentation d'une image par la méthode d'Otsu ou notre méthode.}
+\label{otsuFiltre}
+\end{figure}
+En premier lieu, un filtre médian (2,2) est appliqué. Ce filtre prend, pour chaque pixel de coordonnées $(i,j)$, la valeur médiane des valeurs des pixels dont les coordonnées sont comprises entre $(i-2,i+2)$ et entre $(j-2,j+2)$. La différence n'est pas toujours visible à l'œil nu (cf. figure~\ref{ImageTraitement}), mais ceci permet de diminuer le bruit dans une image et d'affiner l'histogramme des niveaux de gris. Pour le constater, l'histogramme de l'image totale traitée en exemple est présenté sur la figure~\ref{histogrammeNDG}. Le paramètre de segmentation est pris dans l'histogramme des niveaux de gris (NdG) comme étant le minimum entre les deux plus grands maximums.\par 
+Enfin, l'image segmentée est nettoyée de ses petits objets. La taille limite est fixée arbitrairement en fonction du grossissement~; un contrôle visuel est effectué pour chaque série de traitements.\par 
+
+\paragraph*{Remarque~:} Notre méthode de segmentation n'est pas la plus courante. Usuellement, on emploie la méthode dite \og méthode d'Otsu \fg, qui cherche à minimiser la variance des valeurs des pixels au sein d'une même classe (pixels blancs ou pixels noirs). Cependant, cette méthode ne donne pas de bons résultats sur nos images MEB, comme nous pouvons le constater sur la figure~\ref{otsuFiltre}. Dans nos images, nous savons que le substrat est représenté par des pixels dont la variance est très faible (le substrat a une couleur uniforme), tandis que la valeur des pixels de la couche peut varier beaucoup plus. La méthode d'Otsu n'est pas la plus adaptée à ce cas-là.\par  
+
+	\subsection{Mesure de la courbure locale}
+	Dans le chapitre IV, nous accordons une grande importance à la mesure des propriétés locales du front de démouillage, notamment sa courbure. Nous décrivons ici la procédure pour accéder à ces données.\par 
+	Une fois une image nettoyée à disposition, la fonction \textit{measure.find\_contours} du module \textit{skimage} de Python~\cite{van2014scikit} permet d'extraire les contours. Il est important de noter qu'il y a une convention d'orientation des contours qui permet de déterminer si les contours délimitent un trou ou une particule.\par 
+	La première étape pour accéder à la courbure est la paramétrisation du contour. Cette paramétrisation correspond à la définition de l'abscisse curviligne $t$ permettant de déterminer des fonctions $x(t)$ et $y(t)$ pour décrire le contour. Il est important que la longueur d'arc entre $(x(t),y(t))$ et $(x(t+1),y(t+1)$ soit constante~; $t$ est interpolée grâce à la fonction $scipy.interpolate$ pour tenir compte de cette contrainte.\par 
+	Une fois l'abcisse curviligne définie, les fonctions $x(t)$ et $y(t)$ sont obtenues grâce à la fonction $scipy.interpolate.UnivariateSplines$. L'avantage de ces fonctions tient de le fait que les dérivées sont facilement calculées. La courbure s'obtient selon l'équation~:
+	\begin{equation}
+	\dfrac{1}{r(t)}=\gamma(t)=\dfrac{x'(t)y''(t)-x''(t)y'(t)}{(x'^2(t)+y'^2(t))^{3/2}}
+	\end{equation}
+
+\paragraph*{Test sur des objets simples~:} Nous avons testé le code sur des objets simples de courbure connue~: un cercle, puis une ellipse. Pour le cercle, les résultats sont présentés sur la figure~\ref{courbureCercle} de la page~\pageref{courbureCercle}.\par 
+Considérons d'abord le cercle, dont le rayon de courbure est constant et de valeur arbitraire 40. Sur la figure~\ref{courbureCercle}-a, nous pouvons observer que le rayon de courbure calculé est proche de 40, mais diverge sur les bords. Ceci provient du fait que les Splines sont optimisées pour approcher autant que possible un certain nombre de points. Quand elles arrivent au bord du contour, ce nombre de points diminue, puisqu'au-delà du contour, la Spline peut prendre n'importe quelle valeur : il
+n'y a plus de points à approcher au-delà de l'extrémité.\par 
+Pour éliminer cet effet, nous procédons à un doublage des contours. Considérons l'exemple du cercle pour l'expliquer. Le contour du cercle décrit en temps normal l'intervalle $[0,2\pi]$. Nous doublons ce contour, qui décrit alors les angles $[0,4\pi]$. Nous procédons au calcul des Splines sur ce grand intervalle, mais ne gardons pour le calcul de la courbure l'abscisse curviligne que sur l'intervalle $[\pi,3\pi]$. Les Splines ainsi calculées sont contraintes exactement de la même manière sur les extrémités (aux angles $\pi$ et $3\pi$) qu'au milieu. Cette précaution élimine les effets de bord (cf. figure~\ref{courbureCercle}-a). Elle est appliquée à tout contour fermé.\par 	
+La définition des splines requiert deux paramètres : l'ordre du polynôme utilisé pour décrire la fonction en un point et une erreur admissible. L'ordre est fixé à 4 pour toutes nos mesures. Nous définissons l'erreur admissible comme étant égale à $n_{points} \cdot k_{err}$ où $k_{err}$ est le \og paramètre d'erreur \fg. La diminution de ce paramètre contraint davantage les Splines, ce qui améliore la précision du calcul, au détriment du temps de calcul. L'influence de ce paramètre est visible sur la figure~\ref{courbureCercle}-b. Pour $k_{err} = 10^{-4}$, l'erreur ne dépasse pas 0,3~\%~; elle est indétectable ($< 10^{-5}$~\%) à $k_{err} = 10^{-7}$.\par 
+\begin{figure}[!p]
+\centering
+\includegraphics[width=\textwidth]{courbureCercle}
+\caption{Rayon de courbure mesuré par notre code sur un cercle de 400 points et de rayon 40. a) Effet d'une introduction de périodicité dans le code, b) influence du paramètre \og erreur \fg{} sur le résultat.}
+\label{courbureCercle}
+\end{figure}
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.5\textwidth]{courbureEllipse}
+\caption{Rayon de courbure mesuré par notre code sur une ellipse de 400 points. Le demi grand axe est de 40, le demi petit axe est de 20.}
+\label{courbureEllipse}
+\end{figure}
+Le résultat pour une ellipse est présenté sur la figure~\ref{courbureEllipse} de la page~\pageref{courbureEllipse}. L'approximation correspondant à $k_{err} = 10^{-4}$ conduit à une erreur de l'ordre de 2~\%, tandis que fixer $k_{err} = 10^{-7}$ réduit l'erreur à 0,5~\%. Le code développé fonctionne donc très bien sur des cas modèles
+obtenus à partir de points théoriques.\par 
+
+\paragraph*{Test sur des objets pixélisés~:} Nous avons procédé aux mêmes vérifications, mais cette fois-ci sur des images pixélisées. Sur des images de 200x200 pixels, nous avons étudié un cercle de rayon de 40~pixels, ainsi qu'une ellipse de demi grand axe de 40~pixels et de demi petit axe de 20~pixels. Les résultats sont présentés respectivement sur les figures~\ref{cerclePixel} et ~\ref{ellipsePixel} de la page~\pageref{cerclePixel}.\par 
+Lorsque $k_{err} = 10^{-1}$, le comportement est très semblable à ce que l'on observait (pour la même valeur de $k_{err}$) dans les cas non pixélisés. En revanche, si on le diminue, le résultat devient aberrant, la courbure estimée est erratique (en bleu). On constate que les contours ajustés ne sont plus lisses, mais accidentés~; ils ont
+tendance à passer par tous les points de l'image. C'est l'origine de l'erreur de mesure. Cette erreur n'excède pas les 12~\% dans le cas du cercle, et 20~\% dans le cas de l'ellipse, pour $k_{err} = 10^{-1}$. Les erreurs les plus importantes sont obtenues pour les courbures les plus faibles~: pour ces courbures, les pixels sont presque alignés, et plusieurs splines peuvent décrire leurs positions. Lorsque l'on augmente la résolution de l'image (en multipliant par 10 le nombre de pixels dans chaque
+dimension), l'erreur commise est divisée par 2.\par 
+\conclusion{La mesure de la courbure est limitée par la nature pixélisée de l'image~: une erreur incontournable est commise lors de la paramétrisation des Splines à partir des pixels. Pour que notre mesure soit valide, il faut~:
+\begin{itemize}
+\item une image dont la résolution soit raisonnable pour bien distinguer les contours ;
+\item adapter le paramètre d'erreur pour qu'il ne soit pas trop contraignant (on le prend aussi petit que possible, sans que les contours ne deviennent accidentés) ;
+\item des contours décrivant des objets suffisamment gros, c'est-à-dire des contours suffisamment
+longs.
+\end{itemize}
+De cette manière, nous considérons que l'erreur maximale commise lors de la mesure de la courbure est de 10~\%. Cette méthode sera particulièrement employée dans le chapitre~IV. Nous considérons que la mesure des rayons de courbure approchant la résolution de l'image est peu fiable.}
+
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.7\textwidth]{cerclePixel}
+\caption{Détail du contour paramétré et rayon de courbure mesuré par notre code pour un cercle pixélisé de rayon 40~pixels.}
+\label{cerclePixel}
+\end{figure}
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.7\textwidth]{ellipsePixel}
+\caption{Détail du contour paramétré et rayon de courbure mesuré par notre code pour une ellipse pixélisée de demi grand axe 40 et demi petit axe 20~pixels.}
+\label{ellipsePixel}
+\end{figure}
+
+	\subsection{Mesure de la qualité d'un réseau de particules}
+À partir d'images MEB, nous avons développé un code pour quantifier la qualité de l'organisation des structures obtenues après démouillage sur des surfaces texturées, ce qui sera important dans le chapitre V. Il procède en deux temps. En premier lieu, les particules sont segmentées et leur centre de masse est identifié. En parallèle, le réseau théorique des centres des trous est renseigné manuellement sur l'image traitée. On donne pour cela la position de trois nœuds du réseau, à la fois sur l'image et dans le repère du réseau.\par 
+Après cette première étape, pour chaque particule, on détermine sa taille, à quelle maille du réseau elle appartient et à quelle distance elle se trouve du centre de la maille. Les deux mesures (taille et distance) sont bornées : on exclut les particules ne respectant pas des limites fixées arbitrairement. La taille acceptée dépend de la période du réseau $P$, et la distance maximale au centre de la maille ne doit typiquement pas excéder $0,25P$.\par 
+Un exemple de tri est présenté sur la figure~\ref{triExemple}. Il a été réalisé sur une surface de période 350 nm. Les particules vertes sont celles qui sont acceptées. Les particules bleues sont exclues en raison de leur position, les particules rouges en raison de leur taille. Enfin, les particules en contact avec les bords de l'image sont exclues (de même que les mailles qui ne sont pas entières sur l'image). Ces particules ne sont pas colorées par l'algorithme.\par 
+Nous notons $n_{part}$ le nombre de particules correctes en taille et en position, $n_{tot}$ le nombre de particules totales et $n_{trou}$ le nombre de motifs présents sur l'image. Le code fournit en sortie les ratios $r_{tot} = n_{part}/n_{tot}$ et $r_{trou} = n_{part}/n_{trou}$. Cette méthode sera particulièrement employée dans le chapitre~V.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.3\textwidth]{triExemple}
+\caption{Exemple de traitement d'image pour déterminer la qualité d'une structure obtenue par démouillage sur une surface texturée. Les particules vertes sont considérées comme conformes, le particules rouges sont exclues en raison de leur taille et les particules bleues sont exclues en raison de leur mauvais positionnement.}
+\label{triExemple}
+\end{figure}
+
+	\subsection{Modélisation optique par éléments finis}
+Nous avons également modélisé la réponse optique des structures d'argent obtenues par démouillage sur des surface texturées, afin d'en mieux comprendre l'origine. Les simulations ont été effectuées en collaboration avec Alexandre Baron du Crentre de Recherche Paul Pascal.\par 	
+Les simulations électromagnétiques sont basées sur la résolution des équations de Maxwell par la méthode des éléments finis (implémentée dans le logiciel COMSOL)~\cite{kennedy2011analytical}. Le domaine de simulation, schématisé sur la figure~\ref{boiteSimul} est constitué d'une cellule élémentaire contenant une période du réseau. Il est constitué d'un parallélépipède d'air pour le superstrat et d'un parallélépipède de verre pour le substrat. La nanoparticule, constituée d'un hémisphère dans la partie "air" et d'un cône dans la partie "verre", est placée à l'interface air/verre. La pointe du cône est arrondie de façon à reproduire la morphologie de la particule réelle et pour réduire les erreurs dues aux défauts de maillage.\par 
+La structure est illuminée par une onde plane en incidence normale à l'aide d'un port électromagnétique. Des conditions périodiques de Floquet\footnote{C'est à dire que la solution périodique est basée sur le Théorème de Floquet. Pour plus d'informations, on pourra se référer par exemple à la thèse : Samuel Nosal, « Modélisation électromagnétique de structures périodiques et matériaux artificiels : application à la conception d'un radôme passe-bande », \textit{École Centrale Paris}, 2009.} sont utilisées pour les frontières orthogonales au vecteur d'onde du réseau. Un port en réflexion ou transmission est défini pour chaque ordre de diffraction. Un étude en convergence est réalisée en fonction de la taille du maillage. La conservation de l'énergie est vérifiée en s'assurant que la somme des puissances transmises et réfléchies dans tous les modes et des puissances dissipées par effet Joule sont égales à la puissance incidente. L'absorption calculée représente les pertes ohmiques (effet Joule).\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{boiteSimul}
+\caption{Schéma de la cellule de simulation employée pour les calculs COMSOL.}
+\label{boiteSimul}
+\end{figure}
+
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{biblio}

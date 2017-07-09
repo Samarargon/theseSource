@@ -1,0 +1,395 @@
+\minitoc
+\newpage
+
+\textit{La mise en place des mesures optiques ainsi que de nombreux résultats de ce chapitre sont le fruit du stage de Barbara Bouteille au laboratoire SVI.}\par 
+Dans ce chapitre, nous allons étudier le contrôle du démouillage. Notre stratégie est fondée sur la texturation du substrat sur lequel les couches d’argent démouillent. Nous allons, dans un premier temps, nous intéresser à l’aspect de synthèse de structures d’argent organisées. Ensuite, nous présenterons les résultats expérimentaux concernant l’optique de ces structures et nous discuterons de l’apport de la modélisation numérique pour comprendre les phénomènes optiques à l’oeuvre.
+
+\section{Contrôle du démouillage}
+Comme nous l’avons remarqué dans le chapitre I, il existe plusieurs stratégies pour contrôler le démouillage. Nous avons retenu celle qui consiste à procéder au démouillage sur des surfaces texturées. Cette stratégie, aussi étudiée par Giermann et Thompson~\cite{giermann2005solid, giermann2011requirements} avait été appliquée avec succès dans notre laboratoire à des couches d’argent~\cite{le2014self}. Dans cette partie, nous allons discuter de la texturation de surface, de son influence sur le démouillage, mais aussi des relations entre paramètres de dépôt de la couche et structures démouillées.\par 
+
+	\subsection{Fabrication des surfaces texturées}
+	\subsubsection{Principe de fabrication}
+Les détails expérimentaux de la procédures sont exposés dans le chapitre II. Nous obtenons des surfaces texturées grâce à un procédé sol-gel appelé nano-impression~\cite{le2014self,chou1996nanoimprint}. Ce procédé vise à répliquer la texture d’un échantillon initial, appelé \og master \fg{} sur des couches sol-gel. Comme schématisé sur la figure~\ref{schemaSolGelMini}, on peut résumer ce procédé en trois étapes~: 1) le dépôt de la couche sol-gel, 2) l’embossage~: la condensation de la couche en présence d’un moule qui contraint la topographie de la surface et 3) un dernier recuit pour terminer la condensation et éliminer les traces de solvant.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{schemaSolGelMini}
+\caption{Schéma représentant le procédé sol-gel utilisé pour texturer les substrats. 1) dépôt d’une couche sol-gel sur le substrat 2) embossage (50~N, 75~$^\circ$C, 45 min) 3) recuit à 500~$^\circ$C, 2~h.}
+\label{schemaSolGelMini}
+\end{figure}
+
+	\subsubsection{Géométrie des masters}
+Nous avons à disposition 7 masters achetés auprès d’un fournisseur (Cemitec). Ce sont des réseaux de pyramides inversées~: six réseaux carrés et un réseau hexagonal. Les dimensions de ces masters sont carctérisées par des paramètres géométriques (voir figure~\ref{dimensionsCpyrChapter3}). $P$ est la période, $l$ est la largeur de la base de la pyramide, $d$ est la profondeur de la pyramide et $m$ est la largeur de la mésa (plateau qui sépare les pyramides). Les pyramides inversées sont produites sur le master par lithographie électronique (EBL), qui grave un masque à la surface. Une attaque chimique est réalisée sur toute la surface qui n'est pas recouverte par le masque. Cette attaque suit les plans cristallins du silicium, la géométrie des pyramides est donc imposée. Comme les plans inclinés forment un angle de 54,7$^\circ$ avec la base, la profondeur $d$ vaut donc~:
+\begin{equation}
+d = \dfrac{l}{2}\tan(54,7^\circ).
+\end{equation}
+Ceci nous permet d’estimer la profondeur des pyramides, le fournisseur nous ayant fourni la largeur. Les valeurs des différents réseaux sont présentées dans le tableau~\ref{tGeometrie}. Le réseau hexagonal possède les mêmes paramètres géométriques que le réseau de période 350~nm. Par la suite, nous désignerons les réseaux par leur période.\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.4\textwidth]{dimensionsCpyr}
+\caption{Schéma représentant les paramètres géométriques des masters. $P$ est la période, $l$ est la largeur de la base de la pyramide, $d$ est la profondeur de la pyramide et $m$ est la largeur de la mésa (plateau qui sépare les pyramides).}
+\label{dimensionsCpyrChapter3}
+\end{figure}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{ccccccc}
+\hline
+$P$ (nm) & 200 & 350 & 500 & 600 & 750 & 1000\\
+\hline
+$d$ (nm, calculée) & 90 & 150 & 260 & 315 & 394 & 415\\
+$l$ (nm) & 125 & 215 & 370 & 450 & 560 & 590\\
+$m$ (nm) & 75 & 135 & 130 & 150 & 140 & 410\\
+\hline
+\end{tabular}
+\caption{Géométrie des masters qui ont servi pendant nos travaux. Avec $P$ la période, $d$ la profondeur de la pyramide, $l$ la largeur de la base et $m$ la largeur de la mésa.}
+\label{tGeometrie}
+\end{table}
+
+	\subsubsection{Texture obtenue par nano-impression}
+Nous avons contrôlé par AFM la morphologie des textures obtenues par cette méthode, avant et après le dernier recuit, pour le réseau de 600~nm. Les profils AFM sont présentés sur la figure~\ref{profilPyramides}. On observe que la période du réseau et la largeur des mésas varient peu. En revanche, la profondeur de la pyramide est moindre après le recuit~: elle passe d’une moyenne de 215~nm à 170~nm.\par 
+Nous avons mené cette études sur les différentes textures, les résultats sont présentés dans le tableau~\ref{tPerteRecuit}. $d_{master}$ désigne la profondeur du master, $d_{embossage}$, la profondeur mesurée après embossage sur la couche sol-gel et $d_{recuit}$ désigne la profondeur mesurée sur la couche sol-gel, après le dernier recuit. Nous pouvons constater une diminution systématique de la profondeur des pyramides~: une première fois après la réplication par embossage, une seconde fois lors du dernier recuit. La limitation de la mesure par AFM, c’est-à-dire la difficulté de sonder des cavités trop étroites, ne permet pas d’expliquer une diminution aussi importante pour ces profils peu accidentés. Nous pouvons affirmer que le dernier recuit a tendance à diminuer fortement le rapport d’aspect des pyramides. Cette modification n’affecte pas la période, mais elle a tendance à adoucir les profils et arrondir les mésas. Elle est particulièrement marquée pour la texture de 250~nm.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{profilPyramides}
+\caption{Profils AFM extraits de cartographies d’un échantillon texturé par le réseau de 600~nm, avant et après le dernier recuit (étape~3 de la figure~\ref{schemaSolGelMini}.}
+\label{profilPyramides}
+\end{figure}
+\begin{table}[!htb]
+\centering
+\begin{tabular}{ccccccc}
+\hline
+$P$ (nm) & 200 & 350 & 500 & 600 & 750 & 1000\\
+\hline
+$d_{master}$ (nm) & 90 & 150 & 260 & 315 & 394 & 415\\
+$d_{embossage}$ (nm) & 50 & 150 & 195 & 215 & 325 & 300\\
+$d_{recuit}$ (nm) & 25 & 80 & 170 & 170 & 295 & 270\\
+\hline
+\end{tabular}
+\caption{Géométrie des masters qui ont servi pendant nos travaux. Avec $P$ la période, $d$ la profondeur de la pyramide, $l$ la largeur de la base et $m$ la largeur de la mésa.}
+\label{tPerteRecuit}
+\end{table}
+\paragraph*{Remarque~:} Cette réduction du rapport d'aspect est simplement constatée ici, mais les modifications des paramètres de la couche (notamment la chimie de la synthèse sol-gel) pourraient permettre de contrôler davantage ce phénomène et varier les rapports d'aspect des textures obtenues.\par 
+
+	\subsection{Structures métalliques obtenues par démouillage}
+Une fois les substrats texturés, nous déposons une couche d’argent et procédons à son démouillage (un nouveau recuit à 400~$^\circ$C, pendant 2~h). Nous nous intéressons maintenant à la structure métallique obtenue après démouillage.\par 
+Sur la figure~\ref{MEBarraysAllText}, nous pouvons observer les structures métalliques obtenues pour chaque texture. Les épaisseur initiales ont été variées, nous discuterons de ceci dans la section suivante. On remarque une bonne organisation des particules obtenues par démouillage en réseau pour toutes les textures, conformément à la texture imposée par le substrat. Nous observons également des défauts typiques~:
+\begin{itemize}
+\item des particules manquantes ;
+\item des particules interstitielles (sur les mésas, entre deux trous) ;
+\item plusieurs particules par trou ;
+\item des particules pontantes, qui font le lien entre plusieurs trous.
+\end{itemize}
+Comme nous l'avons démontré dans le chapitre III, les grains sont les entités qui gouvernent la morphologie du démouillage. Sur les surfaces texturées, ils permettent de s'affranchir des questions de volumes quant à l'organisation des particules au sein de la texture. Nous allons donc discuter de l'optimisation des réseaux de particules obtenus, non en fonction du volume de métal déposé, mais en fonction de la taille des grains.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\textwidth]{MEBarraysAllText}
+\caption{Structures métalliques obtenues après démouillage de couches d’argent sur les surfaces texturées~: toutes les périodes à disposition, ainsi que sur le réseau héxagonal. Les épaisseurs respectives des couches initiales sont 24, 30, 30, 37, 54, 70 et 90~nm.}
+\label{MEBarraysAllText}
+\end{figure}
+
+	\subsection{Optimisation du dépôt d'argent}
+	\label{sQuality}
+	\subsubsection{Mesure de la qualité}
+Bien que la qualité du réseau soit appréciable de manière visuelle, il est plus aisé de comparer des valeurs numériques. Nous avons donc développé un code de traitement d'images pour discerner, sur une surface, quelles étaient les particules de bonne taille et correctement positionnées. Les détails de la procédure sont exposés dans le chapitre II. Nous obtenons en sortie une image typique traitée est représentée sur la figure~\ref{triExempleChpter3}, ainsi qu'une évaluation numérique de la qualité. Cette évaluation est faite sous la forme de deux rapports~: $r_{tot}$ et $r_{trou}$. $r_{tot}$ évalue le nombre de bonnes particules sur le nombre de particules total et $r_{trou}$ évalue le nombre de bonnes particules sur le nombre de trou sur l'image (c'est-à-dire le nombre idéal de particules). \par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.25\textwidth]{triExemple}
+\caption{Image d'exemple obtenue après la procédure de quantification de la qualité d'un réseau. Les particules vertes sont considérées de bonne taille et correctement positionnées. Les particules rouges sont trop grandes ou trop petites, les particules bleues sont de bonne taille, mais mal positionnées par rapport au réseau.}
+\label{triExempleChpter3}
+\end{figure}
+	\subsubsection{Influence de l'épaisseur}
+Grâce à cet algorithme, nous avons étudié l'évolution de la qualité de dépôt en fonction de l'épaisseur initiale de la couche. En effet, la taille des grains augmente avec l'épaisseur de la couche déposée~\cite{hillert1965theory, thompson1990grain}. Nous prenons ici l'exemple de la texture en réseau carré de 350~nm de période.\par 
+Des couches d'argent d'épaisseurs comprises entre 20 et 75~nm ont été déposées sur la surface texturée. Après un recuit de 2~h à 400~$^\circ$C, la surface a été caractérisée par MEB, puis les images ont été traitées par notre algorithme (voir figure~\ref{triMEB350} de la page~\pageref{triMEB350}). Pour les épaisseurs les plus faibles (20 et 25~nm, images~a et b), nous observons beaucoup de particules. Beaucoup sont mal placées (bleues) ou de trop petite taille (rouges). Pour ces images, on trouve tout de même un nombre de particules vertes proche du nombre de trous, aussi considérons nous que le ratio $r_{tot}$ est plus adapté pour décrire la qualité du réseau. En effet, le ratio $r_{trou}$ ne tient pas compte de la présence de beaucoup de particules supplémentaires sur le réseau. Pour les épaisseurs de 30 à 40~nm, on remarque que le réseau de particules est plus conforme au réseau du substrat. Pour 30~nm d'épaisseur initiale (image~c), on observe davantage de particules bleues que de particules rouges, mais c'est l'opposé pour une épaisseur initiale de 40~nm (image~e). Cela signifie qu'une épaisseur faible favorise les particules surnuméraires interstitielles, tandis qu'une épaisseur plus grande favorise les particules pontantes ou manquantes. Pour les épaisseurs initiales encore plus grandes (de 45 à 75~nm, images~f, g et h), le nombre de particules vertes diminue fortement, et les particules sont de moins en moins déconnectées. Le cas extrême de l'image~h montre que le domaine d'argent est toujours percolé. Pour ces épaisseurs-là, le ratio $r_{trou}$ sera privilégié~: en effet, le nombre total de particules diminue fortement, ce qui a tendance à augmenter le ratio $r_{tot}$ de manière artificielle.\par 
+Nous pouvons discuter ces observations en termes de densité de grains. Pour une épaisseur initiale faible, la taille des grains est petite, donc leur densité grandes. Si l'on suppose que le nombre de grains qui vont croitre pendant le démouillage est directement proportionnel au nombre de grains dans la couche initiale, cela implique que l'on observe une plus grande densité de particules. C'est effectivement le cas (images~a, b et c), et cette trop grande densité de particules donne lieu à une grande population de particules interstitielles.\par 
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.75\textwidth]{triMEBlow}
+\includegraphics[width=0.75\textwidth]{triMEBhigh}
+\caption{Images MEB de structures obtenues après un recuit de 2~h à 400~$^\circ$C sur un substrat texturé par le réseau de période 350~nm, traitées par notre algorithme. Différentes épaisseurs de couches initiales sont comparées~: a)20~nm, b) 25~~nm, c) 30~nm, d) 35~nm, e) 40~~nm, f) 45~nm, g) 55~nm, h) 75~~nm. Les particules vertes sont de bonne taille et bien positionnées, les particules rouges sont de mauvaise taille, les particules bleues sont mal positionnées et les particules grises sont exclues du traitement car elles touchent les bords de l'image.}
+\label{triMEB350}
+\end{figure}
+
+Les ratios $r_{tot}$ et $r_{trou}$ mesurés sont présentés sur la figure~\ref{qualiteStructures}. Les deux ratios sont faibles lorsque l'épaisseur initiale de la couche est faible, ils augmentent, passent par un maximum pour une épaisseur \og optimale \fg{}  située entre 30 et 40~nm, puis diminuent. On remarque également que $r_{tot}<r_{trou}$ pour une épaisseur plus petite que l'épaisseur optimale, puis $r_{tot}>r_{trou}$ pour une épaisseur plus grande.\par 
+Ces ratios décrivent de manière numérique nos observations qualitatives réalisées sur les images. Ils permettent de proposer une épaisseur optimale~: on prend le point où 
+$r_{tot}=r_{trou}$, soit une épaisseur initiale de la couche de 33~nm.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{qualiteStructures}
+\caption{Mesure de la qualité des structures obtenues, mesurées par notre algorithme~: $r_tot$ (bleu) et $r_{trou}$ exprimés en pourcentage, en fonction de l’épaisseur initiale. Les courbes sont des polynômes de degré 4 ajustés sur les données pour guider l'œil.}
+\label{qualiteStructures}
+\end{figure}
+
+Un procédure identique a été appliquée aux autres textures. Les épaisseurs optimales déduites sont présentées dans le tableau~\ref{tOptimaux}. Plus la période est grande, plus l'épaisseur optimale est forte. Cette observation est conforme à notre raisonnement en termes de taille de grains.\par 
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{cccccc}
+\hline
+$P$ (nm) & 350 & 350 (hexagonal) & 500 & 600 & 750 \\
+\hline
+$h_{opti}$ (nm)&  33 & 30 & 44 & 52 & 68\\
+\hline
+\end{tabular}
+\caption{Valeurs des épaisseurs initiales de la couche métallique donnant les meilleurs réseaux de particules après démouillage, en fonction de la texture du substrat.}
+\label{tOptimaux}
+\end{table}
+
+\paragraph*{Remarque~:} Notre avons supposé que le nombre de grains qui connaissent une croissance extraordinaire est directement proportionnel au nombre de grains total. En termes statistiques, ceci implique que la probabilité pour un grain donné de connaître une croissance extraordinaire est indépendante de la densité initiale de grains.\par  
+
+
+Si l'on compare nos observations au modèle de Giermann et Thompson~\cite{giermann2005solid, giermann2011requirements}, l'effet apparent de l'épaisseur n'est donc pas si éloigné. En effet, augmenter l'épaisseur initiale de la couche augmente le volume de métal. La quantité de défauts augmente lorsque l'épaisseur initiale dépasse une certaine limite. Cette limite n'est cependant pas liée au volume.\par
+
+	\subsubsection{Influence de la puissance}
+La puissance électrique fournie à la cathode pendant le dépôt magnétron est un paramètre que l'on peut faire varier (voir chapitre II). Pour toutes les expériences menées jusqu'ici, nous avons employé une puissance de 210~W. Dans cette section, nous faisons varier la puissance. La vitesse de dépôt est directement proportionnelle à la puissance, aussi modifions-nous la vitesse de défilement des échantillons en conséquence pour conserver des épaisseurs initiales constantes. Dans le bâti que nous employons, cette vitesse de défilement est bornée, à la fois par un minium et par un maximum. La puissance électrique associée est comprise entre 100~W et 600~W.\par 
+Des images AFM ont été réalisées sur des couches d'argent de 30~nm d'épaisseur déposées à différentes puissances, sur des surfaces planes. Les images sont présentées sur la figure~\ref{AFMpower}. Nous observons que l'augmentation de la puissance favorise la présence de grains de grande taille. Pour la puissance de 600~W, il est même possible d'observer un domaine cristallin dont la taille avoisine le micron (image~d). La rugosité a été mesurée par AFM, elle est présentée dans le tableau~\ref{tRguoPower}.\par 
+%Cette augmentation de taille est liée à la densité de germes lors du dépôt. Lorsque la puissance augmente, les atomes et clusters qui sont éjectés de la cible métallique ont une énergie plus grande et donc une probabilité plus faible de se fixer à la surface de l'échantillon. La densité de germes diminue, le nombre de grains qui en résultent également, ces grains seront donc plus gros. Bien qu'en apparente contradiction avec l'augmentation de la vitesse de dépôt, ce mécanisme a été \par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\textwidth]{AFMpower}
+\caption{Cartographies AFM d'une couche d'argent de 30~nm déposée sur une couche de silice plane à différentes puissances a) 100~W, b) 200~W, c) 400~W et d) 600~W.}
+\label{AFMpower}
+\end{figure}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{cccccc}
+\hline
+$P$ (nm) & 350 & 350 (hexagonal) & 500 & 600 & 750 \\
+\hline
+$h_{opti}$ (nm)&  33 & 30 & 44 & 52 & 68\\
+\hline
+\end{tabular}
+%\begin{tabular}{cc}
+%\hline
+%Puissance (W) & Rugosité (nm) \\
+%100 & 4,2 \\
+%200 (hexagonal) & 5,2 \\
+%400 & 5,5 \\ 
+%600 & 6,0 \\
+%\hline
+%\end{tabular}
+\caption{Rugosité mesurée sur des couches d'argent de 30~nm, en fonction de la puissance de dépôt.}
+\label{tRguoPower}
+\end{table}
+Nous avons procédé au dépôt de couches de 30~nm sur la texture de période 350~nm, en réseau carré. Les structures obtenues après démouillage (400~$^\circ$C, 2~h) ont été analysées de manière identique que dans la section précédente. Les ratios obtenus sont présentés dans la figure~\ref{qualitePower}. Le ratio $r_{trou}$ est maximum pour 400~W de puissance de dépôt, tandis que le ratio $r_{tot}$ est maximal pour une puissance de 600~W. Par un raisonnement identique à la section précédente, nous déduisons que 400~W (où $r_{tot}=r_{trou}$) est la puissance optimale de dépôt, pour une épaisseur de 30~nm et une texture de réseau carré de période 350~nm.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{qualitePower}
+\caption{Évolution des ratios $r_{tot}$ et $r_{trou}$ en fonction de la puissance de dépôt, pour une couche d'argent de 30~nm démouillée sur une surface texturée par le réseau carré de 350~nm de période.}
+\label{qualitePower}
+\end{figure}
+
+\subsubsection{Conclusion sur l'optimisation}
+Nous avons expérimentés plusieurs paramètres de dépôt et mesuré leur influence sur la qualité des réseaux de particules obtenus. Les variations de qualité sont plus importantes lorsque l'on fait varier l'épaisseur initiale de la couche que lorsque l'on fait varier la puissance de dépôt. En termes d'optimisation du dépôt, le paramètre le plus déterminant reste donc  cette épaisseur.\par 
+Pour être exhaustif, un autre paramètre qui pourrait être modifié est la pression de gaz neutre du plasma du dépôt. Nous n'avons pas procédé à cette étude, mais pour une texture donnée, on pourrait définir un jeu de trois paramètres optimaux~: épaisseur, pression et puissance. Un changement de texture entraine un changement de ce jeu de paramètres.\par 
+
+	\subsection{Propriétés des particules}
+Nous avons caractérisé en détail la qualité des réseaux. Nous étudions maintenant les modifications apportées aux particules individuelles, c'est-à-dire en dehors de leur organisation spatiale.\par 
+
+\subsubsection{Modification de la forme des particules}
+Une caractéristique des particules susceptible d'affecter leur réponse optique est leur forme. Nous avons réalisé des clichés MEB \og en tranche \fg{} de particules sur une surface plane et sur une surface texturée. Les images sont présentées dans la figure~\ref{MEBforme}. Sur une surface plane (image a), les particules sont assimilable à des hémisphères facettées. Cette forme est attendue, compte-tenu de la faible anisotropie des facettes de bas indice de l'argent~\cite{stankic2013equilibrium, winterbottom1967equilibrium}. Sur une surface texturée, une particule a été observée dans un trou pyramidal de la texture (image~b). Cette particule présente un sommet hémisphérique qui émerge de la surface et une base pyramidale (ou conique, la projection de profil ne permettant pas de trancher) qui s'insère dans le substrat. Sur l'image, l'angle formé par les pans inclinés de la particule et le plan du horizontal du substrat est de 38$^\circ$. Cet angle correspond à celui de la pyramide inversée obtenue par nano-impression (37$^\circ$). La particule adopte donc la forme du trou dans lequel elle s'est formée.\par
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{MEBforme}
+\caption{Images MEB réalisées en tranche sur a) une couche d’argent de 20~nm démouillée sur une surface plane b) une couche d’argent de 35~nm démouillée sur un réseau de 350~nm de période.}
+\label{MEBforme}
+\end{figure}
+Ce constat diffère des observation de Giermann et Thompson, qui travaillaient avec de l'or. Ils observaient en effet des particules dont la forme était davantage contrainte par des relations d’épitaxie avec les pans inclinés des pyramides que la forme des pyramide elle-même. Notamment, les particules n’épousaient pas le fond de la pyramide (voir chapitre~I). Dans notre cas, l'argent épouse bien toute la structure du trou.\par  
+
+\subsubsection{Modification de la taille des particules}
+Une autre caractéristique des particules pouvant modifier leur réponse optique est leur taille. Par la suite, nous assimilons \og taille \fg{} au diamètre effectif des particules, c'est à dire le diamètre d'un disque présentant la même superficie. Sur une surface plane, Morawiec \textit{et al.}~\cite{morawiec2013self} ont observé que la taille des particules obtenues par démouillage était proportionnelle à l'épaisseur initiale de la couche. En d'autres termes, pour une épaisseur donnée correspond une taille de particules.\par 
+Nous avons mesuré les distributions en taille des particules obtenues, pour une même épaisseur initiale, sur une surface plane et sur les surfaces texturées par les réseaux de période 350~nm (carré et hexagonal). Elles sont présentées sur la figure~\ref{taillePartComp}. Nous observons que la distribution des particules obtenues sur une surface plane est large et centrée autour d'une valeur moyenne de 314~nm, avec une largeur à mi-hauteur de 118~nm. Sur les surface texturées (respectivement réseau carré et hexagonal), les valeurs moyennes des tailles de particules sont abaissées à 250 et 235~nm, tandis que les largeurs à mi-hauteur sont de 50 et 42~nm. La présence du réseau a un impact fort sur la distribution en taille des particules, en diminuant à la fois la valeur moyenne mais aussi la largeur de la distribution.\par 
+Comparé à une surface plane, la diminution de la taille moyenne s'explique par l'augmentation de la densité de particules, imposée par le substrat. En effet, à volume total constant, augmenter le nombre de particules équivaut à diminuer leur taille. C'est pour cette raison que lorsque l'on considère le réseau hexagonal, plus dense, la taille moyenne est légèrement diminuée par rapport au réseau carré. La diminution de la largeur de la distribution est quant à elle reliée au fait que les particules, étant régulièrement espacées, ont toutes une zone d'influence (définie dans le chapitre~III) comparable, c'est-à-dire qu'elles accumulent toutes une quantité de matière équivalente. Ceci limite les variations de taille des particules observées. \par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{taillePartComp}
+\caption{Distribution en taille des particules pour une couche d'argent de 30~nm démouillée sur une surface plane, texturée par un réseau carré (période 350~nm) ou un réseau hexagonal (période 350~nm).}
+\label{taillePartComp}
+\end{figure}
+
+\subsection{Conclusion}
+Le procédé de nano-impression est compatible avec le démouillage sur surface texturées proposé par Giermann~\cite{giermann2005solid}. Ceci est vrai pour des réseaux de pyramides inversées dont la période varie entre 200 et 1000~nm. Pour chaque texture, il est possible d'optimiser le dépôt initial de la couche métallique afin d'obtenir, après démouillage, des réseaux de particules de bonne qualité. Cette optimisation est principalement fondée sur l'épaisseur initiale de la couche, mais aussi sur la puissance électrique fournie à la cathode pendant la pulvérisation magnétron, ainsi que la pression de gaz employée pour créer le plasma de dépôt. Enfin, comparé à des particules obtenues sur une surface plane, les particules obtenues sur surfaces texturées ont de nouvelles caractéristiques~: leur morphologie adopte celle des trous dans lesquels elles se sont formées, elles sont pour partie immergées dans le substrat et leur taille est réduite et plus régulière. Elles sont maintenant organisées en réseau.\par 
+
+\section[Propriétés optiques des réseaux de particules ]{Propriétés optiques des réseaux de particules obtenues par démouillage}
+L'intérêt de la nano-impression est la possibilité de procéder aux démouillage sur des surface texturées avec des substrats optiquement transparents. Nous avons réalisé nos mesures sur une verre Planilux Saint-Gobain, transparent dans une large gamme ($>$350~nm). Nous pouvons donc mesurer les propriétés optiques de réflexion (R), de transmission (T) et d’absorption (A). Nous présentons dans cette les réponses optiques macroscopiques des structures métalliques obtenues par démouillage.\par 
+
+\subsection{Mesures expérimentales}
+\paragraph*{Remarque préliminaire~:} L'absorption (A) que nous présentons dans les résultats expérimentaux est déduite des mesures de transmission (T) et de réflexion (R). Ce n'est pas une mesure directe. Par ailleurs, la dispositif employé introduit un artéfact de mesure systématiques à une longueur d'onde de 840~nm~; les grandes oscillations brusques autour de cette longueur d'onde n'ont pas de signification physique.\par 
+
+	\subsubsection{Substrat texturé, sans argent}
+Nous travaillons sur un substrat de verre Planilux (Saint-Gobain), sur lequel nous déposons et texturons une couche sol-gel de silice. Sur cette couche sol-gel, nous procédons au dépôt et au démouillage d'une couche d'argent. Avant de caractériser les structures obtenues par démouillage (contenant de l'argent), nous avons contrôlé l’impact sur la réponse optique de la texture seule. Nous avons mesuré la transmission et la réflextion pour une couche sol-gel plane et pour une couche sol-gel texturée par le réseau de période 600~nm. Les spectres de T et R, ainsi que de l’absorption déduite (A = 1-R-T) pour ces deux substrat sont présentés sur la figure~\ref{optiqueSolGelNu}.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\textwidth]{optiqueSolGelNu}
+\caption{Spectres de transmission (T), de réflexion (R) mesuré pour une surface sol-gel plane ou texturée à 600~nm. Spectre d’absorption déduite (A = 1-R-T) pour ces mêmes surfaces. La ligne pointillée indique la limite d’absorption du substrat de verre dans l’UV.}
+\label{optiqueSolGelNu}
+\end{figure}
+Mis à part pour des longueurs d’ondes inférieures à 350 nm, T et R sont relativement constantes. T a une valeur de 90~\%, et R une valeur de 8~\%. On ne remarque qu’une différence faible entre les deux échantillons sut T entre 400 et 800~nm~: un abaissement de quelques points pour la surface texturée. Cet abaissement se traduit par une hausse équivalent de A au même endroit.\par 
+Le verre et la silice ayant un indice optique proche de 1,44 (ceci peut varier pour une couche sol-gel, en fonction de sa densité), il existe naturellement une réflexion à l'interface air/verre. C'est cette réflexion que l'on observe, à 8~\%. Cet effet est observable sur les deux échantillons. En revanche, la différence de transmission observée entre 400 et 800~nm est inattendue. En effet, même si un réseau de 600~nm diffracte la lumière dans le visible, le fait de travailler en sphère intégrante devrait nous affranchir d'éventuels effets liés à ce phénomène. Il existe cependant un petit interstice entre l'échantillon et l'entrée de la sphère intégrante lors des mesures de T~; il possible qu'en transmission, un ordre de diffraction en incidence rasante avec la surface de l'échantillon soit partiellement perdu avant d'entrer dans la sphère.\par 
+Cette différence ne représentant qu'une perte de 4~points pour une transmission de 90~\%, nous considérons qu'elle est négligeable. Nous pouvons en conclure que la texturation n'a pas d'incidence sur les mesure optiques.\par 
+
+	\subsubsection{Comparaison : surfaces planes et texturées}
+Observons maintenant les structures d’argent démouillées. Nous comparons les réponses optiques d’une couche de 30~nm démouillée sur une surface plane ou une surface texturée à 350~nm. Les résultats sont présentés dans la figure~\ref{optiqueCompareTextFlat} de la page~\pageref{optiqueCompareTextFlat}. La transmission mesurée de la couche démouillée sur une surface plane présente deux pics à des longueurs d'onde de 360 et 520~nm. La transmission relative à la surface texturée présente une allure très semblable, mais avec une valeur plus petite. La réflexion relative à la surface plane présente un pic large à 775~nm et un épaulement aux alentours de 400~nm. La réflexion relative à la surface texturée est globalement plus importante, mis à part une forte diminution centrée sur une longueur d'onde de 530 nm.\par 
+Pour les particules obtenues par démouillage sur une surface plane, l'absorption optique présente un unique pic centré à une longueur d'onde de 420~nm. Pour les particules obtenues sur la surface texturée, on retrouve le même pic, plus un nouveau pic centré autour de 530~nm. Ce pic provient directement de l'abaissement de la réflexion observé un peu plus tôt.\par 
+
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.8\textwidth]{optiqueCompareTextFlat}
+\caption{Spectres de transmission (T), de réflexion (R) mesurés pour une couche d’argent de 30~nm démouillée sur une surface sol-gel plane ou texturée par un réseau carré de période 350~nm. Spectre d’absorption déduit (A = 1-R-T) pour ces mêmes surfaces. La ligne pointillée indique la limite d’absorption du substrat de verre dans l’UV.}
+\label{optiqueCompareTextFlat}
+\end{figure}
+Nous avons déterminé en étudiant une couche sol-gel seule que l'introduction d'un réseau périodique ne perturbe pas la mesure, \textit{via} la diffraction. Cette hausse d'absorption très nette autour de 530~nm a donc une origine physique et ne peut pas être imputé à un artéfact de mesure. De manière générique, nous appelons \og premier pic \fg{} le pic situé à 420~nm et \og second pic \fg{} selui situé à 530~nm (nous proposerons plus tard dans ce manuscrit une dénomination plus adéquate). Le premier pic, étant présent de la même manière pour des particules désorganisées (sur surfaces planes) que pour des particules organisées (sur surfaces texturées), n'est donc pas dû à des interactions inter-particules. Le second pic, en revanche peut provenir de l'organisation, mais aussi des autres changements apportés dans le système, telles la forme des particules ou leur taille. Par la suite, nous allons étudier principalement la réponse en absorption des réseaux de particules obtenus. \par 
+   
+	\subsubsection{Influence de la qualité du réseau}
+Nous considérons toujours les réseaux de particules de période 350~nm. Nous avons montré dans la section~\ref{sQuality} comment optimiser le dépôt de la couche initiale afin d'obtenir par démouillage des réseaux de bonne qualité. Pour les échantillons présentés dans la section en question, les mesures optiques ont également été réalisées. Les mesures concernant la variation en épaisseur sont présentées sur la figure~\ref{optiqueCompareQuality} de la page~\pageref{optiqueCompareQuality}. Considérons tout d'abord les épaisseurs initiales inférieures à 35~nm (spectres de gauche). Nous observons très peu de variations dans le premier pic d'absorption (centré à 420~nm). En revanche, l'allure du second pic est dépendante de l'épaisseur initiale~: ce pic est plus fin et plus intense à mesure que l'épaisseur initiale approche de 35~nm. Considérons maintenant les épaisseurs plus grandes (supérieures à 40~nm, spectres de droite). Lorsque l'épaisseur initiale est de 40~nm, le spectre est très semblable à celui obtenu pour une épaisseur de 35~nm. En revanche, si l'on porte l'épaisseur à 45~nm, le premier pic perd en intensité. À 55~nm, les deux pics perdent en intensité. à 75~nm, ils sont encore discernables, mais larges et peu intenses.\par  
+Nous pouvons faire un lien direct entre l'allure du second pic et la qualité du réseau. En effet, les épaisseurs initiales comprises entre 30 et 40~nm sont celles qui donnent les réseaux de meilleure qualité après démouillage. C'est sur ces réseaux que le second pic est le plus fin et le plus intense. À l'opposé, si la qualité du réseau baisse, le second pic perd en intensité et en finesse. Le premier pic subit également une perte en intensité lorsque l'épaisseur initiale est trop importante (à partir de 45~nm). Nous avions observé que les particules avaient de plus en plus de mal à se déconnecter pour de telles épaisseurs initiales. Ces observations sont cohérentes avec notre hypothèse~: le second pic dépend de l'adéquation des particules avec la texture (organisation, taille ou forme), tandis que le premier pic dépend des particules indépendamment les unes des autres.\par 
+\begin{figure}[!p]
+\centering
+\includegraphics[width=\textwidth]{optiqueCompareQuality}
+\caption{Spectres d’absorption déduits pour des réseaux de particules obtenues par démouillage sur une surface texturée par un réseau carré de période 350~nm, pour différentes épaisseurs initiales de couche. Gauche~: de 20 à 35~nm. Droite~: de 40 à 75~nm.}
+\label{optiqueCompareQuality}
+\end{figure}
+Dans la section~\ref{sQuality}, nous avons également étudié l'influence de la puissance électrique fournie pendant le dépôt sur la qualité du réseau de particules obtenues après démouillage. Les spectres d'absorption associés sont présentés sur la figure~\ref{optiqueComparePower}. Le premier pic connait de petites variations en intensité suivant la puissance employée pendant le dépôt. Le second pic également, mais nous notons une augmentation de son intensité et une réduction de sa largeur pour les puissances de 400 et 600~W. Ces puissances sont précisément celles qui donnaient lieu à des réseaux de meilleure qualité, après démouillage. Ces observations sont tout à fait conforme avec nos conclusions précédentes~: la qualité du réseau a une grande influence sur la forme du second pic d'absorption.\par  
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{optiqueComparePower}
+\caption{Spectres d’absorption déduits pour des réseaux de particules obtenues par démouillage sur une surface texturée par un réseau carré de période 350~nm, pour différentes épaisseurs initiales de couche. Gauche~: de 20 à 35~nm. Droite~: de 40 à 75~nm.}
+\label{optiqueComparePower}
+\end{figure}
+En termes de contrôle du démouillage, il apparaît donc que l'optimisation du dépôt en amont du démouillage a une forte influence sur la réponse optique du réseau de particules obtenu. Il y a une très forte corrélation entre la qualité mesurée sur les images MEB et l'intensité et la finesse du second pic observé dans les spectres d'absorption.\par 
+	\subsubsection{Changement de texture}
+Nous avons jusqu'ici étudié la réponse optique de réseaux de particules obtenus par démouillage sur les surfaces texturées par réseaux carrés de période 350~nm. Nous disposons de réseaux d'autres périodes, dont nous avons mesuré la réponse optique. Les spectres d'absorption associés sont présentés sur la figure~\ref{optiqueComparePeriods}. Les épaisseurs déposées pour les différentes textures sont (par ordre croissant de périodes)~: 20, 35, 45, 50 et 70~nm. Ces épaisseurs correspondent, à l'incertitude près, à l'épaisseur optimale pour chaque texture. Concernant le premier pic d'absorption, il est toujours positionné au même endroit, mais son intensité varie d'un réseau à l'autre. Le second pic d'absorption se déplace, sa position est marquée sur les spectres par la ligne en pointillés. Lorsqu'il se déplace vers les grandes longueurs d'onde, l'absorption entre les deux pics reste à une valeur comprise entre 20 et 30~\%, elle est relativement constante.\par
+Nous avons tracé sur la figure~\ref{posVSperiod} les positions du second pic en fonction de la période du réseau. Une régression linéaire effectuée sur ces points donne une droite d'équation $y = 1,44x$.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\textwidth]{optiqueComparePeriods}
+\caption{Spectres d’absorption mesurés sur des réseaux de particules obtenus par démouillage sur des surfaces texturées pour différentes périodes. Les épaisseurs initiales des couches sont dépendantes de la période du réseau (voir texte).}
+\label{optiqueComparePeriods}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{posVSperiod}
+\caption{Position du second pic d'absorption (longueur d'onde en~nm) en fonction de la période du réseau de particules d'argent. La droite est une régression linéaire passant par l'origine.}
+\label{posVSperiod}
+\end{figure}
+Cette dépendance linéaire entre la position du second pic d'absorption et la période du réseau de particules d'argent laisse supposer que c'est bien la période du réseau qui détermine la position du pic et la qualité du réseau qui détermine son intensité et sa finesse. Cependant, tous nos réseaux sont obtenus par démouillage, ce qui lie intrinsèquement la période du réseau aux autres paramètres~: il n'est pas possible d'obtenir, par exemple, un réseau de grande période avec de petites particules. Nous avions constaté dans la chapitre I que ces paramètres (taille et forme) pouvaient modifier la réponse optique des particules. En l'état actuel, les expériences de démouillage ne nous permettent pas de trancher.\par 
+
+Enfin, nous avons réalisé les mesures optiques pour le réseau hexagonal de période 350~nm. Le spectre d'absorption est présenté sur la figure~\ref{optiqueCompareGeometry}, ainsi que les spectres relatifs au réseau carré de même période et aux particules obtenuessur une surface plane, pour les mêmes épaisseurs initiales (30~nm). Nous observons que le premier pic est toujours à la même position (420~nm), comme attendu. En revanche, le second pic s'est déplacé à 490~~nm. Ce déplacement, bien que petit, a été observé systématiquement sur des expériences de contrôle~; il s'agit bien d'un différence d'absorption.\par 
+Les réseaux carrés et hexagonaux ont des paramètres géométriques très proches~: la période, la taille et la forme des particules. Ceci semble indiquer que l'organisation est effectivement responsable de ce deuxième pic d'abosrption. La raison physique expliquant ce phénomène reste encore à identifier.\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{optiqueCompareGeometry}
+\caption{Spectres d'absorption déduits pour des particules d'argent obtenues par démouillage sur une surface plane, une surface texturée en réseau carré (P = 350~nm) ou un réseau hexagonal (P = 350~nm). L'épaisseur initiale est de 30~nm.}
+\label{optiqueCompareGeometry}
+\end{figure}
+
+\subsection{Simulations par éléments finis}
+Nous avons donc pris le parti de compléter notre étude expérimentale par des simulations numériques. En effet, il est possible avec ces simulations de faire varier tous les paramètres (période du réseau, taille et forme des particules) de manière indépendante, afin d'estimer les effets relatifs de ces paramètres. Les simulations, de types \og éléments finis \fg, ont été réalisées par Alexandre Baron (Centre de Recherche Paul Pascal) à l'aide du logiciel COMSOL. Nous présentons ici les résultats obtenus.\par 
+	\subsubsection{Variation de la forme}
+Nous comparons ici les spectres d’absorptions calculés pour deux systèmes, l’un avec des particules rondes et l’autre avec des particules à bas conique et calotte hémisphérique (que nous désignerons simplement par \og particules coniques \fg). Le schéma~\ref{schemaBoiteSimul} permet de visualiser les différents paramètres employés dans la simulation. Nous avons choisi $P$ = 350~nm, $d$ = 150~nm, $D$ = 250~nm pour correspondre à un réseau de 350~nm. Il est important de noter que du fait de conditions périodiques aux bords, nous étudions bien un réseau de particules.\par 
+Les résultats sont représentés dans la figure~\ref{simulCompForme}. Nous ne commenterons pas les valeurs de l’absorption en dessous de 350 nm, car ces valeurs correspondent au substrat de verre. Pour les particules sphériques, on observe (par ordre de longueur d’onde croissante) deux pics proches à 411 et 441~nm, puis deux pics proches à 525 et 579~nm. Pour les particules coniques, on observe un pic à 420~nm et un pic à 540~nm.\par 
+Lorsque les particules sont sphériques, on observe donc davantage de pics. Cependant, ceux-ci sont très proches~; lorsque l’on considère des particules coniques, deux pics proches sont remplacés par un unique pic à une valeur intermédiaire. La forme des particules influence la forme du spectre d’absorption en décalant les pics, ce qui donne lieu à leur superposition ou au contraire leur éclatement. Ces changements, cependant, sont limité à moins de 50 nm pour les cas étudiés, et l'allure globale du spectre est conservée. Nous remarquons, en particulier, que la présence du second pic (ou des seconds pics) aux alentours de 540 nm est observée, quelle que soit la forme des particules~: ce n’est pas le changement de forme qui induit ce pic.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{schemaBoiteSimul}
+\caption{Schéma des boîtes de simulation employées dans les calculs COMSOL.}
+\label{schemaBoiteSimul}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{simulCompForme}
+\caption{Absorption simulée pour un réseau particules sphériques ou coniques. Les paramètres sont indiqués dans le texte.}
+\label{simulCompForme}
+\end{figure}
+Sur la figure~\ref{simulCompForme}, nous avons comparé les résultats de simulation des particules coniques avec nos résultats expérimentaux. On observe un très bon accord entre la simulation et l’expérience, ce qui conforte bien la validité des simulations. La simulation a toutefois tendance à donner des pics plus minces, ce qui sans doute du au fait que le système simulé est idéal, contrairement à nos réseaux expérimentaux.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{simulCompExp}
+\caption{Spectres d’absorption : simulé pour des particules coniques (en rouge) ou obtenu expérimentalement (en bleu), pour un réseau de période 350~nm et des particules d'argent d’une taille moyenne D = 250~nm.}
+\label{simulCompForme}
+\end{figure}
+	\subsubsection{Variation de la période}
+\paragraph*{Remarque :} le temps de calcul pour les petites longueurs d’ondes dans les grandes périodes augmente rapidement. Pour cette raison, nous avons limité la gamme de longueurs d’ondes calculées pour les périodes les plus grandes.\par 
+
+Des simulations ont été effectuées en changeant uniquement la taille de la boîte de simulation (P) ; les spectres d’absorption obtenus sont présentés sur la figure~\ref{simulCompPeriode}. Nous avons gardé tous les autres paramètres constants (particules coniques, D = 250~nm, d = 150~nm). Considérons en premier lieu uniquement le spectre relatif à la période de 500~nm. On observe un pic à 420~nm, un pic à 570~nm et un pic à 770~nm. Le premier pic (420~nm) n’a donc pas bougé lorsque l’on a augmenté la période. Suite à notre remarque, nous ne pourrons pas vérifier sur les simulations à plus grande période s'il s'est déplacé ou non. Nous l'associons cependant au \og premier pic \fg{} observé sur les spectres expérimentaux. Lorsque la période augmente (600 et 750~nm), les deux pics se déplacent vers le rouge. Il semble qu'un nouveau signal émerge pour des longueurs d'ondes plus faibles, mais la simulation est limité dans cette gamme pour les grandes périodes.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{simulCompPeriode}
+\caption{Spectres d’absorption simulés pour des particules coniques de 250 nm de diamètre et une profondeur de 150 nm, en fonction de la période du réseau.}
+\label{simulCompPeriode}
+\end{figure}
+En résumé, nous observons principalement trois pics dans l'absorption simulée des réseaux de particules d'argent~:
+\begin{itemize}
+\item le \og premier pic \fg, à une longueur d'onde de 420~nm, indépendant de la période~;
+\item le \og second pic \fg, dont la position est la plus décalée vers les grandes longueurs d'onde, et qui se déplace lorsque la période varie~;
+\item le \og troisième pic \fg, situé entre les deux précédents, qui se déplace également lorsque la période varie. 
+\end{itemize}
+Le fait d'observer un pic supplémentaire (à 570~nm pour P = 500~nm) est inattendu. Si le pic le plus décalé vers le rouge peut correspondre au \og second pic \fg{} des spectres expérimentaux, le \og troisième pic \fg{} est une nouveauté. Cependant, nous avions remarqué expérimentalement que l'absorption entre le premier et le deuxième pic restait à un niveau de l'ordre de 20 à 30~\%. Ce troisième pic est donc possiblement inclus dans le signal, mais pas suffisamment résolu pour être observé expérimentalement. Remarquons de plus qu'il semble se décomposer en deux pics pour les plus grandes périodes.\par
+Nous avons tracé sur la figure~\ref{simulPicPos} les positions du deuxième et du troisième pic en fonction de la période du réseau. Nous observons pour chaque pic une dépendance linéaire entre sa position et la période. Les pentes obtenues par régression sont respectivement 1,52 et 1,06. Pour rappel, la pente expérimentale obtenue pour le second pic était 1,44.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{simulPicPos}
+\caption{Position des pics d’absorption des spectres simulés en fonction de la période du réseau.}
+\label{simulPicPos}
+\end{figure}
+
+COMSOL nous permet de visualiser l’intensité du champ \textbf{E} dans la boîte de simulation aux longueurs d’onde de résonance. Les cartographies sont présentées sur la figure~\ref{simulModes}. Dans l’ordre d’attribution des pics : a) le premier mode (420 nm) présente une exaltation du champ tout atour de la particule, dans la silice comme dans l’air. Nous l’appellerons « mode hybride ». b) Le second mode (que nous attribuons au second pic) présente une exaltation uniquement dans le substrat, nous l'appelleront \og mode du substrat \fg, tandis que c) et d) qui constituent le troisième pic présentent au contraire une exaltation dans l’air et une exaltation hybride. Nous les regroupons sous le terme \og mode de l'air \fg.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{simulModes}
+\caption{Cartographie simulée de l’intensité du champ \textbf{E} aux longueurs d’onde correspondant aux pics a) au premier pic, à 420 nm, pour la période de 350~nm b) au second pic pour la période de 600~nm et c) et d) au troisième pic, pour la période de 600~nm.}
+\label{simulModes}
+\end{figure}
+
+	\subsubsection{Changement de métal : cas de l'or}
+La simulation permet de changer de métal en remplaçant simplement la fonction diélectrique renseignée. Nous avons exécuté les mêmes calculs avec des particules d'or. Notons que procéder au démouillage de l'or sur un substrat de verre est difficilement réalisable en pratique~: les températures de recuit nécessaires au démouillage dans un délai raisonnable dépassent 650~$^\circ$C, la température de transition vitreuse du verre. Un tel recuit peut alors déformer le substrat.\par 
+Le spectre d'absorption calculé est présenté sur la figure~\ref{simulCompMetal}. Concernant le spectre relatif à l'or, nous observons une absorption élevée entre 400 et 500~nm, un pic double à 520 et 570~nm, puis une décroissance de l'absorption. Un nouveau pic est observé à 770~nm. Par comparaison au spectre obtenu avec la fonction diélectrique de l'argent, nous pouvons identifier le double pic comme étant relatif au mode de l'air, et le pic à 770~nm au mode du substrat. Ces pics sont positionnés à la même longueur d'onde, ils sont donc indépendants du matériau décrit pour la simulation. En revanche, la différence d'absorption aux petites longueurs d'onde est une signature des différents métaux. \par  
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{simulCompMetal}
+\caption{Spectres d'absorption simulés pour un réseau de particules de période 500~nm. La taille (D) des particules est 250~nm, la profondeur (p) est 150~nm. Deux fonctions diélectriques ont été employées~: l'argent (en bleu) et l'or (en rouge).}
+\label{simulCompMetal}
+\end{figure}
+
+	\subsubsection{Variation de la taille}
+Enfin, nous avions souligné dans le chapitre I que la taille des particules pouvait avoir une influence sur leur réponse optique. Nous avons réalisé deux simulations pour un réseau de particules de période 600~nm. Deux tailles (D) on été comparées, 250 et 400~nm. Les spectres d'absorption simulés sont présentés sur la figure~\ref{simulCompTaille}. La spectre d'absorption simulé pour $D = 400$~nm présente des pics aux mêmes positions que celui simulé pour $D = 250$~nm. Leur intensité est plus forte. La taille ne modifie donc pas la position des pics relatifs aux modes du substrat et de l'air, mais augmente leur intensité. Cette augmentation traduit sans doute l'augmentation de quantité de métal susceptible d'absorber. Le mode hybride semble affecté de la même manière (position identique mais augmentation de l'intensité avec la taille).\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{simulCompTaille}
+\caption{Spectres d'absorption simulés pour un réseau de particules d'argent de période 600~nm. La taille (D) des particules est 250~nm (en bleu) ou 400~nm (en rouge).}
+\label{simulCompTaille}
+\end{figure}
+
+\subsection{Discussion}
+Forts des observations expérimentales et des résultats de simulation, nous cherchons à identifier l'origine physique des différents pics d'absorption.\par 
+Les particules d'argent obtenues par démouillage sur une surface texturée sont organisées en réseau (imposé par le substrat). Les mesures de la réponse optique ont mis en évidence deux pics d'absorption. Le premier est présent quelle que soit la texture (différentes périodes, voire surface plane), tandis que le second n'est observé que sur les textures en réseau. Il se déplace en fonction de la période du réseau avec une relation linéaire de pente 1,44.\par 
+Les simulations de la réponse optique de tels réseaux par éléments finis fournissent des spectres d'absorption très proches de nos observations expérimentales. Elles nous permettent de plus de supposer l'existence d'un troisième pic, sans doute pas assez prononcé pour être observé expérimentalement. Nous avons identifié ces différents pics comme étant reliés à des modes différents, que nous appelons respectivement \og hybride \fg, \og du substrat \fg{} et \og de l'air \fg. Nous allons discuter des différents modes séparément.\par 
+Nous avons observé expérimentalement que le mode hybride est indépendant de la période du réseau et n'est que peu modifié par la forme des ou la taille des particules. Ce mode semble équivalent à la LSPR (résonance du plasmon de surface localisé) d'une particule d'argent supportée sur de la silice, observée par Tanyeli \textit{et al.}~\cite{tanyeli2013effect} (à 450~nm pour des particules d'une taille de 150~nm) ou Royer \textit{et al.}~\cite{royer1987substrate} (à 400~nm pour une taille de 50~nm). Le fait que ce mode soit hybride semble indiquer qu'il provient bien d'une interaction avec le milieu environnant (ce qui est le cas de LSPR). On se serait cependant attendu, selon la dépendance linéaire prévue par Tanyeli \textit{et al.} (voir figure~\ref{tanyeliSubstrateResonance} de la page~\pageref{tanyeliSubstrateResonance}) à l'observer à une plus grande longueur d'onde. D'un autre côté, dans le cadre de l'approximation quasi-statique, la polarisabilité d'une particule présente une résonance à une longueur d'onde indépendante de sa taille (mais l'intensité en dépend). Nos particules étant trop grosses pour rentrer dans le cadre de cette approximation, il convient d'être prudent quant à l'interprétation de ce résultat. L'augmentation en taille apporte notamment de la complexité avec des résonances multipolaires. Ceci pourrait notamment être la raison de l'absorption non nulle pour les plus grandes particules à de plus grandes longueurs d'onde que 420~nm. Nous supposerons en conclusion que le mode hybride est bien dû à une LSPR des particules d'argent supportées, mais la détermination exacte de sa nature nous reste à l'heure actuelle inaccessible.\par 
+Les deux autres modes (mode du substrat et mode de l'air) se comportent de manière semblable. N'étant présents que lorsque les particules sont organisées en réseau, ils sont donc dépendants des interactions entre elles. Leur position est principalement influencée par la période, avec une relation linéaire de pente 1,52 et 1,06 selon la simulation, ou 1,44 selon l'expérience. 
+Nous avons vu dans le chapitre I que deux modèles peuvent décrire ce comportement~: un couplage de la lumière aux particules, inaccessible sans diffraction~\cite{kravets2008extremely}, ou un effet de couplage d’une particule au réseau, exprimé par la sommes des dipôles retardés~\cite{zou2004narrow}. La dépendance linéaire pointe dans la direction du premier modèle.\par 
+Ce modèle prévoit deux résonances, pour un réseau de particules à l’interface entre deux milieux, en incidence normale : à $\lambda_{air} = P/m$ et $\lambda_{sub} = n_{sub}P/m$, avec $m \in N^*$. Nos données expérimentales montrent que le pic relatif au mode du substrat se déplace selon une loi $\lambda = 1,44P $ (ou $\lambda = 1, 52P$ selon les simulations). Cette pente correspond exactement à l'indice typique de la silice sol-gel (mesuré par ellipsométrie). La loi est donc parfaitement respectée. Nous pouvons interpréter le pic d'absorption observé comme étant dû à un mode de diffraction présent en incidence rasante. Ce mode de diffraction a donc un chemin optique très grand dans la couche de particule, augmentant donc l'absorption qu'il subit. Remarquons de plus que le champ \textbf{E} est particulièrement exalté dans la silice, ce qui correspond effectivement à un mode de diffraction en incidence rasante à une longueur d'onde de 1,44P.\par 
+L'équation $\lambda_{sub} = n_{sub}P/m$ est en réalité une simplification, puisque le réseau est en deux dimensions. Il conviendrait plutôt de considérer les distance entre particules dans toutes les directions en écrivant $\lambda_{sub} = n_{sub}P/\sqrt{m_1+m_2}$. Notamment, pour $m_1=m_2$, on trouve un mode diffracté en incidence rasante pour $\lambda = n_{sub}P/\sqrt{2}$. Numériquement, pour $n_{sub}=1,44$, on obtient la loi $\lambda = 1,02 P/$, et pour $n_{sub}=1,52$, on obtient la loi $\lambda = 1,07 P/$.\par 
+Cette discussion permet d'interpréter la complexité du pic identifié comme mode de l'air. Nous avons souligné le fait que ce pic était de forme plus complexe, et la position du maximum est linéaire avec la période selon une pente de 1,06. Il s'agirait en réalité de deux pics bien disctincts. L'un est effectivement un mode dû au réseau dans l'air, tandis que le second est un mode dans la silice pour des particules distantes de $P\sqrt{2}$. La cartographie du champ \textbf{E}, réalisée sur les deux composantes pour $P = 600$~nm (figure~\ref{simulModes}), confirme cette hypothèse. Le mode de l'air est clairement identifiable pour $\lambda = 620$~nm (cartographie c), tandis que le mode de la silice, légèrement superposé au mode précédent est visible pour $\lambda = 645$~nm. Ainsi, le pic que nous identifions comme \og mode de l'air \fg{} est en réalité la superposition du véritable mode de l'air et d'un mode de silice issu d'un ordre de diffraction supérieur. Remarquons que ceci contribue d'autant plus à avoir une absorption non nulle entre le mode hybride et le mode de la silice.\par 
+
+Enfin, nous avions remarqué un déplacement du pic d'absorption lié au mode de la silice dans le spectre mesuré sur un réseau hexagonal de particules, comparé au réseau carré (voir figure~\ref{optiqueCompareGeometry} de la page~\pageref{optiqueCompareGeometry}). Pour $P = 350$~nm et le réseau carré, il est positionné à 530~nm. Pour le réseau hexagonal (et $P=350$~nm), il est déplacé à 490~nm. Or, la diffraction pour un réseau hexagonal est légèrement différente que pour un réseau carré. Les rangées de particules sont espacées de $P\sqrt{3}/2$. Ainsi, le premier ordre diffracté en incidence rasante se trouve à une position théorique de 493~nm~: cela est conforme à nos observations.\par 
+
+Ce modèle rend bien compte du changement de période, mais aussi de géométrie. Il explique les déplacements des différents pics d'absorption, aussi bien pour les données simulées qu'expérimentales.\par 
+
+
+\section{Conclusion}
+Nous avons étudié la possibilité d'organiser des réseaux de particules d'argent sur des couches de silice sol-gel texturées par démouillage. La compréhension du démouillage que nous avons développé sur les surfaces texturées nous a permis de comprendre comment le rôle des grains était primordial dans la fabrication du réseau de particules. Contrairement à ce qu'avaient observé Giermann et Thompson dans le cas de l'or, le volume de métal de la couche d'argent peut être plus important que le volume des trous de la texture et malgré tout donner lieu à un réseau organisé de particules. La condition d'obtention d'un réseau idéal est d'avoir un grain (et un seul) en croissance au sein d'un motif de la texture. \par 
+Cette conception nous a permis de proposer une optimisation des conditions de dépôt de la couche. Cette optimisation concerne l'épaisseur initiale, mais aussi la puissance électrique fournie pendant le dépôt. Nous avons développé un algorithme de traitement d'image pour quantifier la qualité d'un réseau de particules. Ceci nous permet de proposer des paramètres optimaux pour une texture donnée.\par 
+Des particules d'argent réparties de manière aléatoire à la surface d'un substrat de silice donne lieu à un pic d'absorption centré à 420~nm. La réponse optique des réseaux organisés de particules diffère principalement par l'apparition d'un nouveau pic d'absorption. La position de ce pic dépend de la période du réseau avec une relation linéaire. Ce pic dépend également de la qualité du réseau obtenu par démouillage~: plus la qualité du réseau est grande, plus ce pic sera fin et intense. Le pic observé à 420~nm a une position constante.\par 
+Des simulations numériques par éléments finis modélisant nos systèmes nous ont permis de discuter de la nature physique des différents pics d'absorption observés expérimentalement. Nous attribuons le pic qui ne se déplace pas à une LSPR des particules. Le second pic est attribué à l'absorption d'un pic de diffraction créé par le réseau. Cette absorption est possible pour lorsque le pic de diffraction est projeté en incidence rasante avec la surface. Son chemin optique dans la couche métallique absorbante est augmenté, menant donc à son absorption. Ce modèle prévoit la position de ce pic pour une longueur d'onde étant égale à la période du réseau multipliée par l'indice du milieu. Les particules étant à l'interface entre deux milieux, deux pics sont donc attendus. Les données expérimentales nous permettent d'observer le pic relatif au substrat uniquement.\par 
+
+En termes d'applications, le contrôle des propriétés optiques des réseaux de particules offre de nouvelles perspectives. Le fait de pouvoir créer de l'absorption à une longueur d'onde désirée est intéressant, par exemple dans le cadre de l'amélioration de l'efficacité des cellules photovolatïques. Les cellules usuelles peuvent être limitées par un manque de conversion de lumière dans le proche infrarouge, où le spectre solaire est intense. Augmenter l'absorption, grâce à des particules à l'interface de la phase active, précisément dans la gamme visée permettrait d'augmenter l'efficacité globale de la cellule.\par 
+Pour d'autres applications industrielles (notamment les vitrages bas-émissifs), créer de l'absorption dans le proche infrarouge est un enjeu important. Cependant, la présence d'absorption dans la gamme visible dans nos systèmes peut être un obstacle. Cependant, nous avons montré que cette absorption dépend de la nature du matériau employé, contrairement aux modes créés par le réseau. Il serait envisageable de moduler séparément ces deux absorptions. D'autres pistes d'expérimentation sont envisageables~: une texture anisotrope (un paramètre de réseau différent selon la direction du plan) devrait donner lieu à deux pics d'absorption différents selon notre modèle. Changer le matériau qui compose le substrat permet également de modifier la position du mode du substrat.\par 
+Le principal défi est lié à l'utilisation du démouillage, qui ne permet pas l'obtention de n'importe quel réseau. Dans l'exemple des réseaux anisotropes, les deux périodes ne peuvent pas être trop différentes~: nous avons vu que l'optimisation de l'épaisseur initiale de la couche métallique était dépendante de la texture. Si les deux périodes s'écartent trop, il ne sera plus possible d'avoir une épaisseur correspondant aux deux. Il conviendra nécessairement de trouver le meilleur compromis.\par 
+
+
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{biblio}

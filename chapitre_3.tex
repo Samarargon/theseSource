@@ -1,0 +1,511 @@
+\minitoc
+\newpage
+
+Dans les produits verriers comprenant des couches pour le contrôle thermique (bas-émissif), la couche d'argent est incluse dans un empilement de plusieurs couches de diélectriques. La nature de ces couches peut varier, apportant d'autant plus de complexité à l'étude de la stabilité thermique de l'empilement et notamment celle du démouillage de la couche d'argent. Par souci de simplification, et en gardant à l'esprit que nous souhaitons ensuite travailler sur des surfaces texturées, nous considérons en premier lieu une couche d'argent sur un substrat de silice plane.\par
+Ce chapitre porte sur les expérimentations menées sur le démouillage à l'état solide de couches minces d'argent dans l'air ou une atmosphère riche en oxygène. Dans ce chapitre, le rôle des grains\footnote{Nous appelons \og grains \fg{} les cristallites observés en MEB et en AFM.} et de leur orientation cristalline dans le mécanisme du démouillage est mis en lumière, notamment grâce à des techniques de suivi \textit{in situ}. Grâce au MEB \textit{in situ}, nous avons également étudié la cinétique du démouillage. Nous discutons également de l'apport d'autres techniques expérimentales, à la fois pour le suivi \textit{in situ} ou pour tenter de comprendre l'évolution de la couche en lien avec sa structure cristalline.\par 
+
+
+\section{Suivi du démouillage par AFM}
+Tout au long de nos travaux, nous allons devoir confronter des résultats obtenus \textit{post mortem} ou \textit{in situ}. Dans cette section, nous allons montrer que les résultats (notamment ceux obtenus au MEB) sont cohérents et permettent bien de tirer des conclusions générales sur le démouillage dans nos systèmes. 
+
+\subsection{Diversité des cinétiques, unicité du mécanisme}
+\label{sPostMortem}
+Comme l'AFM permet de sonder les topologies de surface à une échelle comparable aux grains impliqués (quelques nanomètres), cette technique a été privilégiée dans un premier temps pour étudier l'évolution de couches d'argent lors de recuits. L'objectif est de comprendre comment, lors d'un recuit, une couche mince d'argent se transforme pour atteindre l'état présenté sur la figure~\ref{AFMfinal}, qui correspond à une couche d'argent de 30~nm recuite à 400~$^\circ$C pendant 15 minutes, puis cartographiée en AFM. Sur cette image, nous observons des îlots d'argent déconnectés les uns des autres. Ces îlots ont une forme régulière, semblant hémisphérique mais néanmoins facettée, comme on l'attendrait avec une construction de Wulff-Kaischew~\cite{wulff1901xxv, kaischew1951thermodynamique, winterbottom1967equilibrium}.\par 
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=.6\textwidth]{AFMfinal}
+	\caption{Image AFM d'une couche d'argent de 30~nm recuite à 400~$^\circ$C pendant 15~min.}
+	\label{AFMfinal}
+\end{figure}
+
+Cette morphologie est très différente de la couche mince initiale. L'enjeu est de comprendre quelles étapes permettent de passer de la couche aux îlots. Pour étudier cette transition de manière progressive, une série d'échantillons a été synthétisée en conservant les mêmes paramètres expérimentaux (une couche de 20~nm d'argent déposée dans les mêmes conditions de pulvérisation cathodique magnétron). Ces échantillons ont ensuite été recuits à une température relativement modérée (150~$^\circ$C) pendant des temps variables, afin d'observer le démouillage de manière progressive. Une séquence typique ainsi obtenue est visible sur la figure~\ref{AFMexSitu}. Précisons qu'il s'agit de six échantillons différents, recuits chacun séparément (deux images de l'échantillon recuit pendant 90~min sont présentées).\par
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width = 1.0\textwidth]{sequenceAFMexSitu.jpg}
+	\caption{Séquence d'images AFM obtenues sur des échantillons d'une couche d'argent de 20~nm, recuite à 150~$^\circ$C pendant des durées de 15 à 90 min. Un échantillon de référence est montré, ainsi qu'une seconde image prise sur le même échantillon recuit pendant 90 min.}
+	\label{AFMexSitu}
+\end{figure}
+
+Sur la séquence, nous pouvons voir la couche dans son état initial, composée d'une multitude de grains. Lors de l'allongement du temps de recuit, des trous apparaissent (en noir) et se propagent, tandis que certaines zones de la couche voient leur épaisseur augmenter. Nous observons que les trous ont tendance à s'élargir avec l'accroissement du temps de recuit. L'AFM nous permet également d'extraire des profils de hauteur, pour évaluer l'épaisseur locale de la couche. Un profil typique obtenu de cette manière est représenté sur la figure~\ref{profil1}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width = 0.9\textwidth]{profil1}
+	\caption{Image AFM d'une couche d'argent de 20 nm recuite à 150~$^\circ$C pendant 20 min, ainsi qu'un profil des hauteurs extrait.}
+	\label{profil1}
+\end{figure}
+
+Cette séquence d'images AFM nous mène à faire plusieurs observations~:
+\begin{itemize}
+	\item il y a une apparition de trous, qui ont tendance à se propager avec la durée du recuit. Cette observation est conforme aux résultats de Presland~\cite{presland1972hillock}~;
+	\item de manière concomitante, certains objets voient leur taille augmenter. Ces objets peuvent correspondre aux \og buttes \fg{}~observées par Presland~\cite{presland1972hillock, presland1972role}~;
+	\item ces objets présentent des facettes régulières et bien définies, ce qui nous permet de les identifier comme des grains~;
+	\item la couche qui subsiste sans être concernée par la croissance de grains ne change pas d'épaisseur, comme l'indique le profil de la figure~\ref{profil1}~;
+	\item les particules obtenues à la fin du démouillage présentent des facettes et sont constituées d'un nombre réduit de grains, typiquement un ou deux (figure~\ref{AFMfinal}).
+\end{itemize} 
+
+Afin de quantifier la progression des trous, nous mesurons directement le taux de surface du substrat couverte par la couche d'argent (appelé par la suite \og taux de couverture \fg{}), en fonction du temps de recuit. D'autres séries d'échantillons on été fabriqués dans des conditions identiques (dépôt magnétron de 20~nm d'argent sur une série d'échantillons) pour tenter d'obtenir des données consolidées. Notons que ce que nous appelons \og série d'échantillons \fg{} désigne un ensemble d'échantillons dont les dépôts ont été réalisés au même moment et sur le même substrat (voir chapitre II). L'ensemble des résultats est présenté sur la figure~\ref{PostMortemAFM}, où chaque point représente un échantillon différent. À titre d'indication, la série AFM présentée plus haut correspond à la \og série 2\fg{}.\par
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.7\textwidth]{recouvrementPostMortem}
+	\caption{Taux de couverture mesuré à l'AFM en fonction du temps de recuit à 150~$^\circ$C de couches d'argent de 20 nm.}
+	\label{PostMortemAFM}
+\end{figure}
+
+Sur la figure~\ref{PostMortemAFM}, nous observons que le taux de couverture décroît en fonction du temps de recuit. Les valeurs mesurées par AFM indiquent que d'une série à l'autre, de très importantes variations peuvent survenir~: par exemple, après un recuit de 45~min, on peut observer un taux de couverture de 93~\% (série~1) ou de 38~\% (série~4). Ainsi, deux échantillons dont les conditions de synthèse, de manipulation et de recuit sont identiques (mais non concomitantes) peuvent avoir des taux de couverture très différents. De manière générale, nous avons constaté tout au long de nos travaux que la cinétique du démouillage est très variable d'un échantillon à l'autre. Pourtant, malgré ces différences cinétiques, les morphologies sont très similaires, si l'on compare les images AFM de deux échantillons ayant un taux de couverture semblable. Les grandes variations de cinétique auxquelles nous sommes confrontés, bien qu'inexpliquées, ne semblent donc pas indiquer une différence de mécanisme de démouillage.\par
+
+\conclusion{ Ce constat implique deux choses. La première, c'est que ces différences ne seront pas rédhibitoires dans l'étude du démouillage, et la seconde, qu'il sera plus intéressant de considérer l'état d'avancement du démouillage d'un échantillon (par exemple par le taux de couverture) que le recuit qu'il a subi.\par} 
+
+Ces observations sont en accord avec plusieurs éléments de la littérature, en premier lieu, avec les observations de Presland~\cite{presland1972hillock} ou Sharma~\cite{sharma1980agglomeration, sharma1980hillock, sharma1986hillock} sur la formation de \og buttes \fg{}. Nous observons une croissance de buttes, que nous pouvons identifier comme des grains du fait de leur facettes. Au vu de la différence de taille qu'un grain peut avoir avec ses voisins lorsqu'il croît, on parlera de \og croissance extraordinaire \fg{}~\cite{thompson1990grain}. Étant donné que le reste de la couche garde une épaisseur constante, nous pouvons affirmer que ces grains accumulent toute la matière qui provient du démouillage. Ce mouvement des trous vers certains grains centraux a déjà été observé par Kovalenko \textit{et al.}~\cite{kovalenko2013solid} qui étudiaient le démouillage de couches de fer sur saphir~\cite{kovalenko2013solid}. Notons de plus que la pression de vapeur saturante de l'argent à de telles températures (<250~$^\circ$C), qui est de l'ordre de $10^{-17}$~atm, permet d'exclure toute perte de matière par évaporation.\par
+
+Les analyses AFM effectuées \textit{post mortem} nous ont permis d'identifier certaines caractéristiques du démouillage de l'argent sur la silice. Les grains semblent jouer le rôle d'attracteurs du matériau qui quitte l'interface. Cependant, nous n'avons que des données partielles sur la manière dont les grains croissent, notamment pour faire le lien entre la croissance des grains lors de la propagation des trous et les particules finales. De plus, nous avons montré que les mesures cinétiques ne sont pas reproductibles. Ces raisons nous ont donc incités à travailler \textit{in situ}, c'est-à-dire à considérer un même échantillon à plusieurs moments de son historique de démouillage.\par
+
+\subsection{Suivi \textit{in situ} par AFM}
+\label{sAFMinSitu}
+L'AFM utilisé est équipé d'une platine chauffante pouvant atteindre une température de 250~$^\circ$C. Ceci permet de suivre l'évolution d'une même zone de l'échantillon après plusieurs recuits (voir le chapitre II pour plus de détails). Suivant la température de recuit et l'épaisseur de la couche, il est possible d'étudier une certaine partie du scénario de démouillage. En effet, si l'on privilégie des recuits à température modérée ($\approx 100^\circ$C) ou des couches relativement épaisses (jusqu'à 40~nm), le démouillage est lent et l'induction est aisée à observer. À l'inverse, avec des recuits à plus haute température ou avec des couches plus fines, nous pouvons plus facilement observer l'étape de propagation des trous.\par
+Nous allons ici présenter trois séquences obtenues en AFM \textit{in situ}. La première balaye le démouillage entre l'état initial et un état avancé, la seconde se concentre sur l'étude de l'induction, tandis que la dernière se concentre sur la propagation.\par
+
+\paragraph*{Étude générale}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\textwidth]{AFMwholeDewet}
+	\caption{Images AFM réalisées \textit{in situ} représentant le démouillage d'une couche de 20~nm d'argent, a) dans l'état initial puis chauffée pendant 5 min à b) 75~$^\circ$C, c) 100~$^\circ$C, d) 125~$^\circ$C, e) 150~$^\circ$C, f) 175~$^\circ$C, g) 200~$^\circ$C, h) 250~$^\circ$C. Les échelles (distances et hauteur) sont identiques pour toutes les images.}
+	\label{AFMwhole}
+\end{figure}
+La séquence d'images de la figure~\ref{AFMwhole} permet d'observer le démouillage à différentes étapes. Les valeurs de taux de substrat couvert, mesurées à l'AFM, sont rapportées dans le tableau~\ref{tTaux}.\par 
+Il est déjà intéressant de noter que dans l'état initial (image~\ref{AFMwhole}-a), la couche est très irrégulière. Elle présente des grains dont la taille latérale peut excéder 100~nm, tandis que d'autres sont difficilement discernables tant leur taille s'approche des limites de résolution de l'image (quelques nm). Un chauffage modéré à 75~$^\circ$C suffit à observer des trous (image~\ref{AFMwhole}-b), mais l'évolution de ceux-ci après le second chauffage à 100~$^\circ$C n'est pas très prononcée (image~\ref{AFMwhole}-c). Les trous commencent à se propager après un chauffage à 125~$^\circ$C (image~\ref{AFMwhole}-d). Sur les images~\ref{AFMwhole}-e, f et g (respectivement après chauffage à 150, 175 et 200~$^\circ$C), cette propagation est particulièrement visible, aussi bien que l'agglomération de l'argent dans certaines zones. Conformément à ce qui avait été observé \textit{post mortem}, les zones d'accumulation sont facettées, montrant à nouveau leur nature cristalline. Au-delà de 200~$^\circ$C, le taux de couverture se stabilise.\par
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{ccccccccc}
+\hline
+échantillon & a & b & c & d & e & f & g & h\\
+\hline
+température de recuit ($^\circ$C) & - & 75 & 100 & 125 & 150 & 175 & 200 & 250\\
+taux de couverture (\%) & 100 & 99 & 98 & 92 & 73 & 55 & 53 & 52 \\
+\hline
+\end{tabular}
+\caption{Taux de substrat couvert en fonction de la température de recuit. Mesures effectuées sur la séquence de la figure~\ref{AFMwhole}.}
+\label{tTaux}
+\end{table}
+
+\paragraph*{Étude de l'induction}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{AFMinduction}
+	\caption{Images AFM réalisées \textit{in situ} représentant le démouillage d'une couche d'argent de 40~nm, a) dans l'état initial, b) chauffée à 100~$^\circ$C pendant 5~min et c) à 150~$^\circ$C pendant 5~min. Les profils tracés au bas de la figure ont été relevés à l'endroit matérialisé par la ligne blanche sur l'image a). Les échelles (distances et hauteur) sont idéntiques pour toutes les images.}
+	\label{AFMinduction}
+\end{figure}
+
+Nous avons également procédé au recuit d'une couche de 40~nm à des températures modérées, afin d'étudier plus en détail l'induction (c'est-à-dire ce qui survient avant la propagation de trous dans la couche, voir la section~\ref{sBiblioMeca}). Les résultats sont présentés sur la figure~\ref{AFMinduction}. En étudiant la séquence résultante, plusieurs observations claires s'offrent à nous. De nouveau, la taille latérale des grains dans la couche initiale est très variable, et elle augmente fortement après les recuits successifs. Les mesures AFM ne permettent toutefois pas d'extraire de manière convenable la taille des grains dans la couche, puisque la majorité des petits grains sont difficilement discernables. Nous pouvons tout de même constater~:
+\begin{itemize}
+\item une augmentation globale de la taille des grains, les plus gros pouvant atteindre jusqu'à 500~nm de diamètre~;
+\item une augmentation de la rugosité~\footnote{Mesurée par AFM, voir chapitre II.} de la couche (respectivement 3.86, 4.67 and 7.15~nm)~;
+\item une augmentation de l'amplitude crête à crête, visible sur les profils.
+\end{itemize}
+Ainsi, l'induction est le théâtre d'une croissance des grains dans la couche. Cette croissance a lieu dans le plan (taille latérale), mais aussi hors-plan (hauteur). De plus, les profils sont de plus en plus contrastés entre le sommet des grains de grande taille et des zones où la couche s'amincit, entre les grains.\par
+Comme nous l'avons vu plus haut, à la fin de l'induction, des trous apparaissent et se propagent. Cette propagation s'accompagne de la croissance extraordinaire de certains grains. Nous avons cherché à étudier cette croissance dans la suite du démouillage.\par 
+
+\paragraph*{Étude de la croissance des grains}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{AFMgrainGrowth}
+	\caption{Images AFM réalisées \textit{in situ} représentant le démouillage d'une couche d'argent de 20~nm chauffée à 150~$^\circ$C pendant un total de a) 3~min, b) 6~min et c) 9~min. Les profils tracés au bas de la figure ont été relevés à l'endroit matérialisé par la ligne blanche sur l'image a). Les échelles (distances et hauteur) sont identiques pour toutes les images.}
+	\label{AFMgrainGrowth}
+\end{figure}
+
+Pour cela, nous nous sommes intéressés à la croissance d'un grain en particulier lors de la propagation des trous. La séquence d'images de la figure~\ref{AFMgrainGrowth} illustre cette croissance sur un grain arbitrairement sélectionné dans une couche de 20~nm recuite à 150~$^\circ$C, après 3, 6 ou 9 min. Ce grain a une taille beaucoup plus importante que ses voisins, à la fois latérale ($\approx$ 400~nm contre des tailles typiquement inférieures à 100~nm) et en hauteur ($\approx$ 50~nm, pour une couche de 20~nm). Il continue de croître pendant le démouillage, au détriment des ses voisins. Les profils mesurés le long de ce grain permettent d'identifier une direction dans laquelle le grain s'étend, tandis que le reste de sa structure est très peu impactée.\par 
+
+\paragraph*{Discussion}
+Tâchons maintenant d'interpréter ces données expérimentales. En premier lieu, il est important de noter que dans l'état initial, nous observons des grains de tailles très variables. Pendant l'induction, les petits grains disparaissent au profit des plus gros, ce qui augmente la taille moyenne des grains dans la couche (voir figure~\ref{AFMinduction}). Cependant, ceci a également pour effet d'augmenter la rugosité de la couche, notamment par l'amincissement de certaines zones, qui semblent être des joints de grains. Ceci est cohérent avec la théorie de sillonnement des joints de grains de Mullins~\cite{mullins1957theory}, qui prévoit un approfondissement des joints lors du chauffage. Il est cependant difficile d'observer en détail la morphologie des joints de grains, du fait des limitations de l'AFM, dont la largeur de pointe empêche de sonder les renfoncements trop abrupts. La série observée sur la figure~\ref{AFMwhole} semble toutefois indiquer que les trous se forment principalement aux endroits où la couche est plus fine, entre des grains. D'autres observations expérimentales~\cite{dannenberg2000situ} corroborent l'hypothèse du sillonnement comme source de trous. Cette discussion sera reprise dans le chapitre IV, nous la laissons en suspens pour le moment.\par 
+L'AFM nous permet également d'étudier la croissance extraordinaire des grains qui accumulent le matériau déplacé par le démouillage. Nous pouvons souligner deux observations importantes. La première est que les grains les plus gros accumulent du matériau tout au long du démouillage. Sur la séquence de la figure~\ref{AFMwhole}, on peut observer cette croissance dès l'induction et tout au long du démouillage. La deuxième observation importante est que l'accumulation de matière par les grains se fait majoritairement par le dessus (voir figure~\ref{AFMgrainGrowth}), tandis que le reste de la structure du grain reste intacte. Ceci implique que le mécanisme de glissement invoqué dans les études de Kosinova \textit{et al}.~\cite{kosinova2014role}, couplé à de la diffusion à l'interface ou aux joints de grains, ne participerait pas à la croissance extraordinaire des grains dans notre système.\par
+\conclusion{
+Les modifications ayant lieu en surface, nous supposerons donc par la suite que c'est bel et bien la diffusion de surface qui permet le transport de matière. \par
+}
+A l'appui de cette hypothèse, les coefficients de diffusion de surface sont bien supérieurs aux coefficients de diffusions de joints de grains~\cite{heitjans2006diffusion}.
+
+\subsection{Bilan}
+
+Rappelons les conclusions tirées de l'étude AFM~:
+\begin{itemize}
+\item nous considérons un échantillon par son avancement dans le démouillage plutôt que par son recuit~;
+\item dès l'état initial, les grains n'ont pas tous la même taille~;
+\item pendant l'induction, il y a une réorganisation cristalline qui tend à augmenter globalement la taille des grains~;
+\item certains grains sont le lieu d'agglomération de la matière mise en mouvement par le démouillage~; ils sont assimilables aux \og buttes \fg{} de Presland~\cite{presland1972hillock} ~;
+\item le transport de matière semble principalement assuré par la diffusion de surface.
+\end{itemize}
+L'AFM a l'avantage de nous permettre d'accéder à la topographie de la couche. Cependant, il présente quelques désavantages~: la limitation de la platine chauffante (250~$^\circ$C) et une durée d'acquisition lente (compter entre 10 et 15 minutes par image de 5 $\mathrm{\mu m}$ de côté). Notons de plus que l'AFM repose sur le contact d'une pointe avec la surface, et que si celle-ci s'abime, il est difficile de retrouver la zone analysée~: le nombre d'images d'une séquence est donc limité par la durée de vie de la pointe. Un compromis est à trouver entre la fréquence d'acquisition et l'amplitude de progression du démouillage.\par 
+Dans la partie suivante, nous allons nous intéresser à une autre technique de microscopie~: le MEB \textit{in situ}. 
+
+
+
+\section{MEB \textit{in situ} et analyse d'images}
+Les expériences de MEB \textit{in situ} ont été réalisées en collaboration avec Renaud Podor, de l'Institut de Chimie Séparative de Marcoule. Les séquences MEB peuvent contenir plusieurs centaines d'images. Pour des raisons pratiques, ces séquences sont disponibles sur internet (lien youtube https://goo.gl/pRn6dh). Nous insérerons dans la suite du manuscrit des images choisies pour représenter en quelques clichés les séquences. Par ailleurs, les détails expérimentaux relatifs à ces expériences sont disponibles dans le chapitre II. \par
+Nous distinguerons par la suite deux types d'images enregistrées au MEB. Si le grossissement est faible (typiquement x3~000), les valeurs intensives telles que le taux de surface couverte ou la densité d'objets (trous et îlots) sont indépendantes de la zone d'analyse. Ces images permettent donc d'extraire des valeurs statistiques représentatives de l'état de la couche. D'autre part, le grossissement élevé (typiquement x20~000) offre en revanche la possibilité d'observer la structure locale de la couche. Nous allons discuter de ces deux grossissements séparément.
+
+\subsection{Faible grossissement et données statistiques~: les étapes du démouillages}
+\label{sLowMag}
+La vidéo 1 est une séquence d'images enregistrées à faible grossissement (x3~000) lors d'un recuit à 390~$^\circ$C sous 400~Pa d'oxygène. Une série d'images représentatives est présentée sur la figure~\ref{MEBinSituLow}. Nous pouvons y observer la formation de trous (niveaux de gris sombres) et de buttes (niveaux de gris clairs), puis la propagation de trous. Après une segmentation de l'image (cf. le chapitre II), nous pouvons extraire de l'image plusieurs données statistiques~: le taux de couverture, la densité de trous et la densité d'îlots d'argent déconnectés. Ces données sont représentées sur la figure~\ref{MEBinSituLowGraphs}, ainsi que la longueur totale du front de démouillage sur l'image.\par
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBinSituLow.jpg}
+	\caption{Images représentatives de la séquence d'images de la vidéo 1. Couche d'argent de 40~nm chauffée à 390~$^\circ$C sous 400~Pa d'oxygène, observée en MEB \textit{in situ} à un grossissement de x3000. Relativement à l'image a), les images suivantes sont enregistrées avec un délai de b) 14~s, c) 28~s, d) 47~s et e) 1307~s.}
+	\label{MEBinSituLow}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=.9\textwidth]{MEBinSituLowGraphs.png}
+	\caption{Mesures par analyse d'images de l'évolution du taux de couverture, de la longueur du front et de la densité de trous et d'îlots d'argent dans la séquence de la vidéo 1, associée à la figure~\ref{MEBinSituLow}.}
+	\label{MEBinSituLowGraphs}
+\end{figure}
+
+Sur nos courbes, l'origine des temps est fixée à la première image sur laquelle un trou est visible. On observe bien le temps d'induction, pendant lequel des trous sont présents mais ne se propagent pas (figure~\ref{MEBinSituLowGraphs}-haut). Le temps d'induction se termine vers 25~s, comme indiqué par la ligne pointillée. Ensuite, le film se rétracte et découvre le substrat, avant d'atteindre un taux de recouvrement en apparence constant. L'évolution du taux de surface du substrat recouverte en fonction du temps est très semblable à celle observée par Presland~\cite{presland1972hillock}. L'avantage notable, directement lié à l'emploi du MEB\textit{ in situ}, est le grand nombre de points d'acquisition pendant le démouillage d'un échantillon donné.\par 
+Nous pouvons de plus accéder facilement à la densité de trous et d'îlots d'argent, ainsi qu'à la longueur du front. L'étude de ces grandeurs est très instructive. Considérons d'évolution de la longueur du front en premier (figure~\ref{MEBinSituLowGraphs}-milieu). La longueur augmente dans un premier temps, le maximum est atteint autour de 75~s. Ensuite, la longueur décroît lentement. Intéressons-nous maintenant à la densité de trous dans la couche (figure~\ref{MEBinSituLowGraphs}-bas, courbe orange). Initialement presque nulle (rappelons que l'origine des temps est prise lorsqu'un trou est visible dans la couche), cette densité augmente avec le temps et devient maximale aux alentours de 48~s. Ensuite, elle diminue et tend vers 0, ce qui correspond au moment où tous les trous ont percolé\footnote{On parle d'un domaine percolé lorsqu'il est possible de le parcourir en entier sans en sortir. Cela peut désigner aussi bien les trous que la couche d'argent. Dans un système de deux phases en 2D, si un phase est percolée, l'autre ne l'est pas.}. Cette percolation a lieu vers 75~s. À l'opposé, si l'on étudie la densité de particules (ou îlots) isolées d'argent, ce nombre est nul jusqu'aux alentours de 50~s. Pendant cette période, il n'y a donc pas de particules isolées de la couche, tout le domaine d'argent est continu ou percolé. Puis la densité augmente rapidement avant de se stabiliser lentement, aux alentours de 130~s.\par
+Soulignons bien les faits suivants~:
+\begin{itemize}
+\item la percolation des trous et le maximum de longueur du front de démouillage sont atteints au même moment (75~s), qui est repéré par la ligne en alternance de points et tirets sur la figure~\ref{MEBinSituLowGraphs}~;
+\item ce moment correspond également à la rupture de pente dans le taux de couverture en fonction du temps~;
+\item le nombre total de particules isolées continue d'évoluer plus lentement et ne se stabilise que vers 130~s.
+\end{itemize}
+Considérons plus particulièrement le changement qui intervient à 75~s. Avant, les trous se propagent rapidement, diminuant le taux de couverture et augmentant la longueur du front. Mais lors de la percolation des trous, la propagation est très fortement ralentie. Dans la littérature~\cite{presland1972hillock}, ce ralentissement était interprété comme l'approche de l'état final. Nous avons continué d'étudier l'évolution à des temps plus longs.\par 
+Pourtant, la morphologie de la couche d'argent continue de se modifier. Cela est notamment visible en étudiant l'évolution aux temps longs du taux de couverture, comme tracé sur la figure~\ref{MEBzoom}, dont les données sont également extraites des images de la vidéo~1.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBwithZoom}
+	\caption{\'Evolution du taux de couverture en fonction du temps correspondant au film 2 (40~nm Ag, 390~$^\circ$C). La droite rouge est une régression linéaire effectuée pour les valeurs comprises entre 200 et 1600~s.}
+	\label{MEBzoom}
+\end{figure}
+
+Nous pouvons observer l'évolution du taux de couverture entre 200 et 1600~s. Une régression linéaire (en rouge) a été ajoutée afin de faciliter le constat~: le taux de couverture continue de diminuer, très lentement. Ainsi, le changement brusque intervenant au moment où les trous cessent de se propager (deuxième ligne pointillée sur la figure~\ref{MEBinSituLowGraphs}) ne correspond pas à l'atteinte d'un état final. Il indique plutôt un changement de régime cinétique.
+\conclusion{
+Le démouillage se décompose en trois régimes distincts~: induction, propagation, et un troisième régime dont la nature reste à déterminer.\par 
+}
+
+
+
+\subsection{Fort grossissement et analyse locale~: la croissance extraordinaire de grains}
+Dans cette section, nous allons analyser une séquence d'images obtenues à plus fort grossissement. Ceci nous permet de déterminer la nature du troisième régime que nous avons identifié.\par
+
+\subsubsection{Rôle des grains}
+La vidéo 2, représentée par la séquence d'images de la figure~\ref{MEBinSituIntro}, montre le démouillage d'une couche de 40 nm à 330~$^\circ$C sous une atmosphère riche en oxygène (100~Pa de O$_2$) avec un grossissement de x20~000. Elle est représentée par la séquence d'images de la figure~\ref{MEBinSituIntro}. Dans les toutes premières images, alors que le substrat est encore majoritairement recouvert par la couche, on observe une dispersion de la taille des grains d'argent. Si la plupart ont une taille inférieure à 100~nm et sont indiscernables, d'autres ont déjà une taille de l'ordre de 500~nm. De plus, on observe que ces grains les plus gros continuent à croître et donner naissance à des îlots, après le démouillage. Enfin, il existe une partie de la couche qui n'est pas modifiée tant qu'elle n'a pas été atteinte par la propagation des trous~; l'agglomération de l'argent n'a lieu que sur certains grains spécifiques.\par
+Ces observations sont très semblables à celles effectuées en AFM, mais nous pouvons suivre l'évolution des grains pendant tout le démouillage, avec une grande fréquence d'acquisition. Ceci nous permet de superposer à nos données MEB les données topographiques (de hauteur des grains) obtenues en AFM.\par 
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBinSituIntro}
+	\caption{Séquence d'images réalisées en MEB \textit{in situ} d'une couche d'argent de 40~nm chauffée à 330~$^\circ$C sous une atmosphère de 100~Pa de O$_2$, grossissement x20~000. L'image a) est considérée à l'origine des temps. Les images suivantes sont enregistrées à b) 85~s, c) 214~s, d) 447~s, e) 584~s, f) 785~s.}
+	\label{MEBinSituIntro}
+\end{figure}
+
+Le rôle de certains grains sélectionnés en tant que centres d'accumulation de la matière évacuée par le démouillage, déjà évoqué dans la section~\ref{sAFMinSitu}, est à nouveau mis en évidence. Pour le visualiser de manière certaine, considérons la figure~\ref{MEBzoom}. Sur cette figure, nous avons repéré en bleu les positions successives du front de démouillage à plusieurs instants (plus le front est clair, plus il est observé à des temps courts). Un grain spécifique a été repéré, et ses contours ont été superposés en vert (plus le contour est foncé, plus les temps mesurés sont courts).\par 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBzoomGrain}
+	\caption{Superposition des contours successifs du front de la couche d'argent observés lors de la propagation. Analyse issue de la vidéo 2. Les contours bleus représentent les positions occupées par le front au cours du temps, du plus clair vers le plus sombre. Les contours verts représentent l'évolution temporelle des contours du grain central, du plus sombre au plus clair.}
+	\label{MEBzoomGrain}
+\end{figure}
+
+Dans cette zone, nous voyons aisément les caractéristiques du démouillage~:
+\begin{itemize}
+\item la propagation des trous~;
+\item la croissance extraordinaire d'un nombre restreint de grains~;
+\item la stabilité de la couche qui n'est concernée ni par la propagation, ni par la croissance. 
+\end{itemize}
+Nous observons également que le grain central en train de croître (en vert) est séparé du front par une distance de l'ordre du micromètre. Comme le reste de la couche demeure inchangé pendant le démouillage, cela signifie que le transport de matière majoritaire a lieu du front vers les grains en croissance. Ce transport peut concerner des distances aussi longues que le micron. Ce mode de transport ne permet pas la formation d'un bourrelet sur le front de propagation, ce qui n'avait été observé jusque là que dans un système~\cite{kovalenko2013solid}.\par
+
+Grâce au MEB \textit{in situ}, il est aisé d'étudier l'évolution de ces grains sélectionnés depuis l'induction jusqu'à un état de démouillage très avancé. Sur la figure~\ref{MEBposGrains}-a, nous avons superposé le contour des particules obtenues à la fin de la propagation (en vert) à l'image de la couche avant la propagation. Il est également possible de déterminer une \og zone d'influence \fg{} des grains (image~\ref{MEBposGrains}-b), matérialisée par les lignes blanches. Ces lignes sont les points du plan qui sont à égale distance des deux particules les plus proches. Tous les points contenus dans une zone sont plus proches de la particule centrale que de n'importe quelle autre particule.\par 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBposGrains}
+	\caption{Deux images issues de la séquence de la vidéo 1 a) au début b) à la fin. Sur l'image a), la forme des particules de l'image b) sont superposées en vert. Sur l'image b), les lignes blanches marquent les points équidistants entre les particules les plus proches.}
+	\label{MEBposGrains}
+\end{figure}
+
+Sur l'image~\ref{MEBposGrains}-a, nous observons que les grains les plus gros de la couche à l'état initial sont contenus dans les contours des particules de l'état final. Ceci confirme que dès l'induction, certains grains spécifiques connaissent une croissance extraordinaire et accumulent pendant la propagation l'essentiel du matériau qui démouille.\par
+
+\conclusion{
+Grâce à une analyse des images MEB \textit{in situ} à fort grossissement, nous pouvons conclure qu'un petit nombre de grains spécifiques pilotent la morphologie du démouillage.\par }
+
+\subsubsection{Le troisième régime~: le frittage}
+\label{sfrittage}
+Nous avons démontré par l'analyse statistique des images MEB l'existence d'un troisième régime dans le démouillage, qui prend place après l'induction et la propagation. L'analyse locale de la morphologie nous permet de comprendre sa nature, dont nous allons discuter ici.\par
+À la fin de la vidéo~2, les particules n'ont pas encore atteint leur forme d'équilibre~: on attendrait des particules dont la surface s'approche davantage d'une sphère tronquée, compte tenu de la faible anisotropie des énergies de surface de l'argent~\cite{stankic2013equilibrium}. La différence est illustrée par exemple sur la figure~\ref{MEBpostMortem}. Sur l'image~\ref{MEBpostMortem}-a, les particules sont bien définies et isolées mais présentent une forme irrégulière, on parle de forme \og en asticots \fg{} (traduction du terme \og worm-like \fg{} de la littérature). On s'attend à ce que les particules en asticots finissent par s'agglomérer jusqu'à leur forme finale, ce qu'on observe d'ailleurs à la fin de la vidéo~1. Un exemple de cette évolution est montré sur la figure~\ref{MEBpostMortem}-b.\par 
+L'évolution attendue est représentée sur la figure~\ref{MEBfrittage}, où une particule est observée avant et après un intervalle de 5~min (images a et b). La différence d'image est calculée en c~: les zones noires montrent une différence négative (de la matière est partie), tandis que les zones claires indiquent une différence positive (de la matière a été apportée). On distingue clairement une protubérance de la particule (marquée 1 sur la figure~\ref{MEBfrittage}-c) qui disparaît, tandis que la zone 2) marque un léger affaissement et la zone 3) une croissance. Ceci indique clairement qu'il y a eu un déplacement de matière depuis la petite protubérance jusque dans le reste de la particule. La particule s'est réorganisée (2) pendant le transfert. \par
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBpostMortem}
+	\caption{Couche d'argent de 30~nm recuite à 400~$^\circ$C pendant 15~min. Deux avancements ont été observés a) état dit en asticots (\og worm-like \fg) et b) état final attendu.}
+	\label{MEBpostMortem}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{MEBfrittage}
+	\caption{Zoom sur une particule de la vidéo~1. L'image a) est une référence, l'image b) a été enregistrée 5~min plus tard, et l'image c) est une différence des deux précédentes.}
+	\label{MEBfrittage}
+\end{figure}
+
+En résumé, nous observons que le mécanisme est une disparition, au sein d'une même particule, de petits domaines au profit du plus gros. Pour ses similitudes avec le frittage de particules dans le domaine des céramiques, nous avons baptisé ce troisième régime \og frittage \fg. Il est important de préciser que le nombre total de particules ne varie pas~: les particules distantes n'échangent pas de matière, ce n'est donc pas un processus de mûrissement.\par
+Le frittage est la troisième étape, cinétiquement lente, remarquée dans la section~\ref{sLowMag}. Dans ce régime, nous observons que~:
+\begin{itemize}
+\item toute la couche a été transformée par la croissance ou la propagation des trous (il ne reste pas de zone \og intacte \fg{})~;
+\item les particules tendent à passer d'une forme en asticot à une forme d'équilibre~;
+\item se faisant, le périmètre et le taux de couverture décroissent lentement. 
+\end{itemize}
+Dans la littérature~\cite{presland1972hillock,morawiec2013self}, l'état atteint après la propagation des trous était considéré comme l'état final. Nous venons de démontrer qu'il existe en réalité un régime cinétique très lent, mais néanmoins existant, qui amène les îlots d'argent vers leur forme d'équilibre~: le frittage.\par
+
+
+
+\subsection{Rôle des grains sur les surfaces texturées}
+Nous avons vu dans le chapitre bibliographique que Gierman et Thompson~\cite{giermann2005solid, giermann2011requirements}, lors du démouillage d'une couche d'or sur une surface texturée, considéraient qu'une condition nécessaire à l'obtention de particules organisées était d'avoir un volume de métal inférieur au volume des trous dans la surface~\cite{giermann2005solid}. Pour nos textures en pyramides inversées, l'épaisseur équivalente au volume est donnée par la relation~:
+\begin{equation}
+e = \dfrac{bh}{3P^2}
+\end{equation}
+avec $b$ la base de la pyramide, $h$ sa hauteur et $P$ la période du réseau. En prenant nos valeurs ($b=450^2~nm^2$, $h=175~nm$ et $P=600~nm$), l'épaisseur maximale théorique pour obtenir une organisation est de 32~nm. Dans la vidéo~3, nous avons procédé au démouillage d'une couche de 40~nm d'épaisseur sur ces textures (la figure~\ref{MEBtexture} montre une image de la même expérience à plus faible grossissement). Nous y observons de la croissance extraordinaire de grains qui suit le réseau imposé par la texture, avant même la propagation des trous. Malgré un volume d'argent plus conséquent que le volume des trous de la texture, nous obtenons tout de même une organisation des particules.\par
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{MEBtexture}
+	\caption{Image MEB d'une couche d'argent de 40~nm sur une texture de période 600~nm, pendant le démouillage. La température de recuit est 350~$^\circ$C. Cette image est associée à la vidéo~3.}
+	\label{MEBtexture}
+\end{figure}
+
+Grâce à l'étude réalisée sur des surfaces planes, nous pouvons comprendre cette contradiction. Plus précisément, l'élément central qui détermine l'organisation finale des particules est la croissance de certains grains (qui sont plus clairs que les autres sur la vidéo~3 et l'image~\ref{MEBtexture}), avant l'apparition des trous. Ces grains croissent en respectant la période imposée par le substrat. Comme nous savons que ce sont les grains qui déterminent ensuite la morphologie du démouillage, cela signifie que l'organisation n'est pas gouvernée par le volume de la couche, mais simplement par la présence, au sein d'une maille du réseau de la surface du substrat, d'un (et un seul) grain en croissance extraordinaire. Ce modèle permet d'expliquer pourquoi nous observons une organisation en contradiction avec le modèle de Gierman et Thompson.\par
+Cette constatation permet également d'expliquer les défauts observés lors du démouillage de couches d'épaisseurs variables. Si la couche est trop fine, la densité surfacique de grains augmente, ce qui peut donner lieu à la croissance de plusieurs grains par trou. Inversement, si la couche est trop épaisse, la densité de grains initialement formés est faible et une particule donnée peut accumuler la matière provenant des mailles voisines. Nous discuterons plus en détail de cette question dans le chapitre~V, portant sur le contrôle du démouillage.\par
+Notons de plus que la présence d'une texture sur la surface du substrat amène la couche d'argent à démouiller plus rapidement que sur une surface plane. En effet, nous observons un état \og final \fg{} dès 250~$^\circ$C, alors qu'une telle température sur une surface plane amène seulement à la fin de la propagation.
+
+\subsection{Conclusion sur le mécanisme}
+Grâce à toutes ces informations, nous pouvons proposer une nouvelle description du démouillage des couches polycristallines. Un schéma explicatif est présenté sur la figure~\ref{3etapes}. Une couche initiale (a) voit, pendant l'induction, certains des grains qui la composent croître de manière extraordinaire. En parallèle, des trous apparaissent dans la couche, sans se propager (b). Puis les trous se propagent, ce qui donne lieu à une accumulation de matière, mais uniquement sur des grains spécifiques (c). Le transport de matière peut avoir lieu sur des distances de l'ordre du micron. Il n'implique pas la présence de bourrelet, comme cela a pu être observé dans la littérature~\cite{brandon1966mobility, atiya2014solid}. Lorsque toute la couche a été affectée par la propagation des trous, les particules restantes n'ont pas nécessairement une forme d'équilibre (d), vers laquelle elles évoluent lentement pendant le frittage (e). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{3etapes}
+	\caption{Schéma résumant le mécanisme du démouillage d'une couche d'argent sous air. Les pointillés rouges délimitent les différents régimes.}
+	\label{3etapes}
+\end{figure}
+
+Pendant tout le processus, c'est la croissance extraordinaire d'un petit nombre de grains qui pilote la morphologie du démouillage. Dès l'induction, des grains plus gros prennent le pas sur leurs voisins et deviennent des centres d'accumulation de la matière provenant du front du démouillage. Pendant ce temps, les autres grains de la couche connaissent très peu de transformations. Ces grains donnent naissance à des particules dont la forme est irrégulière et évolue vers un profil d'équilibre pendant le régime de frittage.\par
+
+\paragraph*{Remarque :}
+Nous avons dissocié la propagation et le frittage. Cependant, il est possible d'observer des comportements de frittage avant la fin de la propagation (c'est-à-dire tant qu'il reste des régions de la couche qui ont gardé l'épaisseur initiale). Ceci dit, le frittage a une cinétique suffisamment lente pour que l'on puisse considérer qu'il ne joue pas un rôle significatif dans la morphologie du démouillage.\par \vspace{12pt}
+
+Nous avons mis en évidence le rôle de certains grains spécifiques dans le démouillage. Cependant, une question demeure~: quelle est leur particularité~? Il semblerait que cette sélection ait lieu dès la phase d'induction, que nous avons tenté d'observer grâce à d'autres méthodes. Dans les deux sections suivantes, nous allons discuter des méthodes mises en œuvre et de leur apport dans la compréhension du démouillage.\par 
+
+
+\section{Ellipsométrie \textit{in situ}}
+\label{sEllipso}
+Au cours des travaux de la thèse, nous avons été amenés à tenter de nouvelles approches pour caractériser le démouillage \textit{in situ}. Nous allons ici présenter les résultats obtenus avec de l'ellipsométrie \textit{in situ}. Ces travaux ont été réalisés en collaboration avec Morten Kildemo, de la NTNU (Norwegian University of Science and Technology, Institute of physics). Comme expliqué dans le chapitre II, le suivi par MEB donnait parfois lieu à des problèmes de faisceau qui contraignait nos analyses. Bien que nous ayons eu la possibilité de nous en affranchir dans la plupart des cas, l'ellipsométrie, en tant que méthode tout photon, ne donne pas lieu à ces effets.\par
+
+\subsubsection{Étude préliminaire \textit{post mortem}}
+De la même manière que nous avons commencé par étudier le mécanisme en \textit{post mortem} par AFM avant de nous intéresser aux mesures \textit{in situ} du MEB, nous avons procédé à une étude à température ambiante de spectres obtenus \textit{post mortem} sur des morphologies mesurées en AFM. Considérons tout d'abord les échantillons dont les surfaces sont représentées par les clichés AFM de la figure~\ref{AFMendPoint}. Ces échantillons représentent une couche a) dans l'état initial, b) pendant l'induction, c) pendant la propagation, d) à la fin de la propagation et e) pendant le frittage. Nous allons analyser les fonctions diélectriques extraites des mesures d'ellipsométrie réalisées sur ces échantillons.\par 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{AFMendPoint.jpg}
+	\caption{Clichés AFM de la couche d'argent de 20~nm étudiée en ellipsométrie a) dans l'état initial ou recuite 5~min à b) 100~$^\circ$C, c) 150~$^\circ$C, d) 300~$^\circ$C et e) 400~$^\circ$C. Les clichés proviennent d'échantillons issus d'une même série.}
+	\label{AFMendPoint}
+\end{figure}
+
+La fonction diélectrique de la couche a été ajustée par une B-Spline\footnote{Cette méthode consiste à approximer de manière polynomiale la fonction diélectrique de la couche, afin de calculer la réponse théorique obtenue par le système en entier. Il s'agit ensuite d'optimiser le polynôme pour obtenir une solution satisfaisante.} isotrope sur un milieu semi-infini de silicium recouvert d'une couche de 2~nm d'oxide natif (voir chapitre~II). Les parties réelle ($\varepsilon_1$) et imaginaire ($\varepsilon_2$) des fonctions diélectriques extraites sont représentées sur la figure~\ref{endPoint}. On remarque qu'il n'y a pas de changement notable dans la fonction diélectrique après le premier recuit à 100~$^\circ$C. Des changements notables interviennent seulement après des recuits à plus haute température~: aux basses énergies de photons, la partie réelle $\varepsilon_1$ est très négative dans l'état initial mais bascule vers de valeurs positives à partir de 300~$^\circ$C. Ce changement est caractéristique d'une transition depuis un caractère conducteur vers un comportement isolant d'un matériau. Si l'on observe la partie imaginaire $\varepsilon_2$ des fonctions diélectriques aux basses énergies, on remarque qu'elle augmente dès un recuit à 150~$^\circ$C, est maximale après le recuit à 300~$^\circ$C et diminue après le dernier recuit à 400~$^\circ$C.\par
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{EndPoint}
+	\caption{Parties réelle et imaginaire des fonctions diélectriques extraites de l'analyse ellipsométrique des échantillons étudiés \textit{post-mortem}.}
+	\label{endPoint}
+\end{figure}
+
+
+Cette transition semble correspondre à celle d'un modèle de Drude à un modèle d'oscillateur de Lorentz de basse énergie (voir chapitre I). En termes physiques, cela revient à dire que l'on passe d'une couche de métal conducteur à de larges particules où les électrons peuvent se mouvoir sur une distance large (plus grande que le libre parcours moyen) mais limitée, typiquement les particules d'argent d'une taille de plus de 1000~nm en asticots, observées sur l'image~\ref{AFMendPoint}-e.\par
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{EndPointExplained}
+	\caption{Partie imaginaire de la fonction diélectrique extraite de l'échantillon e).}
+	\label{endPointExplained}
+\end{figure}
+
+Sur la figure~\ref{endPointExplained}, nous avons reproduit la dernière fonction diélectrique extraite (échantillon e, recuit à 400~$^\circ$C). La courbe pointillée représente un oscillateur de Lorentz, tandis que la zone verte indique une partie du signal qui n'est pas décrite par cet oscillateur. Nous interprétons cette forme plus complexe, entre 1.5 et 3~eV comme un signal dû à des objets de plus petite taille, sans doute les particules dont la taille varie entre 150 et 250~nm observées sur l'image~\ref{AFMendPoint}e. La forme de gaussienne proviendrait de leur dispersion en taille, en forme et en orientation~\cite{oates2005evolution}.\par
+
+Nous avons identifié les principales caractéristiques du démouillage visibles en ellipsométrie~: 
+\begin{itemize}
+\item le moment où la phase d'argent n'est plus percolante~;
+\item la formation des particules en asticots de grande taille ($\micro\meter$)~;
+\item la présence de particules plus petites (<250~nm).
+\end{itemize}
+Forts de ces éléments d'interprétation, nous pouvons à présent aborder les données obtenues en ellipsométrie \textit{in situ}.\par
+
+\subsubsection{Étude \textit{in situ}}
+Nous avons mis en évidence le régime de frittage qui intervient après la propagation des trous (voir section~B.2.\ref{sfrittage}). En temps normal, il correspond à une évolution lente des particules d'argent vers leur forme d'équilibre. Cependant, nous avons pu remarquer que dans certains cas, le frittage était extrêmement rapide. Ceci est généralement observé sur les bords des échantillons ou autour de défauts ponctuels~; mais parfois sur toute la surface d'un échantillon. Sur la figure~\ref{MEBpostMortem} de la page~\pageref{MEBpostMortem}, les deux échantillons présentés sont préparés de manière identique~: une couche d'argent de 20~nm, recuite à 400~$^\circ$C pendant 15~min. L'un présente des particules en asticot, typique de ce qui est observé pendant le frittage (nous l'appellerons \og échantillon 1\fg), tandis que l'autre ne présente que des particules proches de l'état final attendu (nous l'appellerons \og échantillon 2 \fg). Dans le cadre du contrôle du démouillage, cette cinétique rapide nous intéresse, puisqu'elle permet l'obtention rapide de particules aux formes régulières. Nous aimerions donc connaître l'origine de cette différence. Précisons enfin que la différence entre les deux cinétiques est d'un autre ordre que les variations observées dans la section~\ref{sPostMortem}.\\[12pt]
+
+\paragraph{Échantillon 1 (cas standard)~:}
+Dans l'étude d'ellipsométrie, nous avons pu étudier \textit{in situ} les deux types de démouillage. La question est de savoir s'il s'agit d'une différence d'ordre cinétique uniquement, ou si les mécanismes impliqués diffèrent également. Dans un premier temps, nous allons nous intéresser à un échantillon dont le démouillage est le plus souvent observé, tel que visible sur la figure~\ref{MEBpostMortem}-a, (échantillon 1). Dans l'étude \textit{post mortem}, nous avions pu observer trois composantes dans la fonction diélectrique de la couche en train de démouiller~: une composante de Drude se transformant en une Lorentzienne à basse énergie et une Gaussienne entre 1.5 et 3~eV. Nous avons donc cherché à modéliser ces composantes tout au long du démouillage. Il nous est vite apparu que l'optimisation de la fonction diélectrique donnait des résultats aberrants, à cause d'un trop grand degré de liberté. Nous avons donc pris le parti de supprimer la composante de Drude, mais de laisser la Lorentzienne prendre une amplitude extrêmement grande et une position à très faible énergie, afin d'en imiter le comportement. Cette idée reste cohérente physiquement~: on donne la possibilité aux oscillateurs de Lorentz (les grosses particules de plus d'un micron) de devenir encore plus grosses, jusqu'à devenir de taille \og infinie \fg{}~(c'est-à-dire une couche continue).\par
+Nous avons donc modélisé la réponse totale du système en faisant varier les paramètre suivants : position et amplitude d'un oscillateur Lorentzien, et amplitude d'un oscillateur gaussien situé entre 2 et 3~eV. Les résultats sont présentés sur la figure~\ref{EllipsoInSitu1}. Étudions dans un premier temps la partie imaginaire de la fonction diélectrique modélisée pendant le démouillage (figure~\ref{EllipsoInSitu1}-gauche). Aux basses énergies, on observe une croissance entre l'ambiante et 200~$^\circ$C. Passé cette température, elle diminue, tandis que la forme gaussienne apparaît entre 1.5 et 3.5~eV. Ce comportement est très semblable à celui de l'étude \textit{post mortem}~; nous pouvons donc facilement interpréter ces variations de manière similaire.\par
+Pour plus de précisions, les variations des paramètres sont tracées sur la figure~\ref{EllipsoInSitu1}-droite. On observe la décroissance de la lorentzienne seulement à partir de 150~$^\circ$C~: elle imite un comportement de Drude à plus basse température. La décroissance se poursuit rapidement jusqu'à 250~$^\circ$C, où elle devient subitement plus lente. La gaussienne apparaît entre 225 et 250~$^\circ$C, puis évolue peu.\par
+Grâce aux éléments précédents, nous pouvons interpréter ces paramètres de la manière suivante~:
+\begin{itemize}
+\item la couche est relativement peu modifiée jusqu'à 150~$^\circ$C, où la propagation des trous commence à perturber le comportement conducteur de la couche~;
+\item entre 150 et 250~$^\circ$C a lieu la propagation des trous~;
+\item à 250~$^\circ$C, l'évolution est fortement ralentie, c'est le début du frittage~;
+\item des particules dont la taille est inférieure à 250~nm apparaissent à la fin de la propagation.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.45\textwidth]{ellipsoModel} \includegraphics[width=.45\textwidth]{EllipsoParamsFrench}
+	\caption{Gauche~: partie imaginaire de la fonction diélectrique d'une couche d'argent de 20~nm modélisée pendant le suivi \textit{in situ} du démouillage, comme décrit dans le texte. Droite~: évolution des paramètres du modèle en fonction de la température.}
+	\label{EllipsoInSitu1}
+\end{figure}
+
+Il est intéressant de remarquer que le signal relatif aux particules de taille relativement petite (< 250~nm) apparaît avant le début du frittage. Ceci signifie qu'à la fin de la propagation, les particules ne sont pas toutes en asticot~: certaines ont déjà une forme proche de l'équilibre.\par
+
+\paragraph{Échantillon 2~:}
+Considérons maintenant l'autre échantillon, appelé échantillon 2, dont le démouillage a donné un état final sous forme de particules hémisphériques très rapidement (cf. figure~\ref{MEBpostMortem}-b). Pour cet échantillon, un modèle isotrope ne permettait pas de décrire les mesures ellipsométriques. Nous avons donc utilisé un modèle de Bsplines uniaxial~: la fonction diélectrique perpendiculaire au substrat est différente de la fonction diélectrique parallèle. Très peu de changements ont été observés selon l'axe perpendiculaire, nous allons donc nous concentrer sur l'évolution de la fonction diélectrique parallèle. Son évolution est représentée sur la figure~\ref{ellipsoUniaxial}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{ellipsoEps2Uni}
+	\caption{Partie imaginaire de la fonction diélectrique parallèle de la couche d'argent de l'échantillon 2 modélisée à différentes températures.}
+	\label{ellipsoUniaxial}
+\end{figure}
+
+%Sur la figure~\ref{ellipsoPlasmon}, nous pouvons observer les parties réelles et imaginaire de la fonction diélectrique parallèle obtenues après un recuit à 400~$^\circ$C. Nous observons une forte résonance à 3,26~eV (indiquée en pointillés) qui n'était pas présente sur l'échantillon~1.
+%
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=.6\textwidth]{ellipsoPlasmon}
+%	\caption{Parties réelle et imaginaire de l'échantillon 2 après un recuit à 400~$^\circ$C.}
+%	\label{ellipsoPlasmon}
+%\end{figure}
+
+Si l'aspect obtenu à 200~$^\circ$C est comparable à ce que l'on obtenait, à température égale, sur l'échantillon 1, son évolution à plus haute température diffère grandement. En effet, la gaussienne centrée autour de 2.5~eV n'apparaît pas seule à 250~$^\circ$C, on observe également un autre signal à plus haute énergie (3.25~eV). De plus, la lorentzienne à basse énergie a complètement disparu à 400~$^\circ$C.\par
+
+La résonance à 3.26~eV indique la présence de particules d'argent plus petites que celles donnant lieu au signal gaussien. La disparition de la lorentzienne à basse énergie semble indiquer la disparation des particules en asticots. Ces observations correspondent bien à ce qui est visible sur la figure~\ref{MEBpostMortem}-b~: pas de particules en asticots, des particules de taille comprise entre 150 et 250~nm et des particules plus petites, de taille inférieure à 80~nm. Ce que l'ellipsométrie nous indique de plus, c'est que les deux populations de particules apparaissent au même moment.\par
+\conclusion{
+Nous avons bien affaire à deux états finaux différents~: dans le cas de l'échantillon 1, les particules en asticot disparaissent uniquement au profit de particules dont la taille est de l'ordre de 250~nm, tandis que dans le cas de l'échantillon~2, deux populations distinctes de particules se forment au même moment.\par 
+}
+Les raisons de ces différences sont inconnues, mais de nouveaux éléments de réponse seront apportés dans la partie~D.\ref{sModifSubstrat}.
+
+\section{Sélection des grains lors du démouillage}
+À plusieurs reprises dans les sections précédentes, nous avons évoqué la sélection de grains pendant le processus de démouillage. Nous allons ici discuter de l'origine de cette sélection. Presland~\cite{presland1972hillock}, lorsqu'il étudiait la croissance des buttes, attribuait leur formation à une relaxation des contraintes à l'interface. Selon lui, la croissance est régie par une diffusion de matière de l'interface à la surface des buttes, dont le flux s'écrit~:
+\begin{equation}
+j = \dfrac{D_s}{kTr_c}\left(\sigma-\dfrac{2\gamma}{r}\right),
+\end{equation}
+avec $D_s$ le coefficient d'autodiffusion solide, $kT$ le terme thermodynamique usuel, $r_c$ la distance entre les buttes, $\sigma$ la contrainte à l'interface, $\gamma$ l'énergie de surface et $r$ le rayon de la butte. Pour que le flux soit positif, il faut que la butte ait un rayon initial supérieur à un rayon critique~:
+\begin{equation}
+r > r_0 = 2\gamma/\sigma.
+\end{equation}
+Avec des valeurs typiques, ($\sigma = 10^{7}$~J.m$^{-2}$, $\gamma = 0.2$~J.m$^{-1}$), on obtient un rayon critique de l'ordre de 0,4~nm. Dans une couche de 20~nm d'épaisseur, les observations montrent que la taille des grains est du même ordre que l'épaisseur de la couche. Ce modèle ne permet donc pas de discriminer certains grains parmi d'autres puisqu'une grande majorité de grains a une taille supérieure à 0,4~nm~; nous devons donc trouver une explication ailleurs. Dans cette section, nous allons discuter de résultats expérimentaux qui permettent de progresser dans la compréhension de la sélectivité qui a été observée plus haut.\par
+
+
+\subsection{Orientation cristalline et démouillage}
+Nous avons deux méthodes à disposition pour étudier l'orientation cristalline des grains dans la couche d'argent. La première est courante, c'est la diffraction des rayons X (DRX), qui donne une information statistique à l'échelle de la taille du faisceau. La seconde est obtenue dans une chambre de TEM, où l'on fait diffracter le faisceau d'électrons~: l'ASTAR. L'ASTAR permet de cartographier des orientations cristallographiques dans une couche mince de manière locale. On perd donc l'aspect statistique des données au profit d'informations sur la structure locale.\par
+\subsubsection{DRX}
+Trois échantillons ont été comparés en diffraction. Il s'agissait d'une couche d'argent de 30~nm, dans son état initial, recuite à 125~$^\circ$C pendant 15~minutes ou recuite à 400~$^\circ$C pendant une heure. Les surfaces ainsi obtenues sont représentées sur la figure~\ref{AFMforDRX} de la page~\pageref{AFMforDRX}. Du point de vue du démouillage, elles correspondent à une couche a) dans l'état initial, b) pendant l'étape de propagation et c) pendant l'étape de frittage. Les diffractogrammes obtenus en DRX en mode $\theta-2\theta$ sont présentés sur la figure~\ref{DRXpostMortem}. Les aires sous les pics ont été mesurées, puis corrigées du facteur de structure de l'argent, du facteur de Lorentz, du facteur de polarisation et du facteur thermique, afin de déterminer le rapport statistique de prépondérance des familles de plan par rapport à la surface. Les résultats sont rassemblés dans le tableau~\ref{DRXratios}.\par
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.9\textwidth]{AFMforDRX}
+	\caption{Clichés AFM réalisés sur des couches de 30~nm d'argent a) dans l'état initial b) recuite à 125~$^\circ$C pendant 15~minutes ou c) recuite à 400~$^\circ$C pendant une heure. Ces échantillons sont ceux caractérisés par la suite en DRX.}
+	\label{AFMforDRX}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.9\textwidth]{DRXpostMortem.pdf}
+	\caption{Diffractogrammes des échantillons présentés sur la figure~\ref{AFMforDRX}.}
+	\label{DRXpostMortem}
+\end{figure}
+
+\begin{table}[p]
+	\centering
+	\begin{tabular}{cccc}
+	\hline
+	état de la couche & ratio (111) (\%) & ratio (200) (\%) & ratio (220) (\%)\\
+	\hline
+	état initial & 54 & 44 & 2\\
+	pendant propagation & 56 & 40 & 4\\
+	pendant frittage & 52 & 44 & 4\\
+	\hline	
+	\end{tabular}
+	\caption{Pourcentage du signal corrigé du facteur de structures pour les principales familles de plans observées en DRX pendant le démouillage.}
+	\label{DRXratios}
+\end{table}
+
+Considérons les trois principales orientations cristallines~: <111>, <100> et <110>. Les pics associés aux plans (111) et (200) sont bien observés sur le diffratogramme. En revanche, le signal associé aux plans (220) est très peu intense. Par ailleurs, on observe une tendance des pics à s'affiner, tout en conservant une constance dans la répartition des orientations cristallines tout au long du démouillage (voir le tableau~\ref{DRXratios}).\par 
+Nous constatons que la direction <110> n'est statistiquement pas représentée orthogonalement au substrat. Pour les autres, l'affinement des pics indique une augmentation de taille du domaine cristallin sondé~; cela vient du fait que les grains croissent dans la direction orthogonale au plan. Le fait que l'intensité relative des pics se conserve signifie que l'orientation du cristallite d'argent par rapport au substrat n'a apparemment aucune influence sur sa croissance pendant le démouillage.\par
+
+
+
+\subsubsection{ASTAR}
+Une autre méthode permet de visualiser l'orientation hors plan des grains d'argent, il s'agit de l'ASTAR. Nous avons réalisé une cartographie des orientations sur une couche de 15~nm d'argent démouillée à 400~$^\circ$C pendant 15~minutes. Elle est représentée sur la figure~\ref{AstarOxy}. Sur cette cartographie, toutes les couleurs sont observées, indiquant que toutes les orientations sont représentées. Par ailleurs, les particules d'argent, même lorsqu'elles semblent avoir atteint une forme d'équilibre, comportent toujours des joints de grains.\par 
+\conclusion{La diversité des orientations hors-plan renforce nos observations DRX~: ce facteur n'est pas déterminant dans la sélection des grains pendant le démouillage.\par}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{AstarOxy}
+	\caption{Cartographie ASTAR des orientations cristallines hors-plan d'une couche d'argent de 15~nm recuite à 400~$^\circ$C pendant 15~minutes. }
+	\label{AstarOxy}
+\end{figure}
+
+\subsubsection{De l'orientation cristalline et son effet sur la sélection des grains}
+Nous avons démontré que c'est la sélection de certains grains qui détermine la morphologie du démouillage. En effet, ces grains croissent de manière extraordinaire en accumulant la matière qui est diffuse à cause du démouillage. Les résultats DRX et ASTAR pointent dans la même direction~: ce n'est pas l'orientation hors-plan de ces grains qui détermine s'ils vont croître.\par 
+Cependant, ce résultat n'exclut pas pour autant que la croissance soit favorisée dans une direction cristallographique qui peut être inclinée par rapport au substrat. Cette distinction est importante, car on pourrait s'attendre au pilotage de la sélection au travers de l'anisotropie des énergies de surface des facettes d'un grain d'argent. En effet, Molina \textit{et al.}~\cite{molina2011size} ont calculé, en présence d'oxygène, un abaissement notable de l'énergie des plans (100) comparativement aux autres. Cet abaissement pourrait favoriser une sélection lors de la croissance des grains. Malheureusement, aucun effet ne contraint l'orientation <100> à se présenter de manière orthogonale au substrat~; même si une croissance extraordinaire était liée à cette orientation, la DRX ou l'ASTAR ne permettraient pas de l'observer.\par 
+
+
+L'orientation cristalline peut intervenir d'une autre manière dans la sélection des grains. Un parallèle avait été fait entre la formation de buttes et celles des whiskers par Pennebaker~\cite{pennebaker1969hillock} dans l'étude de films minces d'or. Le principal mécanisme mis en jeu est la relaxation de contraintes présentes à l'interface, de la même manière que le présentaient Presland~\cite{presland1972hillock} ou Sharma~\cite{sharma1980agglomeration}. Pour relaxer ces contraintes, les joints de grains sont amenés à bouger. La vitesse de déplacement des joints est liée aux orientations relatives des grains impliqués de part et d'autre. Ceci pourrait expliquer, dans certains cas, la croissance plus rapide de certains grains au sein d'une couche. Ce mécanisme a été invoqué pour expliquer la formation des whiskers, très semblables aux grains si ce n'est qu'il croissent uniquement dans la direction hors-plan. La vérification expérimentale de cette hypothèse ne nous semble pas accessible.\par
+
+
+\subsection{Modification du substrat lors du démouillage}
+\label{sModifSubstrat}
+Jusqu'à présent, nous avons supposé implicitement que le substrat est plan et qu'il n'est pas modifié pendant le démouillage. Dans cette partie, nous allons voir que ce n’est pas le cas.\par
+Nous avons procédé à l'expérience suivante~: une couche d'argent de 40~nm a été déposée sur un wafer de silicium, puis recuite à 400~$^\circ$C pendant 5~minutes, puis 400~$^\circ$C pendant 6~heures. Sur la figure~\ref{AFMsiNu} sont représentées les images AFM prises a) avant le dépôt de la couche d'argent, b) après le premier recuit, c) après le premier recuit, mais sur les bords de l'échantillon d) après le second recuit, au même endroit que l'image b). Afin de repérer la zone sur l'échantillon, une rayure mécanique a été effectuée à côté de la zone mesurée, après le premier recuit. L'image e) a été prise sur la zone du substrat découverte par cette rayure.\par
+Considérons d'abord la surface sur laquelle nous déposons les couches d'argent (image~\ref{AFMsiNu}-a)~: la surface présente une rugosité mesurée inférieure au nanomètre. Observons maintenant la surface après un recuit de 5~min à 400~$^\circ$C (images~\ref{AFMsiNu}-b et c). Dans la zone homogène de l'échantillon, les particules d'argent ont une forme d'asticot, tandis que sur les bords, les particules sont déjà agglomérées dans une forme proche de l'équilibre. Cette différence est celle que nous avions considérée dans la section~\ref{sEllipso}. D'autre part, nous observons des irrégularité sur la surface découverte du silicium, qui n'étaient pas présentes auparavant. Ces irrégularités prennent la forme de petits monticules mesurant jusqu'à 5~nm, répartis aléatoirement sur la surface visible entre les îlots d'argent.\par
+Après un second recuit à 400~$^\circ$C, d'une durée beaucoup plus longue (6~h), nous avons imagé par AFM le même endroit que précédemment (image~\ref{AFMsiNu}-d, à comparer avec l'image b). Nous pouvons constater que les particules ont évolué, conformément à nos attentes, dans le sens du frittage. Cependant, si l'on regarde attentivement la surface, des traces sont visibles. Ces traces correspondent à la position du front de démouillage de l'image b), à quelques différences près. Ces traces sont constituées d'un renflement mesurant jusqu'à 6~nm, voisin d'une dépression de l'ordre du nanomètre. Sur l'image~\ref{AFMsiNu}-e, où l'argent a été retiré avant le second recuit, des traces semblables sont visibles sur la surface. Le renflement n'est pas visible, seule la dépression l'est.\par 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{AFMsiNu}
+	\caption{Images AFM a) d'un substrat de silicium (couvert d'oxyde natif) avant dépôt de couche d'argent, puis après démouillage à 400~$^\circ$C, 5~min, b) dans la zone homogène de l'échantillon c) sur les bords, et après un second recuit à 400~$^\circ$C, 6~heures d) au même endroit que l'image b); e) sur une rayure effectuée avant le second recuit. L'échelle couleur n'est valable que pour l'image a), elle n'est pas représentée pour les autres images.}
+	\label{AFMsiNu}
+\end{figure}
+
+Comme les traces ont bien la forme du front de démouillage, elles sont bien apparues à cause du démouillage. Le fait qu'elles soient présentes sur l'image e) indique qu'elle se forment extrêmement rapidement, dès 5~min de recuit. Notons de plus que de telles traces sont aussi observables lorsque le substrat est une silice sol-gel de plusieurs centaines de nanomètres d'épaisseur~; elles ne sont pas reliées à la présence de silicium à quelques nanomètres de profondeur. Enfin, l'absence de ces traces sur les bords de l'échantillon, où le frittage a eu lieu dès le premier recuit, pose question. En effet, il n'est pas possible de déterminer si les traces sont apparues parce que le front a été bloqué, ou si le front a été bloqué à cause de la formation des ces traces.\par
+La présence des monticules elle-même peut nous amener à nous interroger~: s'ils ont été formés de la même manière que les autres traces, par exemple aux joints triples, alors il est possible qu'ils influencent fortement la réorganisation des grains pendant l'induction par un effet d'épinglage de Zener~\cite{weygand1999zener}. Un tel piégage est également envisageable lorsqu'il s'agit de la progression du front de démouillage. Dans le cadre des techniques à disposition, il n'est pas possible d'étudier expérimentalement leur formation.\footnote{Des résultats prélimiaires en Auger à Balayage (réalisé en collaboration avec Muriel Bouttemy de l'institut Lavoisier, université Versaille Saint-Quentin) indiquent que les traces observées sont bien constituées de silice, et dépourvues d'argent.}\par
+Ces traces sont sans doute dues à une déformation du substrat pour atteindre un équilibre au niveau de la ligne triple. Ce phénomène a été observé par Saiz \textit{et al.}~\cite{saiz04} dans le cas de gouttelettes métalliques liquides. Il s'agit, à notre connaissance, de la première mise en évidence de ce phénomène entre deux solides.\par  
+
+\section[Conclusion]{Conclusion et comparaison avec les systèmes industriels}
+Nous avons mise en oeuvre de nombreuse techniques dont la complémentarité nous a permis d'obtenir une meilleure compréhension du phénomène de démouillage. Pour chaque technique \textit{in situ}, nous avons développé des méthodes d'analyse en relation avec des résultats \textit{post mortem}. Cette approche a été fructueuse et nous a permis d'aboutir aux conclusions suivantes~:
+\begin{itemize}
+\item les méthodes expérimentales \textit{in situ} sont indispensables pour étudier le démouillage~;
+\item le mouvement de matière est majoritairement dû à la diffusion de surface~;
+\item un petit nombre de grains spécifiques accumulent la majorité de la matière mise en mouvement par le démouillage~;
+\item il n'y a pas de propagation de bourrelet~: la couche garde une épaisseur constante avant de démouiller~;
+\item il existe un troisième régime, après la propagation des trous~: le frittage.
+\end{itemize}
+Ces observations sont valables pour des couches d'argent polycristallines démouillant sur un substrat de silice dans une atmosphère contenant de l'oxygène. Elles sont indépendantes de la température (entre 100 et 400~$^\circ$C) ou de l'épaisseur (entre 15 et 80~nm). Dans cette partie, nous avons également étudié le rôle de l'orientation cristalline des grains sur le démouillage, et mis en évidence des déformations du substrat au cours du processus.\par
+
+Notre stratégie dans l'étude du démouillage a été en premier lieu de simplifier le système. Une couche d'argent libre sur un substrat de silice est système est très simple par rapport aux empilements à l'argent des systèmes produits par Saint-Gobain. Même si certains aspects doivent pouvoir être transposés, certaines différences sont importantes. Par exemple, nous avons montré que la diffusion de surface était dominante, ce qui ne peut plus être le cas lorsque l'argent est recouvert d'une couche de diélectrique. D'autres chemins de diffusion, impliquant les autres couches de l'empilement, doivent alors prendre le relais, ce qui aura pour effet de ralentir le démouillage. En effet, il faut chauffer à plus haute température un empilement pour observer le démouillage ($\approx$600~$^\circ$C). Par ailleurs, l'argent n'est pas en contact avec l'air dans un empilement.\par
+
+Pour cette dernière raison, nous avons souhaité faire varier notre système de manière simple. En l'occurrence, changer l'atmosphère de recuit et procéder au démouillage sous vide. Cette étude mérite à elle seule un chapitre entier du manuscrit.
+
+
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=.7\textwidth]{}
+%	\caption{}
+%	\label{}
+%\end{figure}
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{biblio}

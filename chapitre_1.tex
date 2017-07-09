@@ -1,0 +1,669 @@
+\minitoc
+\newpage
+
+Ce chapitre est dédié à l'étude bibliographique concernant les travaux exposés dans les chapitres suivants. Il s'articule en quatre parties~: \textit{(A)} une brève revue du démouillage à l'état solide, \textit{(B)} des caractéristiques physiques de l'argent, \textit{(C)} une présentation des approches pour contrôler le démouillage et \textit{(D)} une introduction à la réponse optique de structures métalliques semblables à celles obtenues par démouillage.
+
+
+\section{Le démouillage à l'état solide}
+Le démouillage solide d'un film mince est la transformation du film activée par chauffage vers son état d'équilibre thermodynamique~: des particules isolées. L'état initial de film est métastable~; ce retour dicté par la réduction d'énergie des interfaces en présence (métal/environnement ou métal/substrat).\par 
+	\subsection{Bref historique du démouillage}
+\label{sHistoire}
+Avant de nous plonger dans le détail des travaux portant sur le démouillage à l’état solide, ce paragraphe a pour but d'expliquer comment l'étude de la stabilité de couches minces a finalement débouché sur le démouillage en tant qu'objet d'intérêt. Les modèles évoqués dans ce paragraphe seront décrits plus précisément par la suite.\par 
+L'intérêt porté aux couches minces a débuté dans les années soixante. À cette date, les transistors à couches (TFT) ou transistors à effet de champ à grille isolée (MOSFET) sont inventés. De fines couches métalliques servent alors de contact électrique, ce qui permet de relier plusieurs transistors en circuit intégrés. La structure, la qualité et la durabilité de ces couches sont étudiées durant cette période~\cite{pennebaker1969hillock,dheurle1968structure,caswell1963low}. Une des premières observations concerne la formation de petites buttes en surface de la couche, dès lors que le système est chauffé. Les températures nécessaires à la transformation sont bien moindres que les températures de fusion des métaux~:
+\textbf{tout se produit à l'état solide}.\par 
+À la même période, Mullins~\cite{mullins1957theory} étudia un autre phénomène d'évolution des couches minces polycristallines~: le sillonnement des joints de grains. Un joint de grains tel qu'étudié par Mullins est représenté sur la figure~\ref{schemaMullins}. Après développement d'un modèle, Mullins obtient une loi de vitesse de sillonnement des joints de grains, reliant leur profondeur au temps de recuit. Suspecté d'être à l'origine de nombreux défauts dans les couches minces, ce phénomène sera étudié expérimentalement par Rhead~\cite{rhead1963surface,rhead1965surface} dans les couches d'argent. Il remarque alors que les sillons se creusent beaucoup plus rapidement lorsque l'atmosphère de recuit contient de l'oxygène, et estime un rapport de coefficients de diffusion de plusieurs ordres de grandeur par rapport à une atmosphère réductrice. À ce moment-là, le phénomène de \og démouillage \fg{} n'est pas encore un objet d'étude.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.6\textwidth]{schemaMullins}
+	\caption{Joint de grains dans l'étude de Mullins}
+	\label{schemaMullins}
+\end{figure}
+Brandon et Bradshaw~\cite{brandon1966mobility}, un peu plus tard, cherchent à remonter au coefficient d'autodiffusion de l'argent. Ils souhaitent notamment comparer la méthode de Mullins à d'autres mesures. Pour cela, ils étudient un autre phénomène~: la rétraction d'un front de métal sur un substrat. Ils proposent eux aussi un modèle, principalement basé sur la courbure locale, pour expliquer cette rétraction. Grâce à ce modèle, qui adopte une description continue et isotrope
+du matériau, ils estiment un coefficient de diffusion. Il est important de noter que le domaine de la \og matière molle \fg{}, étudiant notamment le démouillage de polymères, est en effervescence à ce moment-là. L'approche de Brandon et Bradshaw est très largement inspirée du même formalisme.\par 
+Dans leur étude, Brandon et Bradshaw comparent différentes manières de mesurer un coefficient de diffusion. Comme la mesure obtenue grâce à leur nouveau modèle est cohérente avec les résultats d'autres méthodes, ce modèle a été adopté par la suite. Bien que le phénomène étudié soit bien le démouillage, il faut attendre les années 1990 pour que le démouillage lui-même
+devient un objet d'étude~: le terme \og démouillage à l'état solide \fg{} n'apparaît d'ailleurs que vers la fin des années 90. Ces études vont apporter des modifications au modèle initial, mais encore aujourd'hui des questions demeurent. Ce travail de thèse s'inscrit dans cette lignée et vise à acquérir une meilleure compréhension du mécanisme de démouillage.\par 
+
+	\subsection{Diversité des systèmes}
+La morphologie du démouillage dépend beaucoup du système étudié~\cite{thompson2012solid}. Nous allons présenter différents systèmes par ordre décroissant de complexité liée au désordre structural~: couches polycristallines non-épitaxiées, couches polycristallines épitaxiées, couches monocristallines.
+
+\paragraph*{Couches polycristallines~:} les couches polycristallines correspondent aux études historiques du démouillage~\cite{presland1972hillock}. Plusieurs matériaux ont été étudiés~: l'argent~\cite{presland1972hillock, presland1972role, sharma1980agglomeration, sharma1980hillock, sharma1986hillock, dannenberg2000situ}, l'or~\cite{jiran1990capillary, kwon2003comparison, muller2010microstructure,jang2015crystallographic}, le cuivre~\cite{kwon2003comparison, gadkari2005comparison} ou encore le platine~\cite{gadkari2005comparison, atiya2014solid, jahangir2014situ}. Dans les couches
+polycristallines, les joints de grains peuvent jouer un rôle dans l'évolution de la couche. Le rôle individuel des grains a récemment été mis en lumière dans le mécanisme de démouillage~\cite{atiya2014role, kosinova2014role}.\par 
+Dans leurs travaux, Kwon\textit{ et al.}~\cite{kwon2003comparison} ont étudié le comportement de l'or et du cuivre sur silice. Sur la figure~\ref{kwonCompAu} et \ref{kwonCompCu} de la page~\pageref{kwonCompAu}, nous pouvons comparer l'évolution de deux couches d'épaisseur identique de 50~nm, déposées sur de la silice amorphe et recuites dans des atmosphères réductrices similaires. La première, d'or est recuite à 700~$^\circ$C et la seconde, de cuivre, est recuite à 300~$^\circ$C. Dans le cas de l'or, nous observons que peu de trous croissent en formant des dendrites, tandis que dans le cas du cuivre, beaucoup de trous apparaissent et se propagent sans former de dendrites. Nous observons deux comportements très différents en changeant le métal.\par 
+
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.6\textwidth]{kwonCompAu}
+\caption{Évolution de la morphologie d'une couche d'or de 50~nm d'épaisseur recuite à 700~$^\circ$C dans une atmosphère
+d'argon hydrogéné pendant a) 5 min, b) 30 min, c) 60 min,d) 90 min, e) 120 min, f) 150 min.~\cite{kwon2003comparison}}
+\label{kwonCompAu}
+\end{figure}
+
+
+\begin{figure}[!p]
+\centering
+\includegraphics[width=0.6\textwidth]{kwonCompCu}
+\caption{Évolution de la morphologie d'une couche de cuivre de 50~nm d'épaisseur recuite à 300~$^\circ$C dans une atmosphère d'argon hydrogéné pendant a) 0 min, b) 10 min, c) 20 min, d) 40 min, e) 60 min, f) 120 min~\cite{kwon2003comparison}.}
+\label{kwonCompCu}
+\end{figure}
+
+
+\paragraph*{Couches épitaxiées} Si le substrat est cristallin et qu'il présente une correspondance avec la maille du métal qui est déposé dessus, le métal s'oriente de manière à faire correspondre sa propre maille avec celle du substrat. L'orientation hors-plan des grains qui constituent la couches métallique est alors déterminée. Ce phénomène est appelé épitaxie. Dans l'étude du démouillage, les systèmes épitaxiés courants sont Au/$\alpha$-Al$_2$0$_3$(0001)~\cite{kosinova2014role} ou Pt/SrTiO$_3$ (100)~\cite{atiya2014solid}. L'épitaxie stabilisant (dans une certaine mesure) l'interface, le démouillage sur les couches épitaxiées nécessite une plus haute température de recuit. Elle change également la nature des joints de grains au travers de l'orientation hors plan.\par 
+
+\paragraph*{Remarque~:} Dans les couches utilisées dans l'industrie verrière, l'argent est stabilisée par une épitaxie sur la face basale de ZnO wurtzite. En dépit d'un désaccord paramétrique important (-11\%) et l'existence d'une autre orientation, tournée de 30$^\circ$ à désaccord plus faible  (2.5\%), l'argent adopte une orientation hexagone/hexagone sur les faces polaires de ZnO~\cite{jedrecy05,jedrecy05b}, impliquant une orientation (111) de l'argent. Cette orientation semble pilotée par la nucléation/croissance en bord de marches polaires~\cite{chernyshevat}.
+
+
+\paragraph*{Couches monocristallines~:} On peut encore augmenter l'ordre du système en considérant des couches monocristallines. Plusieurs systèmes ont été étudiés~: citons par exemple Ni(100)/MgO(100)~\cite{zucker2016mechanism}, Ni(111)/$\alpha$-Al$_2$0$_3$(0001)~\cite{rabkin2014solid}, Ge(100) ou Si(100)/a-SiO$_2$~\cite{leroy2013influence, cheynis2013dynamics}. La morphologie du démouillage de monocristaux présente des symétries très caractéristiques de la structure cristalline elle-même, comme par exemple le démouillage de Ge présenté sur la figure~\ref{cheynisGeDewet}.\par
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{cheynisGeDewet}
+\caption{Propagation d'un trou dans un monocristal de germanium observé en LEEM (Low Energy Electron Microscopy) (a-e) ou en AFM (f). Images issues de~\cite{cheynis2013dynamics}.}
+\label{cheynisGeDewet}
+\end{figure}
+Dans le cas des monocristaux, la composante \og joints de grains \fg{} ne fait plus partie du problème, c'est pourquoi ces systèmes servent plus facilement de modèles. En effet, l'absence de joints de grains permet de considérer que le matériau est homogène. De plus, le fait de connaître l'orientation du cristal permet de construire plus aisément des modèles en fonction de l'anisotropie des énergies des surfaces qui peuvent exister~\cite{zucker2013model}. Dans ce système, l'état initial est très bien déterminé, contrairement aux couches polycristallines.\par
+
+
+\conclusion{Les couches métalliques présentent une très grande variété de morphologies lors du démouillage, déterminées par leur nature chimique, leur structure et l'énergétique de leurs surfaces/interfaces. De plus la cinétique du phénomène est intimement liée à la structure initiale du film donc à la méthode et aux conditions de dépôt.\par 
+
+Notre étude se situe dans la première catégorie, où l'ordre structural est le plus faible~: une couche polycristalline (argent) sur un substrat amorphe (silice). Ce choix se justifie par \textit{(i)} la volonté de rester proche des contraintes industrielles, où l'argent est déposé par pulvérisation magnétron, \textit{(ii)} mais aussi d'avoir un système simplifié (en éliminant la couche de ZnO) afin de tester les approches capillaires du phénomène, \textit{(iii)} et enfin de permettre la texturation de surface en vue du contrôle du démouillage. Au cours de nos travaux, nous remettrons nos résultats en perspectives avec les systèmes industriels.\par}
+
+
+	\subsection{Le mécanisme du démouillage}
+	\label{sBiblioMeca}
+Pour la suite, nous allons centrer notre étude bibliographique sur les couches polycristallines. Nous décrirons peu dans ces pages les modèles portant sur les monocristaux. Certaines grandes caractéristiques du démouillage sont observées systématiquement~: il est d'autant plus rapide que la température est élevée (tout en restant sous le point de fusion)~\cite{simrick2012thermal, morawiec2013self}, et la couche métallique démouille d'autant plus facilement qu'elle est fine~\cite{morawiec2013self, kim2002thickness, manuela2013dewetting}. Au-delà de ces similitudes apparentes, de nombreuses différences apparaissent en fonction du système considéré.\par 
+		\subsubsection{Induction et croissance cristalline}
+
+Presland~\cite{presland1972hillock} a observé, lors de ses travaux historiques, que le démouillage débute par une modification de la couche, avant même que les trous ne se forment. Cette période est appelée \og temps d'induction \fg. Nous allons d'abord nous concentrer sur ces modifications, qui sont de deux ordres. D'une part, la structure des grains d'une couche polycristalline peut évoluer pendant le recuit~\cite{thompson1990grain} (orientation, taille, forme), d'autre part des buttes apparaissent~\cite{sharma1980hillock, sharma1986hillock}.\par 
+
+\paragraph*{Réorganisation cristalline~:} L'interface entre deux grains, appelée joint de grains, est une structure énergétiquement défavorable~: c'est la frontière entre deux domaines cristallins dont l'orientation varie. Elle est donc le siège d'une discontinuité structurale. On y observe notamment des dislocations. Ainsi, une structure polycristalline sera d'autant plus stable que le nombre de joints de grains est réduit, et que leur énergie associée est faible. Il est important de noter qu'il n'existe pas de relation simple entre l'énergie d'un joint de grains et la désorientation des deux domaines cristallins~\cite{hull2001introduction}; Il convient donc de calculer ou mesurer cette énergie pour chaque orientation considérée.\par 
+La croissance cristalline est gouvernée par une diminution des énergies à l'interface des joints de grains. Nous allons nous intéresser plus spécifiquement à la croissance dans des couches minces~\cite{thompson1990grain}. Il existe deux types de croissances~: la croissance normale et la croissance anormale. Dans le cadre de la croissance normale, on peut formuler une condition d'autosimilarité~\cite{mullins1986statistical}~: la taille des grains augmente mais reste homogène (\og monodisperse \fg) au cours du processus. Dans le cadre d'une croissance anormale, certains grains croissent plus rapidement que leurs voisins~\cite{thompson1990grain}, menant à l'apparition de deux populations distinctes de grains. Ce processus est représenté sur la figure~\ref{thompsonSchemaGrowth}.\par 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{thompsonSchemaGrowth}
+\caption{Croissance normale (a) et croissance anormale d'un grain (b) dans une couche mince~\cite{thompson1990grain}.}
+\label{thompsonSchemaGrowth}
+\end{figure}
+Trois facteurs orientent vers la croissance anormale~\cite{hillert1965theory}~: \textit{(i)} une grande disparité dans les énergies interfaciales au niveau des joints (due par exemple à l'anisotropie des énergies de surface), \textit{(ii)} un mouvement de certains joints de grains ralenti et \textit{(iii)} une disparité initiale dans la taille des grains.\par 
+Le mouvement des joints de grains peut être ralenti de deux manières, ce qui influence donc la croissance~: l'épinglage de Zener par des impuretés~\cite{couturier20053d} et la présence de profonds sillons de joints de grains~\cite{mullins1958effect}. Dans les deux cas, un obstacle énergétique se présente pour empêcher le mouvement du joint de grains.\par
+
+\paragraph*{La croissance de buttes~:} La formation de buttes a été observées dans diverses couches minces
+(or, aluminium, plomb, argent~\cite{pennebaker1969hillock, dheurle1968structure, caswell1963low}). Pennebaker~\cite{pennebaker1969hillock} attribue la formation de buttes à la
+relaxation de contraintes à l'interface, engendrées par la dilatation thermique. Ces contraintes sont écrites de la manière suivante~:
+\begin{equation}
+\Delta\sigma = (\alpha_M - \alpha_S)\cdot\Delta T\dfrac{E}{1-\nu},
+\end{equation}
+
+avec $\Delta\sigma$ la différence de contraintes entre deux températures, $\alpha_M$ et $\alpha_S$ les coefficients d'expansion thermique (respectivement de la couche métallique et du substrat), $\Delta T$ la différence de température, $E$ le module d'Young et $\nu$ le coefficient de Poisson de la couche métallique. Les coefficients d'expansion des métaux étant plus grands que ceux des diélectriques, une couche métallique supportée a donc tendance à subir des contraintes en compression si on la chauffe. Ces contraintes se relaxent lors du traitement thermique, et des buttes apparaissent à la surface du métal. Si l'on refroidit le système après la formation des buttes, on observe une contrainte en tension à l'interface~\cite{pennebaker1969hillock}. La formation de buttes en surface semble donc être due à une relaxation des contraintes à l'interface.\par 
+Presland a observé la croissance de buttes lors du recuit d'une couche d'argent~\cite{presland1972hillock}. Scharma et Spritz étudient le même métal en variant les modes de dépôt~\cite{sharma1980agglomeration, sharma1980hillock, sharma1986hillock}. De ces études, plusieurs conclusions se dégagent~:
+\begin{itemize}
+\item L'oxygène favorise la croissance des buttes ;
+\item La densité de buttes semble davantage liée à des inhomogénéités initiales de la couche qu'aux conditions de recuit ;
+\item Les buttes sont bien des calottes pleines, pas des cloques comme on peut l'observer dans d'autres systèmes~\cite{gadkari2005comparison}.
+\end{itemize}
+Ainsi, la surface de contact métal-substrat ne varie pas, mais la surface libre du métal augmente. Ces observations pointent elles aussi dans la direction d'une relaxation des contraintes à l'interface. La nature des buttes elle-même n'est pas déterminée dans ces travaux.\par 
+
+\paragraph*{Remarque~:} À la même période, un autre phénomène très semblable à la croissance des buttes a été observé~: l'apparition de whiskers (moustaches de chat). Les whiskers apparaissent grâce à un mode de croissance d'un grain dans une direction spécifique qui lui donne une forme de fil. Leur présence est particulièrement désastreuse dans des systèmes électroniques, car ils peuvent engendrer des courts-circuits. Les conditions d'apparition des whiskers sont comparables avec celles d'apparition des buttes~\cite{rhead1963surface}.
+
+\paragraph*{Apparition des trous~:} Un des mécanismes possibles pour l'apparition des trous est lié au phénomène évoqué dans la section~\ref{sHistoire} et étudié par Mullins~\cite{mullins1957theory}~: le sillonnement des joints de grains. L'idée générale est de supposer que lorsque le sillon atteint le substrat, un trou se forme.\par 
+Dans son étude, Mullins étudie le joint en 2D (voir la figure~\ref{schemaMullins}), considérant uniquement le projeté des surfaces de deux grains voisins dans un plan. Il propose deux mécanismes pour le phénomène~: l'évaporation-condensation ou la diffusion de surface. Le premier mécanisme est négligeable dans notre système (car le taux d'évaporation de l'argent est trop faible dans nos conditions de recuit). En revanche, le second va nourrir beaucoup d'études postérieures, car il correspond à la majorité des cas étudiés. Mullins calcule le potentiel chimique $\mu$ d'un atome de surface du métal~: 
+\begin{equation}
+\mu = \mu_{ref} + \kappa \gamma \Omega,
+\end{equation}
+en fonction de la courbure $\kappa$ et de l'énergie de surface $\gamma$ (supposée isotrope et uniforme) par rapport à un potentiel de référence $\mu_{ref}$ et $\Omega$, le volume atomique. Cette différence de potentiel chimique induit un flux diffusif sur un arc arbitraire s~:
+\begin{equation}
+J = -\dfrac{D_s\nu}{kT}\cdot\dfrac{\partial\mu}{\partial s}\newline
+ = -\dfrac{D_s\nu\gamma\Omega}{kT}\cdot\dfrac{\partial\kappa}{\partial s},
+\label{eDiffFlux}
+\end{equation}
+avec $D_s$ le coefficient d'auto-diffusion du métal, $\nu$ la concentration d'adatomes en surface, $k$ la constante de Boltzmann et $T$ la température. Après développement mathématique, Mullins obtient une loi de vitesse de sillonnement des joints de grains. Leur profondeur d varie selon la loi~:
+\begin{equation}
+d = 0,973m\left(\dfrac{D_s\Omega^2\nu}{kT}t\right)^{1/4},
+\end{equation}
+où $m$ est la tangente de l'angle $\beta$ du sillon du joint de grains (cf. fig.~\ref{schemaMullins}), $t$ le temps. Cette équation permet donc, dans un cadre que nous appellerons \og théorie de Mullins \fg{}, de relier le coefficient de diffusion à la vitesse de sillonnement des joints de grains. En étudiant la longueur du temps d'induction en fonction de l'épaisseur initiale de la couche, Presland~\cite{presland1972hillock} trouve bien une relation en $t^{1/4}$. Il en conclut que ce phénomène est bien à l'origine de la formation des trous.\par 
+Depuis la formulation du modèle de Mullins, quelques modifications ont été proposées. Génin \textit{et al.}~\cite{genin1992capillary} ont étudié dans des hypothèses comparables le comportement des jonctions de trois grains. Ils ont conclu que l'approfondissement de ces points de jonction était beaucoup plus prononcé que celui des joints de grains ; ils jouent sans doute une rôle prépondérant dans la formation de trous. Dans le cas d'une grande anisotropie de surface~\cite{klinger2011kinetics}, où la formation de facettes modifiant le profil du sillon a été observée, le sillonnement est modifié. Enfin, la diffusion à l'interface a été ajoutée au modèle pour décrire des profils qui ne correspondaient pas au modèle de Mullins~\cite{amram2014grain}. Ces ajouts tendent à remettre en question la manière dont s'effectue le sillonnement et sa cinétique, mais pas le fait que c'est bien le sillonnement qui est à l'origine des trous dans la couche.\par 
+Dans le cas de l'argent, des études TEM (Microscopie Électronique à Transmission) de Dannenberg \textit{et al.}~\cite{dannenberg2000situ} ont précisément observé la formation d'un trou au niveau de joints de grains. Sur la figure~\ref{dannenbergTEMgroove}, une image TEM d'une couche d'argent de 80~nm est représentée. Sur cette image, on discerne entre deux grains une fine bande blanche qui signifie que l'épaisseur du film d'argent est nulle. Dannenberg interprète cet amincissement comme étant dû au sillonnement du joint de grains.\par
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{dannenbergTEMgroove}
+\caption{Image TEM en vue plane d'une couche d'argent de 80~nm recuite à 400~$^\circ$C~\cite{dannenberg2000situ}.}
+\label{dannenbergTEMgroove}
+\end{figure}
+Considérons à nouveau les travaux de Kwon \textit{et al.}~\cite{kwon2003comparison}, qui compare le démouillage de l'or à celui du cuivre. Nous avons vu que le nombre de trous formés dans la couche était extrêmement différent en fonction du système considéré. Kwon \textit{et al.} interprètent cette différence comme étant due à deux mécanismes différents de formation de trous. Dans le cas du cuivre, ils attribuent effectivement la création de trous au sillonnement des joints de grains, mais dans le cas de l'or, ils proposent une autre origine~: une agglomération des lacunes présentes dans le cristal et proches des joints de grain. Dans ce système, ils sont donc en désaccord avec le modèle de sillonnement des joints de grains, suggéré jusque-là~\cite{frost1990simulation}.\par 
+Notons également que dans le cadre de la réorganisation cristalline, les plus petits grains peuvent subir une \og annihilation \fg{}~\cite{frost1990simulation}, c'est-à-dire qu'ils subissent une réorganisation les faisant disparaître, la matière étant transférée vers les grains voisins. Cette annihilation peut également donner lieu à la formation de trous~\cite{derkach2014grain}.\par 
+
+\conclusion{Trois hypothèses coexistent concernant la formation de trous~: le sillonnement de joints de grains, l'annihilation des petits grains et la nucléation de lacunes. Dans le cas de l'argent polycristallin, le sillonnement de joints de grains semble prépondérant.}
+
+
+		\subsubsection{Propagation des trous}
+Comme nous l'avons expliqué dans la section~\ref{sHistoire}, la rétraction des films minces (avant d'être nommée démouillage) servait initialement à mesurer des coefficients de diffusion. Nous allons développer ici les modifications qui ont été apportées au modèle initial de Brandon et Bradshaw~\cite{brandon1966mobility}, lorsque le démouillage est devenu un objet d'étude en soi.\par 
+Brandon et Bradshaw~\cite{brandon1966mobility} emploient l'équation~\ref{eDiffFlux} pour décrire le moteur du démouillage, mais sur une configuration schématisée dans la figure~\ref{schemaBrandon}~: un bourrelet de rayon $r$ se propageant sur une couche d'épaisseur $h$. Cette description est très inspirée par les problématiques de démouillage de polymères, notoires à l'époque.\par 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.3\textwidth]{schemaBrandon}
+	\caption{Forme du front de propagation telle que décrite par Brandon et Bradshaw~\cite{brandon1966mobility}.}
+	\label{schemaBrandon}
+\end{figure}
+
+En considérant que la courbure dans le film plat est nulle (le potentiel chimique est alors celui de référence), on obtient~:
+\begin{equation}
+\Delta \mu = \Omega\gamma\kappa = \Omega\gamma\left(\dfrac{1}{r}-\dfrac{1}{r'}\right),
+\end{equation}
+avec $r'$ le rayon de courbure parallèle au substrat, qui est considéré comme négligeable par Brandon et Bradshaw~\cite{brandon1966mobility}. Ce modèle implique deux choses~:
+\begin{itemize}
+\item l'existence d'un bourrelet qui se propage ;
+\item l'épaississement de ce bourrelet au cours de la propagation.
+\end{itemize}
+Notons de plus que si le bourrelet s'épaissit, le moteur de sa propagation (sa courbure) diminue. Ainsi, plus il se propage, plus il est ralenti.\par 
+Une modification notable de ce modèle a été proposée par Jiran et Thompson~\cite{jiran1990capillary, jiran1992capillary}. Leur étude porte sur le démouillage de couches d'or sur un substrat amorphe (silice ou nitrure de silicium). Jiran et Thompson observent que la vitesse de propagation des trous se fait à vitesse constante, contrairement à ce que nous avons conclu du modèle précédent. Selon eux, les trous forment des doigts (ou dendrites) qui se propagent (voir la figure~\ref{schemaDoigts})~; l'accumulation de matière se fait en réalité sur les bords des doigts. Ainsi, au bout du doigt, le front n'est pas épaissi, et la vitesse est constante. Ils adaptent donc l'équation de Brandon et Bradshaw pour tenir compte de cette modification~:
+\begin{equation}
+\Delta \mu = \Omega\gamma\left(\dfrac{1}{h}-\dfrac{1}{r'}\right).
+\end{equation}
+Et à nouveau, ils supposent que $r' \gg h$, donc $\kappa_\parallel \ll \kappa_\perp$ (avec $\kappa_\parallel$ la courbure dans le plan du substrat et $\kappa_\perp$ la courbure perpendiculaire au substrat de la surface du front de démouillage).\par 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.9\textwidth]{schemaDoigts}
+	\caption{Forme du front de démouillage, selon Jiran et Thompson~\cite{jiran1990capillary,jiran1992capillary}.}
+	\label{schemaDoigts}
+\end{figure}
+
+Ces modèles décrivent le matériau comme uniforme (absence de grains et de joints de grains) et isotrope (l'énergie de surface est identique en tout point). La structure cristalline du matériau n'est pas prise en compte, les modèles étant inspirés de la littérature de la matière molle. Finalement, plusieurs travaux ont proposé des modifications pour les cas qui s'écartaient de cette idéalité. Par exemple, l'anisotropie des énergies de surface a été prise en compte pour modifier la forme du front~\cite{klinger2011kinetics, zucker2013model}.\par 
+Récemment, une nouvelle description de la propagation a émergé. Elle est centrée autour du rôle des grains \footnote{La littérature qui traite du rôle des grains est majoritairement issue d'un laboratoire israélien (Departement of Materials Engineering, Technion).}. Nous allons présenter trois modèles~; la figure~\ref{schemaGrainsIsraeli} permet de les comprendre.\par 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.9\textwidth]{schemaGrainsIsraeli}
+	\caption{Forme du front de démouillage tenant compte des grains~\cite{atiya2014role, kosinova2014role, kovalenko2013solid}.}
+	\label{schemaGrainsIsraeli}
+\end{figure}
+
+Atiya \textit{et al.}~\cite{atiya2014role} et Kosinova \textit{et al.}~\cite{kosinova2014role} étudient respectivement du platine et de l'or sur une alumine-$\alpha$. Les deux groupes d'auteurs proposent que le bourrelet est en réalité constitué de gros grains. Ils envisagent donc la propagation du bourrelet comme la croissance et la décroissance de grains successifs à proximité du front. La différence tient dans le fait que Kosinova \textit{et al.} introduisent la diffusion à l'interface comme mode de transport supplémentaire dans le modèle. Kovalenko \textit{et al.}~\cite{kovalenko2013solid} étudient le démouillage du fer, également sur l'alumine-$\alpha$. Pour leur part, ils n'observent pas de bourrelet, mais une croissance de grains au sein de la couche, loin du front. Ils proposent donc une croissance induite par la diffusion à longue portée, à l'interface, du matériau en train de démouiller. \par 
+Dans ces études, la surface n'est pas décrite comme étant continue, du fait de la présence de grains. Le potentiel chimique est relié à la taille du grain, ainsi qu'à des énergies d'interface. La variation de potentiel lors de la disparition d'un grain est décrite par la grandeur~:
+\begin{equation}
+\Delta\gamma = \gamma_m+\gamma_i-\gamma_{sub},
+\end{equation}
+où les $\gamma_m$,$\gamma_i$ et $\gamma_{sub}$ sont respectivement l'énergie de surface du métal, l'énergie à l'interface substrat/métal et l'énergie de surface du substrat. $\Delta\gamma$ correspond à la diminution de la surface de métal exposée et de l'aire de l'interface métal/substrat mais aussi à l'augmentation de la surface de substrat exposée. Cette description permet de tenir compte de la nature discontinue de la couche métallique.\par 
+
+\paragraph*{Remarque~:} Dans ces travaux, la diffusion à l'interface métal/substrat est considérée comme non négligeable. Ceci repose sur deux observations~: la forme des joints de grains, dont le profil ne correspond pas à ce qui attendu si on ne considère que la diffusion de surface~\cite{amram2014grain}, et la présence de grains de tailles très différentes placés côte à côte ou d'escarpements forts proches des joints de grains. Selon ces auteurs~\cite{kosinova2014role,kosinova2015mechanisms}, le profil devrait être lissé par une diffusion de surface rapide. Ils proposent des simulations numériques tenant compte de ces hypothèses pour étayer leur propos.\par 
+
+	\subsection{Résumé}
+Pour résumer les enseignements de la littérature, en ce qui concerne notre étude~:
+\begin{itemize}
+\item nous considérons le cas d'une couche polycristalline d'argent, sur un substrat amorphe ;
+\item avant l'apparition et la propagation de trous, il y a une réorganisation de la structure cristalline et une apparition de buttes, cette étape est nommée \og temps d'induction \fg{} ;
+\item les trous apparaissent le plus probablement par sillonnement des joints de grains ou annihilation des grains les plus petits ;
+\item la rapidité du démouillage est fortement influencée par l'épaisseur initiale du film et la température de recuit (et d'un point de vue général, par la nature du métal)~;
+\item la force motrice du démouillage ne fait pas l'unanimité~: il s'agit soit des variations de potentiel chimique dus à la courbure de la surface (modèle inspiré des polymères), soit d'un équilibre à l'échelle du grain entres les différentes énergies de surface et d'interface (qui tient compte de la microstructure).
+\end{itemize}
+
+\section{Le matériau~: l'argent}
+	\subsection{Généralités}
+L'argent, de numéro atomique 47 et de symbole Ag, a une température de fusion de 961,68~$^\circ$C.
+Il cristallise dans un réseau de Bravais cubique face centrée (CFC) dont le paramètre de maille
+est de 4,086 Å.\par 
+Certains travaux concluent que la température de fusion d'un film mince varie en fonction de l'épaisseur. Cette variation a été étudiée par Gromov \textit{et al.}~\cite{gromov2011heterogeneous} (voir figure~\ref{gromovMelting}), qui estiment que pour un film d'argent de 20~nm, cette température est abaissée à 475~$^\circ$C.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{gromovMelting}
+	\caption{Évolution de la température de fusion de films minces métalliques en fonction de
+l'épaisseur, selon~\cite{gromov2011heterogeneous}}
+	\label{gromovMelting}
+\end{figure}
+
+Cependant, cette considération est très liée au démouillage~: la transition étudiée par Gromov \textit{et al.} correspond à la dispersion d'un film mince en gouttelettes. Comme il ne parle pas de démouillage dans ses travaux, nous supposerons que cet abaissement de température de fusion correspond plutôt à une température de démouillage. Dans le cas de particules supportées, cet abaissement est parfois appelé \og pré-fusion \fg{}. Il correspond à la contribution non négligeable des énergies de surface et d'interface dans la stabilité thermique du système, et a une dépendance en $1/a$ ($a$ le rayon de la particule). Il n'est concrètement significatif qu'à partir de tailles de l'ordre de 10~nm (variation supérieure à 5\%~\cite{takagi1954electron}).\par 
+
+\conclusion{Nous considérons donc que l'argent reste toujours à l'état solide dans notre étude, ce qui est déterminant dans notre description~: l'argent reste cristallin et la diffusion de volume très lente par rapport à la diffusion de surface.\par}
+
+	\subsection{Énergie de surface}
+L'énergie de surface des solides cristallins n'est pas isotrope~: elle varie en fonction du plan cristallin exposé. Dans le cas de l'argent, plusieurs méthodes ont été employées pour déterminer les différentes énergies de surface\footnote{On limite en général cette étude aux facettes de bas indice, (111), (100) et (110), car les surfaces vicinales font intervenir le concept d'énergie de marche.}~\cite{stankic2013equilibrium,vitos1998surface}. Plusieurs valeurs extraites de la littérature sont représentées dans le tableau~\ref{tEnergies}. Ces valeurs sont situées entre 1,14 et 1,24 J.m$^{-2}$. La température peut modifier l'énergie de surface, mais nous supposerons une valeur constante.\par 
+\begin{table}
+\centering
+\begin{tabular}{cccc}
+\hline
+facette & valeur (J.m$^{-2}$) & température ($^\circ$C) & source\\
+\hline
+$\cdot$ & 1,140 & 875-935 & exp.*~\cite{buttner1952adsorption}\\
+$\cdot$ & 1,24 & -273 & exp.**~\cite{tyson1977surface}\\
+$\cdot$ & 1,205 & -273 & exp.***~\cite{kumikov1983measurement}\\
+(111) & 1,172 & -273 & DFT~\cite{vitos1998surface}\\
+(100) & 1,200 & -273 & DFT~\cite{vitos1998surface}\\
+(110) & 1,238 & -273 & DFT~\cite{vitos1998surface}\\
+\hline
+\end{tabular}
+\caption{Valeurs des énergies de surface de l'argent solide de la littérature.*) les valeurs de~\cite{buttner1952adsorption} sont obtenues par mesure de tension de fils d'argent **) les valeurs de~\cite{tyson1977surface} sont extrapolées à 0~K à partir de mesures d'angle de contact à l'état liquide (962~$^\circ$C) ***) les valeurs de~\cite{kumikov1983measurement} sont des valeurs moyennes obtenues par des méthodes similaires à~\cite{buttner1952adsorption}.\og DFT \fg{} correspond à des calculs \textit{ab initio}. }
+\label{tEnergies}
+\end{table}
+L'anisotropie des énergies est faible~: le ratio  $\gamma(111)/\gamma(110)$ calculé est de 1,056~\cite{vitos1998surface}, tandis que des mesures de rapports d'aspects sur des clusters d'argent équilibrés donnent une valeur de 1,08~\cite{stankic2013equilibrium}. Ces valeurs sont usuelles pour des matériaux CFC (cubique faces centrées)~\cite{sundquist1964direct}, dont l'or et le cuivre font également partie.\par
+\paragraph*{Remarque~:} Le fait que l'énergie de surface ne soit pas isotrope est un élément de description très important pour les solides. Ici, nous n'avons considéré l'énergie des surfaces de bas indice. Entre ces surfaces, il existe autant de plans cristallographiques que d'orientations. D'un point de vue atomique et cristallographique, ces plans sont décrits par une suite de terrasses de bas indices séparées par des marches et sont donc plus hauts en énergie. Ces plans ne seront pas ou peu représentés~; on passera donc, par exemple, d'un plan (111) à un plan (100).\par 
+Ainsi, dire que l'anisotropie des énergies de surface est faible pour les surfaces de bas indice ne revient pas à dire que le métal n'est pas facetté. Cela implique seulement que les facettes (111), (100) et (110) auront tendance à toutes être représentées de manière équivalente. À ce titre, le démouillage à l'état solide de l'argent est un excellent candidat pour tester les approches capillaires~\cite{brandon1966mobility}.\par 
+
+	\subsection{Diffusion solide}
+La diffusion a l'état solide peut emprunter plusieurs chemins~: la diffusion dans le volume, la diffusion aux joints de grains et la diffusion de surface (ou d'interface avec d'autres phases). Ces trois chemins sont associés à des coefficients de diffusion allant du plus petit au plus grand~: la diffusion de surface est généralement la plus rapide~\cite{heitjans2006diffusion}. On peut la désigner sous le terme d'autodiffusion lorsque l'espèce qui diffuse est de même nature que le solide au sein duquel elle diffuse. Les coefficients de diffusion suivent une loi d'Arrhénius~:
+\begin{equation}
+D = D_0e^{-Q/kT},
+\label{eDiffusion}
+\end{equation}
+où $D_0$ est le coefficient d'auto-diffusion et $Q$ est l'énergie d'activation. Ce sont des paramètres à déterminer suivant les cas. Dans le cas de l'argent, ces coefficients dépendent de la facette considérée~\cite{agrawal2002predicting}. L'évolution des coefficients de diffusion avec la température est représentée sur la figure~\ref{diffusionCoeff}, pour les facettes de bas indices. Les coefficients sont calculés par simulation numérique (DFT). Ils augmentent avec la température, et la diffusion sur la face (111) est beaucoup plus rapide (trois ordres de grandeur à 200~$^\circ$C). Dans le cadre des couches minces, où les facettes exposées sont multiples et aléatoirement réparties, on considère généralement un coefficient de diffusion unique. Dans notre cas, nous le considérons compris entre les deux extrêmes de la figure~\ref{diffusionCoeff}.\par 
+Nous pouvons estimer la distance caractéristique parcourue en une seconde en considérant $\sqrt{Dt}$. Cette distance est de 300~nm si D = 10$^{-9}$ cm$^{2}$.s$^{-1}$, et de 30 \micro\meter{} si D = 10$^{-5}$ cm$^{2}$.s$^{-1}$.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{diffusionCoeff2}
+	\caption{Évolution des valeurs des coefficients d'auto-diffusion de l'argent sur les facettes
+principales en fonction de la température, selon~\cite{agrawal2002predicting}. Ces valeurs sont calculées par simulation \textit{ab initio} (DFT).}
+	\label{diffusionCoeff}
+\end{figure}
+
+
+
+	\subsection{Influence de l'oxygène}
+L'étude de l'interaction de l'oxygène avec l'argent a été principalement menée dans le domaine de la catalyse hétérogène. Cette interaction est complexe et très dépendante de la température et de l'activité de l'oxygène, mais nous verrons dans nos travaux (chapitre IV) qu'elle a un impact fondamental sur le démouillage. Nous allons l'aborder sous différents aspects~: formation de l'oxyde d'argent, adsorption et modifications des propriétés de surface.\par 
+
+		\subsubsection{Oxydation de l'argent}
+L'oxyde d'argent sous la forme la plus courante est Ag$_2$O. Sous forme massique et à pression standard, l'enthalpie libre de la réaction d'oxydation  $\Delta_rG^0$ suit la relation $\Delta_rG^0$~(kJ.mol$^{-1}$)$=-31,1+67.10^{-3}.T$, avec $T$ la température en Kelvin. L'oxyde n'est donc plus stable à partir de 200~$^\circ$C. En surface du matériau, la stabilité de l'oxyde en fonction de la température et de la pression partielle d'oxygène a été étudiée par calculs \textit{ab initio}~\cite{michaelides2003structures}. Un diagramme de phase est présenté sur la figure~\ref{diagrammeOxydationAg}. Ce diagramme concerne la face (111) de l'argent, mais nous considérerons qu'il est transposable à toutes les orientations. Nous observons que la température de décomposition est d'autant plus basse que la pression partielle d'oxygène est basse. Malgré les prévisions thermodynamiques, l'oxyde d'argent ne se forme pas spontanément dans l'air à température ambiante~\cite{rehren1991interaction}. Nous considérons donc qu'il n'y a pas d'oxyde d'argent massique qui se forme sur nos couches avant le début des expériences de démouillage. Pendant le démouillage, à plus haute température et sous des pressions partielles réduites en oxygène, l'oxydation est encore moins probable~: nous considérons qu'il ne se forme pas d'oxyde non plus.\par  
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.4\textwidth]{diagrammeOxydationAg}
+	\caption{Diagramme de phase Ag/Ag2O calculé dans~\cite{michaelides2003structures}.}
+	\label{diagrammeOxydationAg}
+\end{figure}
+\paragraph*{Remarque :} Le fait que l'argent soit sous forme de particules diminue l'enthalpie libre de la réaction d'oxydation, $\Delta_rG^0$, mais cet effet ne devient vraiment perceptible que pour des particules dont la taille est de l'ordre de 10~nm~\cite{levard2012environmental, campbell2006transition}. Pour écarter tout risque, nous avons adopté un protocole rigoureux de production et de stockage des échantillons. Ce protocole sera décrit dans le chapitre 2.\par 
+
+
+
+
+		\subsubsection{Adsorption de l'oxygène sur l'argent}
+L'absence d'oxyde n'interdit pas l'interaction de l'oxygène avec l'argent~: il peut s'adsorber. On distingue plusieurs espèces d'oxygène adsorbé à la surface de l'argent~\cite{nagy1999correlation}~; ces différentes espèces sont représentés sur le schéma de la figure~\ref{schemaOxygeneEspeces}. O$\alpha$ correspond à une chimisorption dissociative, où les atomes d'oxygène restent en surface. Cette espèce se concentre sur les facettes orientées (110). S'il diffusent dans l'argent, on parle alors de l'espèce O$\beta$. Il existe une autre espèce, appelée O$\gamma$, qui est semblable à O$\alpha$, mais qui possède une énergie de liaison beaucoup plus forte~\cite{bao1996interaction}. De plus, elle ne se présente que sur les facettes orientées (111).\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.2\textwidth]{schemaOxygeneEspeces}
+	\caption{Schéma représentant les différentes espèces d'oxygène interagissant avec l'argent. Inspiré de~\cite{nagy1999correlation}.}
+	\label{schemaOxygeneEspeces}
+\end{figure}
+Les stabilités de ces espèces sont différentes. O$\alpha$ se désorbe à une température proche de 300~$^\circ$C~\cite{engelhardt1976adsorption}, tandis que O$\beta$ se désorbe à 375~$^\circ$C et O$\gamma$ à 600~$^\circ$C~\cite{nagy1999correlation}.\par 
+L'adsorption d'oxygène n'est pas neutre pour le réseau cristallin~: le paramètre de maille peut augmenter en présence d'oxygène (de l'ordre de 0,2\% à 500~$^\circ$C)~\cite{nagy1999correlation}. Une autre modification très régulièrement observée est la modification de la topographie de la surface par création de nouvelles facettes~\cite{buttner1952adsorption, nagy1999correlation, engelhardt1976adsorption, yoshihara1979effect}. Une illustration de ce phénomène est présenté sur la figure~\ref{nagyFacetting}~: une feuille d'argent de 100 \micro\meter{} d'épaisseur (non supportée) a été recuite pendant quatre jours dans une atmosphère neutre (He) ou contenant de l'oxygène (10\%). Aucune modification n'est visible sur la première feuille, tandis que la morphologie de la surface de la feuille recuite sous oxygène a énormément changé. De nombreuses facettes sont visibles. Dans leur étude, Nagy \textit{et al.}~\cite{nagy1999correlation} désignent l'adsorption sélective de l'oxygène comme étant responsable d'un déplacement des atomes d'argent, menant à ce genre de structures.\par 
+Notons que cet effet peut avoir lieu à des pressions très faibles d'oxygène~: Nagy \textit{et al.}~\cite{nagy1999correlation} observent cet effet alors que la pression d'oxygène n'excède pas 10$^{-5}$~atm.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{nagyFacetting}
+	\caption{Images MEB d'une feuille d'argent (100~\micro\meter) recuite à 750~$^\circ$C pendant quatre jours a) dans une atmosphère neutre (He) b) dans une atmosphère contenant 10\% d'oxygène. Images issues de~\cite{nagy1999correlation}.}
+	\label{nagyFacetting}
+\end{figure}
+
+		\subsubsection{Abaissement de l'énergie de surface}
+La mesure d'angle de contact d'une goutte d'argent liquide avec son substrat permet également de déterminer que l'oxygène abaisse l'énergie de surface du métal~\cite{chatain94}. Cette baisse a lieu dès une activité d'oxygène de 10$^{-3}$ (soit une pression de 10$^{-3}$~atm en considérant un gaz idéal). Cet abaissement est étayé par des simulations~\cite{muolo08}.\par 
+L'effet observé pour de l'argent liquide a également lieu pour des solides. Buttner \textit{et al.}~\cite{buttner1952adsorption} effectuent des mesures de tension de surface en observant des fils d'argent lestés. Ils remarquent que l'oxygène abaisse l'énergie de surface de l'argent solide, dès une pression de l'ordre de 10$^{-5}$~atm (soit 1~Pa). La décroissance de l'énergie est linéaire avec le logarithme de la pression. Des simulations numériques effectuées par Molina \textit{et al.}~\cite{molina2011size} prédisent également une baisse de l'énergie de surface. Cette baisse est plus prononcée pour la face (100) que pour les autres faces de bas indice. La présence d'oxygène est donc susceptible de modifier l'anisotropie des énergies de surface.\par 
+
+		\subsubsection{Influence de l'oxygène sur la diffusion}
+Deux études font état d'une augmentation de l'autodiffusion de surface de l'argent en présence d'oxygène~\cite{rhead1965surface, yoshihara1979effect}. Dans les deux cas, la méthode employée pour mesurer les coefficients de diffusion est fondée sur une mesure de l'ouverture des joints de grains (cf. section~\ref{sHistoire}). Dans les deux cas, les mesures sont effectuées à une température comprise entre 650 et 960~$^\circ$C.\par 
+Ces deux études estiment, grâce à la théorie de Mullins~\cite{mullins1957theory}, une augmentation du coefficient d'autodiffusion de deux ordres de grandeur. Cette augmentation pourrait être due à la fois à l'augmentation de $D_0$ (le coeffcient d'autodiffusion) et la diminution de $Q$ (la barrière d'activation, voir équation~\ref{eDiffusion}). Yoshihara~\cite{yoshihara1979effect} suggère que l'oxygène, en s'adsorbant à la surface de l'argent, occupe les sites où se fixent normalement les adatomes d'argent. Comme il leur est interdit de se fixer sur la surface, ils diffusent plus loin.\par 
+Les valeurs prises à 700~$^\circ$C sont présentées dans le tableau~\ref{tDiffusion}. Remarquons que ces valeurs semblent en bon accord avec celles présentées sous vide dans la figure~\ref{diffusionCoeff}, mais prévoient une augmentation de un à deux ordres de grandeur du coefficient lorsque l'argent est exposé à l'air.\par 
+
+\begin{table}
+\centering
+\begin{tabular}{ccccc}
+\hline
+source & \cite{rhead1963surface, rhead1965surface} & \cite{rhead1963surface, rhead1965surface} &\cite{yoshihara1979effect} & \cite{yoshihara1979effect}\\
+\hline
+condition ($P_{O_{2}}$) & 2.10$^4$~Pa & atm. réduc. & 10$^5$~Pa & 10$^{-11}$ Pa \\
+valeur (cm$^2$.s$^{-1}$) & 5.10$^{-6}$ & 5.10$^{-8}$ & 8.10$^{-5}$ & 5.10$^{-6}$\\
+\hline
+\end{tabular}
+\caption{Valeurs des coefficients d'autodiffusion de l'argent sur l'argent mesurés par la méthode de Mullins dans~\cite{rhead1963surface, rhead1965surface} et~\cite{yoshihara1979effect}.}
+\label{tDiffusion}
+\end{table}
+Dans ce manuscrit, toutes les expériences présentées sont effectuées à des températures inférieures à 700~$^\circ$C, ce qui est hors de la gamme de température explorée dans la littérature mentionnée. En extrapolant les résultats de la littérature, une augmentation de la diffusion de deux ou trois ordres de grandeurs est attendue dans nos conditions de température.\par 
+
+\conclusion{L'oxygène interagit avec l'argent solide par de nombreux biais. Même si nous excluons la formation d'oxyde d'argent dans notre système, l'adsorption de gaz a un effet sur la morphologie du métal. Cette adsorption est différente selon la facette considérée. On constate en parallèle que l'énergie de surface de l'argent est globalement réduite en présence d'oxygène, mais cette modification est plus prononcée pour la facette (100) que les autres. En outre, l'oxygène accélère l'autodiffusion de surface de l'argent. Il conviendra de tenir compte de ces phénomènes lors de la description de recuits effectués en présence d'oxygène.\par}
+
+
+
+\section{Le contrôle du démouillage}
+Le démouillage permet d'obtenir des particules à partir d'une couche initiale. Le démouillage en tant que procédé de synthèse a été de plus en plus étudié au cours de ces dernières années~\cite{thompson2012solid,leroy2016control}. Dans cette section, nous allons présenter plusieurs stratégies développées afin de contrôler les structures finales obtenues~:  contrôle au travers \textit{(i)} des paramètres de dépôt de la couche \textit{(ii)} des paramètres de recuit, \textit{(iii)} de la modification de la couche après dépôt, \textit{(iv)} de la nature du substrat et \textit{(v)} de la texturation du substrat.\par
+	\subsection{Variation des paramètres expérimentaux}
+La première manière de contrôler le démouillage, et la plus immédiate, consiste à faire varier les paramètres expérimentaux~: épaisseur initiale de la couche, température ou temps de recuit. Considérons en premier lieu l'épaisseur de la couche~: plus la couche est épaisse, plus les particules obtenues par démouillage sont grosses~\cite{schmidl2015formation, naffouti2016fabrication}. Ce paramètre a également été exploité par Pandey \textit{et al.}~\cite{pandey2017morphological} afin de faire varier les propriétés optiques des particules finales. Ruffino \textit{et al.}~\cite{ruffino2014self} observent ce phénomène sur des couches dont l'épaisseur varie à l'échelle locale.\par 
+Comme nous l'avons évoqué au tout début de ce chapitre, la stabilité thermique des couches métalliques dépend de l'épaisseur. Aussi, pour une étude plus complète, est-il nécessaire de coupler l'étude de l'épaisseur de la couche à celle de la température et du temps de recuit~\cite{manuela2013dewetting}. Cet aspect est extrêmement important à prendre en compte~: il est nécessaire de chauffer à plus haute température lorsque l'épaisseur de la couche mince initiale augmente, afin de la faire démouiller. Ainsi, Tanyeli \textit{et al.}~\cite{tanyeli2013effect} remarquent qu'après le démouillage d'un film d'argent de 12~nm à 300~$^\circ$C coexistent des petites particules (assimilées à des demi-sphères de rayon 13~nm) avec des plus grosses (57~nm), tandis que l'on n'observe qu'une seule population de particules à 67~nm de rayon à 500~$^\circ$C. Morawiec \textit{et al.}~\cite{morawiec2013self} procèdent à des recuits de couches d'argent à des températures allant jusqu'à 500~$^\circ$C pour des couches d'épaisseur initiale comprise entre 5 et 25~nm. Ils observent (contrairement à Tanyeli \textit{et al.}) que la taille des particules dépend uniquement de l'épaisseur initiale de la couche, non de la température de recuit (cf. figure~\ref{morawiecSizeThickness} de la page~\pageref{morawiecSizeThickness}). Ils remarquent en revanche que la morphologie des particules obtenues peut varier~: des petites particules régulières, des particules en asticot ou un mélange de deux populations de particules de tailles très différentes (voir la figure~\ref{morawiecShapes} de la page~\pageref{morawiecShapes}).\par
+\begin{figure}[!p]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{morawiecSizeThickness}
+	\caption{Évolution de la taille des particules après démouillage en fonction de l'épaisseur initiale de la couche (Ag/SiO$_2$). Les symboles vides représentent la taille des petites particules lorsque la population en taille est bimodale. Issu de~\cite{morawiec2013self}.}
+	\label{morawiecSizeThickness}
+\end{figure}
+\begin{figure}[!p]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{morawiecShapes}
+	\caption{Diagramme montrant la forme des particules obtenues par démouillage, en fonction du temps de recuit et de l'épaisseur initiale (Ag/SiO$_2$). Type F~: démouillage partiel. Type I~: particules en asticots. Type S~: particules de taille et forme régulières. Type D~: deux populations de particules. Issu de~\cite{morawiec2013self}.}
+	\label{morawiecShapes}
+\end{figure} 
+Morawiec \textit{et al.}~\cite{morawiec2013self} supposent qu'ils ont atteint l'état final après leur recuit, mais ne précisent pas le temps de recuit dans leur travaux. Cependant, de la même manière que la température de recuit voit son effet modifié par l'épaisseur initiale, le temps de recuit est également un paramètre important à prendre en compte. Finalement, il convient de considérer trois paramètres~: l'épaisseur initiale de la couche, la température de recuit et le temps de recuit. Une action sur n'importe lequel de ces paramètres constitue une forme de contrôle du démouillage.\par 
+
+\paragraph*{Remarque~:} Un démouillage partiel (type F de la figure~\ref{morawiecShapes}) peut aussi avoir des propriétés optiques intéressantes~\cite{morawiec2013self, kunwar2016ag}. Pour une épaisseur donnée, on l'obtient plus facilement en limitant la température ou la durée du recuit.\par 
+
+	\subsection{Mode de chauffage de la couche}
+Un four ou une platine chauffante sont usuellement employés pour porter les échantillons à haute température. Kalfagiannis \textit{et al.}~\cite{kalfagiannis2016selective} proposent une synthèse de particules en illuminant la couche avec un laser. L'échauffement est alors issu de l'absorption d'énergie lumineuse. Le réglage de la fluence permet de contrôler la taille des particules et la distance entre elles. À plus forte puissance, le laser permet également de dépasser le point de fusion ; le démouillage liquide donne lieu à des états finaux différents~\cite{trice2007pulsed}. L'emploi du laser peut se faire même dans des empilements~\cite{siozios2015sub}. Makarov \textit{et al.}~\cite{makarov2016controllable} emploient un laser pour graver et faire démouiller simultanément une couche d'or, permettant l'obtention d'un réseau de particules.\par 
+Le chauffage par micro-ondes a également été étudié~\cite{panagiotopoulos2015self}, ainsi qu'avec des rampes ultra-rapides~\cite{yu2016structural}. Cependant, ces modes de chauffage alternatifs n'ont pas été comparés aux modes usuels, et un seul jeu de paramètres a été employé dans les études citées~: il ne nous est pas possible de conclure quant à leur influence sur la morphologie.\par 
+
+	\subsection{Modification après dépôt de la couche métallique}
+Un autre stratégie consiste à modifier la couche métallique après son dépôt. La déformation par embossage de cette couche permet d'organiser la structure obtenue par démouillage~\cite{yoshino2012effects}. Mizsei et Lantto~\cite{mizsei2001situ} ont montré qu'il est possible de favoriser la création de trous à certains endroits précis en y exerçant une contrainte grâce à une pointe AFM. Un étude comparable a été réalisée par Kosinova \textit{et al.}~\cite{kosinova2017indentation} par indentation. Il semble que le démouillage ne soit pas seulement induit par une déformation locale de la couche, mais également par une réorganisation cristalline autour des indentations. Cette réorganisation est induite par des contraintes mécaniques.\par 
+Notons enfin que l'ajout de couches au-dessus de la couche métallique rend son démouillage beaucoup plus lent ; il faut chauffer à plus haute température lorsque la couche est recouverte~\cite{thompson2012solid}. Recouvrir la couche métallique est donc en soi une manière de contrôler le démouillage.\par 
+
+	\subsection{Modification de la nature du substrat}
+	\label{sNatureSubstrat}
+Nous avons souligné la multitude de systèmes étudiés dans la section 2). Pour une même couche métallique, la nature du substrat est déterminante pour déterminer la morphologie du démouillage, ceci constitue donc une forme de contrôle. Tanyeli \textit{et al.}~\cite{tanyeli2013effect} ont étudié le démouillage de l'argent sur Si, Si$_3$N$_4$, SiO$_2$, ITO (Indium Tin Oxide), et AZO (Aluminium Zinc Oxide, qui est du ZnO dopé Al). Même avec une couche initiale de même épaisseur (12~nm) et des conditions de recuit identiques, ils observent après démouillage des populations de particules différentes selon le substrat, comme par exemple sur ITO et AZO (voir figure~\ref{tanyeliSubstrateSize} de la page~\pageref{tanyeliSubstrateSize}). Sur AZO, la population finale de particules est centrée autour d'une valeur plus élevée et la distribution est plus large que sur ITO.\par 
+L'épitaxie joue un rôle extrêmement important à cet égard~\cite{thompson1990grain, leroy2016control}. Outre la plus grande stabilité de la couche métallique lorsqu'elle est épitaxiée (comme Ag/ZnO), la présence d'orientations cristallines spécifiques permet d'obtenir des structures variées. Sur la figure~\ref{singleCrystalControl} de la page~\pageref{singleCrystalControl}, des monocristaux de Ni, épitaxiés sur un substrat de MgO monocristallin, démouillent et adoptent des morphologies différentes après le démouillage. Ceci est dû au fait que l'orientation des bords carrés est variable, alors que l'orientation cristalline ne l'est pas (car imposée par le substrat). Ainsi, modifier l'inclinaison des bords d'un monocristal par rapport à son orientation cristaline permet de changer la morphologie obtenue par démouillage.\par 
+Dans une autre approche, Farzinpour \textit{et al.}~\cite{farzinpour2012altering} étudient le démouillage de l'or sur une couche sacrificielle d'antimoine, qui se sublime au fur et à mesure que l'or démouille. Plus cette couche d'antimoine est épaisse, plus les particules d'or finales sont grosses. Ceci est dû à deux phénomènes en compétition~: l'antimoine stabilise la couche d'or mais se sublime. Cette sublimation se fait uniquement lorsque la couche est percée~; la morphologie dépend davantage des points initiaux de sublimation que du démouillage de la couche d'or.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{tanyeliSubstrateSize}
+	\caption{Images MEB et analyse des populations en taille de particules d'argent obtenues par démouillage sur AZO ou ITO. Épaisseur initiale~: 12~nm. Issu de~\cite{tanyeli2013effect}.}
+	\label{tanyeliSubstrateSize}
+\end{figure} 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{singleCrystalControl}
+	\caption{Démouillage de monocristaux de Ni de 120 nm d'épaisseur, en fonction de leur orientation cristalline. Image extraite de~\cite{ye2011templated}.}
+	\label{singleCrystalControl}
+\end{figure} 
+
+	\subsection{Texturation du substrat}
+	\label{sControleBiblio}
+Un approche originale consiste à mettre en forme le substrat (texturation) avant le dépôt de la couche métallique. La texture du substrat contraint le démouillage pendant le recuit.\par  
+La première étude proposant ce procédé est celle de Giermann et Thompson~\cite{giermann2005solid, giermann2011requirements}. Leur méthode consiste à procéder au démouillage d'une couche initiale continue sur un substrat de silicium dont la surface présente un réseau de trous en forme de pyramides inversées (obtenues par lithographie électronique). Le résultat de cette expérience est présenté sur la figure~\ref{giermannControl}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.4\textwidth]{giermannControl}
+	\caption{Démouillage d'une couche d'or sur un substrat texturé. Image issue de~\cite{giermann2005solid}.}
+	\label{giermannControl}
+\end{figure} 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{giermannTypes}
+	\caption{Démouillage d'une couche d'or sur un substrat texturé par un réseau carré de pyramides inversées de 175 nm de période. a) couche de 21 nm, mésas étroites~: type \og dedans\fg, b) couche de 16 nm, mésas larges~: type \og mélangé\fg, c) couche de 21 nm, mésas larges~: type \og dehors\fg. Images issues de~\cite{giermann2011requirements}.}
+	\label{giermannTypes}
+\end{figure} 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{schemaGeometrie}
+	\caption{Paramètres géométriques employés dans nos travaux. $P$ désigne la période, $m$ la largeur de la mésa, $l$ la largeur de la base de la pyramide et $d$ la profondeur.}
+	\label{schemaGeometrie}
+\end{figure} 
+Sur cette figure, nous pouvons observer que les particules d'or sont situées à l'intérieur des pyramides. Ceci assure une très grande organisation spatiale~: les particules suivent le réseau imposé par les pyramides. Le principe du démouillage sur une surface texturée a été employé dans différentes études postérieures. Par exemple, Oh \textit{et al.}~\cite{oh2009cobalt} reproduisent ces travaux avec du cobalt. La texture peut être modifiée, par exemple en considérant des lignes plutôt que des trous pyramidaux~\cite{petersen2008dewetting}, ou même des tranchées séparant des domaines plans~\cite{yoshino2012effects}. Altomare \textit{et al.}~\cite{altomare2016templated} utilisent ce principe pour produire des nanoparticules d'or de petite taille pour de la photocatalyse dans des trous tubulaires. L'utilisation de particules de polymère ou de silice organisées, soit comme masque pour texturer la sous-couche~\cite{yang2011template}, soit comme texture~\cite{wang2016thermal} relève également de la même approche.\par 
+
+		\subsubsection{Modèle de Giermann}
+Nous allons étudier plus en détail les possibilités de cette méthode, telles que définies par Giermann et Thompson.\par 
+La première étude de démouillage sur une surface texturée a été publiée en 2005~\cite{giermann2005solid} et a été complétée par une seconde, parue en 2011~\cite{giermann2011requirements}. Dans cette seconde étude, une grande attention a été portée aux différentes configurations des structures démouillées obtenues par cette méthode. Trois cas typiques ont été identifiés (voir la figure~\ref{giermannTypes}). Le premier type, \og dedans \fg, est obtenu par démouillage d'une couche de 21~nm sur un réseau carré de pyramides de 175~nm de pas. Dans cette configuration, toutes les particules sont dans les trous. Le second type, \og mélangé \fg, est obtenu sur un substrat dont les mésas sont plus larges (c'est-à-dire le plateau séparant deux pyramides), avec une couche plus fine (16~nm). Certaines particules sont au fond des trous, mais d'autres sont simplement posées à la surface, sans interagir avec la texture. Enfin, le troisième cas, \og dehors \fg, est obtenu avec une couche de 21~nm, mais des mésas de pyramides beaucoup plus larges. Les particules sont beaucoup plus grosses et ne tiennent pas compte de la texture.\par 
+Pour expliquer ces trois types, Giermann et Thompson ont proposé un modèle fondé sur les paramètres géométriques du système, définis sur la figure~\ref{schemaGeometrie}. $P$ désigne la période du réseau, $l$ désigne la largeur de la base, $d$ désigne la profondeur et $m$ la largeur de la mésa.\par 
+Le volume de la pyramide est~:
+\begin{equation}
+\dfrac{1}{3}dl^2,
+\end{equation}
+et le volume de la couche contenu dans une période est~:
+\begin{equation}
+hP^2,
+\end{equation}
+avec $h$ son épaisseur. Pour délimiter les différents types de démouillage, Giermann définit des paramètres adimensionnés~: le rapport $h/d$ et le rapport $m/P$. Ces rapports sont tracés dans un repère, respectivement sur l'axe des ordonnées et l'axes des abscisses (voir figure~\ref{giermannDiagramme}). Giermann postule que pour être dans le régime \og dedans \fg, il faut que le volume de la couche n'excède pas le volume des pyramides. Sur le graphe, la ligne délimitant l'égalité des volumes est la courbe d'équation $3y = 1 - 2x + x^2$, tracée en bleu. Elle sépare les domaines correspondant aux structures démouillées de type \og dedans\fg{} (zone bleue) de celles de type \og mélangé\fg{} ou \og dehors\fg.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.3\textwidth]{giermannShapePit}
+	\caption{Schéma explicatif de l'orientation des particules d'or par rapport au substrat pour une particule localisée dans un trou en forme de pyramide inversée. Issu de~\cite{giermann2011requirements}.}
+	\label{giermannShapePit}
+\end{figure} 
+La limite entre les cas \og mélangé \fg{} et \og dehors \fg{} a ensuite été estimée par analyse numérique~: l'évolution de la surface du métal a été modélisée par l'équation~\ref{eDiffFlux}. Si la surface du métal modélisée entre en contact avec le substrat au niveau du coin des mésas, la structure finale attendue est de type \og mélangé \fg. Elle prévoit qu'une augmentation du ratio $m/P$ tend à augmenter la probabilité de se trouver dans une configuration de type \og mélangé \fg.\par 
+
+\paragraph*{Remarque~:} Cette structuration apportée par la texture de la surface concerne également l'orientation cristalline des particules. En effet, Giermann observe que l'orientation hors-plan dominante est (100), alors qu'elle est (111) sur une surface plane. Comme schématisé sur la figure~\ref{giermannShapePit}, cela provient du fait que la texture perpendiculaire à la surface correspond à des orientations (111) du substrat gravé de Si conduisant à une \og épitaxie géométrique\fg{} qui donne lieu à une orientation (100) dans le plan global (non incliné) du substrat.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{giermannDiagramme}
+	\caption{Diagramme de zone selon Giermann et Thompson~\cite{giermann2011requirements}. La limite représente l'égalité des volumes, au-delà de laquelle l'organisation des particules n'est pas possible.}
+	\label{giermannDiagramme}
+\end{figure} 
+		\subsubsection{Travaux préliminaires du laboratoire SVI}
+Lorsque l'on s'intéresse aux propriétés optiques des systèmes obtenus par cette méthode, la transparence du substrat est cruciale. Giermann et Thompson employaient du silicium pour obtenir par photolithographie les réseaux de pyramides inversées. Cependant, le silicium n'est pas transparent dans la gamme visible. La technologie de nano-impression permet de contourner cet obstacle en reproduisant la texture sur des substrats transparents.\par 
+La nano-impression a été développée par Chou \textit{et al.}~\cite{chou1996nanoimprint} et a été adaptée par Le Bris \textit{et al.}~\cite{le2014self}. Il repose sur l'utilisation d'un polymère, le PDMS (polydiméthylesiloxane), qui est réticulé en contact avec une surface d'un moule déjà gravé (appelé \og master \fg), dont il conserve la forme en négatif. Ce PDMS sert ensuite de moule pour l'embossage de couches sol-gel. Ce procédé a été employé au laboratoire SVI pour texturer des couches de silice sur du verre~\cite{dubov2013superhydrophobic}. De plus amples détails seront fournis dans la partie expérimentale (chapitre 2).\par 
+Le Bris \textit{et al.}~\cite{le2014self} ont procédé au démouillage de couches d'argent sur les textures de Giermann et Thompson reproduites par nano-impression. L'intérêt de cette approche est de disposer d'une organisation de nanoparticules métalliques sur un substrat transparent. La méthode permet non seulement de mesurer les propriétés optiques du système, mais aussi de copier le master un grand nombre de fois, à moindre coût. Un exemple de réseau de particules ainsi obtenu est présenté sur la figure~\ref{lebrisOrganisation}.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{lebrisOrganisation}
+	\caption{Image MEB d'une couche d'argent de 46 nm démouillée sur un substrat de SiO$_2$ texturé par la méthode de nano-imprint~\cite{le2014self}.}
+	\label{lebrisOrganisation}
+\end{figure}
+Sur cette figure, on peut observer une organisation des particules d'argent au sein de la texture, qui correspond au type \og dedans \fg. Cependant, le ratio $V_{couche}/V_{pyr} = 1,3$, ce qui est donc supérieur à la limite imposée par le modèle de Giermann et Thomspon. Cela signifie que les particules s'organisent au sein des trous alors que leur volume est plus grand que les trous supposés les contenir.\par 
+
+\subsection{conclusion}
+En définitive, il existe plusieurs techniques pour contrôler le démouillage~:
+\begin{itemize}
+\item modifier les paramètres de démouillage~: épaisseur initiale de la couche, durée ou température
+de recuit ;
+\item changer de mode de chauffage ;
+\item modifier la couche métallique après son dépôt ;
+\item modifier le substrat, soit en changeant de nature chimique, soit en le texturant.
+\end{itemize}
+Nous avons sélectionné cette dernière approche~; c'est-à-dire procéder au démouillage sur une surface texturée. Nous avons cependant observé au cours d'expériences préliminaires que les modèles de la littérature ne décrivent pas les résultats obtenus dans notre système. Un des objectifs de ce travail de thèse a donc été d'en comprendre la raison.\par
+
+\section{Réponse optique des structures métalliques}
+La motivation qui nous pousse à vouloir contrôler le démouillage réside dans la réponse optique des systèmes obtenus, qui peut être modulée en fonction de l'organisation spatiale et la taille des objets formés. Cette réponse est d'intérêt dans de nombreuses applications, qui touchent notamment aux cellules photovoltaïques et à la fabrication d'éléctrodes transparentes (nanogrille d'argent). Dans le premier cas, on souhaite pour cela exalter l'absorption optique au travers de résonances plasmon, à une longueur d'onde choisie.\par 
+La technique de NanoImprint laisse envisager la maîtrise à grande échelle de structures organisées répondant à ces besoins. 
+Dans cette section, nous allons passer en revue de façon succincte les propriétés optiques d'objets métalliques.  La \og plasmonique\footnote{On peut définir la plasmonique comme étant le domaine d'étude et d'applications technologiques faisant intervenir l'interaction de la lumière avec des métaux, souvent à des échelles nanométriques.} \fg{} sera traitée dans les cas simples au début, puis dans des cas plus complexes. \par 
+	\subsection{Fonction diélectrique des métaux}
+La réponse optique d'un matériau se caractérise notamment par sa fonction diélectrique $\varepsilon(\omega)$~\cite{jacksonbook, palikbook}, où $\omega$ est la pulsation de l'onde électromagnétique. Pour un métal, cette fonction diélectrique est fortement impactée par la liberté qu'ont les électrons de se déplacer, interagissant de ce fait avec la lumière. Nous présentons dans un premier temps une description très basique du comportement des électrons.
+		\subsubsection{Modèle de Drude}
+Le modèle de Drude est une description dynamique du mouvement des électrons (issu de la mécanique newtonienne). Le mouvement d'un électron de masse $m$ et de position $x$ est décrit de la manière suivante~:
+\begin{equation}
+m\dfrac{d^2\textbf{x}}{dt^2} = \textbf{F}-\Gamma\dfrac{d\textbf{x}}{dt},
+\label{eMouvement}
+\end{equation}
+sachant que~:
+\begin{itemize}
+\item $v = \dfrac{d\textbf{x}}{dt} $ est sa vitesse~;
+\item $\textbf{F} = q\cdot(\textbf{E}+\textbf{v}\wedge \textbf{B})$ est la force électromagnétique qu'il subit, avec $q$ la charge, $\textbf{E}, \textbf{B}$ les champs électrique et magnétique~;
+\item $\Gamma$ est un coefficient de frottement.
+\end{itemize}
+On écrit en formalisme complexe le champ $\textbf{E}$ et la position $\textbf{x}$ sous la forme $\textbf{E}=\textbf{E}_0e^{-i\omega t}$ et $\textbf{x}=\textbf{x}_0e^{-i\omega t}$. L'équation~\ref{eMouvement} devient donc~:
+\begin{equation}
+-m\omega^2 \textbf{x}-i\Gamma\omega\textbf{x} = -e\textbf{E},
+\end{equation}
+soit
+\begin{equation}
+\textbf{x} = \dfrac{e}{m\omega^2+i\omega\Gamma}\textbf{E}.
+\end{equation}
+En posant $\textbf{P} = -ne\textbf{x}$ ($\textbf{P}$ étant le champ de polarisation, $n$ la densité d'électrons), on obtient~:
+\begin{equation}
+P = \dfrac{-ne^2}{m\omega^2+i\omega\Gamma}\textbf{E}
+\end{equation}
+Pour faire intervenir la fonction diélectrique, il convient de considérer le champ de déplacement $\mathbf{D} = \epsilon_0 \mathbf{E} + \mathbf{P}	$~:
+\begin{equation}
+\textbf{D} = \varepsilon_0\left(1-\dfrac{\omega_p^2}{\omega^2+i\omega\gamma}\right)\textbf{E},
+\end{equation}
+où la fréquence plasma est définie comme $\omega_p^2 = ne^2/\varepsilon_0m$ et en posant $\gamma = \Gamma/m$. La fréquence plasma est caractéristique du métal, elle décrit la fréquence propre des oscillations du nuage d'électrons soumis au rappel exercé par les noyaux chargés positivement. Par définition, la constante diélectrique vaut~: $\textbf{D} = \varepsilon_0\varepsilon \textbf{E}$. On en déduit donc que~:
+\begin{equation}
+\varepsilon(\omega) = 1-\dfrac{\omega_p^2}{\omega^2+i\omega\gamma}.
+\end{equation}
+L'allure de la fonction diélectrique est représentée sur la figure~\ref{drudeDielectric}. La partie réelle $\varepsilon_1$ et imaginaire $\varepsilon_2$ sont représentées séparément. Il y a une divergence lorsque $\omega$ tend vers 0~: $\varepsilon_1$ tend vers $-\infty$ et $\varepsilon_2$ tend vers $+\infty$.\par 
+Par ailleurs, $\gamma$ est rélié au libre parcours moyen des électrons $\Lambda = \hbar v_F/\gamma$ qui est la distance moyenne que l'électron peut parcourir sans collision. $v_F$ est la vitesse des électrons au niveau de Fermi, c'est-à-dire ceux concernés par le modèle de Drude. Pour indication $\Lambda$ est de l'ordre de quelques nanomètres dans les métaux à température ambiante.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.75\textwidth]{drudeDielectric}
+	\caption{Allure de la fonction diélectrique, selon le modèle de Drude.}
+	\label{drudeDielectric}
+\end{figure}
+\paragraph*{Remarque~:} Lorsque $\omega\gg\omega_p$, les variations du champ sont trop rapides pour que les électrons puissent les suivre. On prend généralement en compte ce phénomène en écrivant~:
+\begin{equation}
+\varepsilon(\omega) = \varepsilon_\infty-\dfrac{\omega_p^2}{\omega^2+i\omega\gamma}.
+\end{equation}
+		\subsubsection{Transitions interbandes}
+Aux hautes énergies, un partie du rayonnement pourra être absorbée au travers d'excitations électroniques. En théorie des bandes, on parlera de \og transitions interbandes \fg. Ces transitions peuvent être ajoutées relativement aisément dans le modèle de Drude en ajoutant à~\ref{eMouvement} un terme de rappel~:	
+\begin{equation}
+m\dfrac{d^2\textbf{x}}{dt^2}+\Gamma\dfrac{d\textbf{x}}{dt}+m\omega_i\textbf{x} = \textbf{F}.
+\end{equation}
+Il convient d'ajouter à l'équation autant de contributions $\omega_i$ que nécessaire. Ces contributions impactent la fonction diélectrique du gaz d'électrons libres sous la forme de composantes
+lorentziennes du type~:
+\begin{equation}
+\varepsilon(\omega) = \dfrac{A_i}{\omega_i^2-\omega^2-i\gamma_i\omega}
+\end{equation}
+L'allure d'une contribution lorentzienne est représentée sur la figure~\ref{lorentzDielectric} pour deux valeurs de $\omega_i$. La première, $\omega_a$, correspond à une pulsation standard d'interbandes (\textit{e.g.} 3,9~eV pour l'argent~\cite{oates2005evolution}), tandis que la seconde, $\omega_a/100$ illustre ce qu'il se produit lorsqu'on fait tendre $\omega_i$ vers 0. La présence d'un pic dans la partie imaginaire $\varepsilon_2$ traduit physiquement une absorption. La partie réelle $\varepsilon_1$ marque un maximum suivi d'un minimum autour de la pulsation de résonance. Lorsque $\omega_i$ tend vers 0, l'allure de la lorentzienne est très semblable à un modèle de Drude. Nous exploiterons cette similarité dans nos travaux d'ellipsométrie (voir chapitre 3). \par
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.75\textwidth]{lorentzDielectric}
+	\caption{Allure de la fonction diélectrique d'une contribution lorentzienne. L'allure est
+présentée pour deux valeurs de $\omega_i$ ($\omega_i=\omega_a$, choisi arbitrairement, et $\omega_i=\omega_a/100$).}
+	\label{lorentzDielectric}
+\end{figure}
+Pour l'argent, la fonction diélectrique est représentée sur la figure~\ref{argentDielectric}. On observe bien un comportement de type Drude aux basses énergies, et des composantes de type interbandes à partir de 3,9~eV. Ces caractéristiques font de l'argent un très bon candidat pour les propriétés plasmoniques décrites ci-après.\par
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.75\textwidth]{argentDielectric}
+	\caption{Fonction diélectrique de l'argent, selon le données fournies par Woollam Co.~\cite{herzinger1998ellipsometric}.}
+	\label{argentDielectric}
+\end{figure}
+	\subsection{Effets de confinement~: réponse d'une particule dans un milieu homogène}
+Après avoir vu l'allure de la fonction diélectrique dont la partie imaginaire gouverne l'absorption volumique, il faut souligner que si l'object métallique a une taille réduite le déplacement des électrons est confiné. Cela conduit à des absorptions spécifiques liées à la forme de l'objet, appelées résonances plasmon~\cite{maier2007plasmonics,kreibigbook}.\par 
+Pour commencer, nous allons traiter d'un cas dont la solution analytique est connue~: des petites particules sphériques dans un milieu homogène. Puis nous nous intéresserons à des systèmes qui s'écartent de ce cas idéal, décrit par un modèle \og simple \fg.\par 
+		\subsubsection{Plasmons de surface localisés (LSP) dans des particules métalliques}
+Lorsque la taille $D$ d'une particule est négligeable devant la longueur d'onde $\lambda$, le champ électrique qui y règne peut être considéré comme homogène, et le déplacement des électrons peut être considéré comme un dipôle, dans le champ lointain. C'est l'approximation quasi-statique. Nous allons voir le développement mathématique de cette hypothèse.\par 
+Considérons le système représenté sur la figure~\ref{schemaPlasmons}~: une particule de rayon $a\ll \lambda$ illuminée
+par un champ $\textbf{E}$, de fonction diélectrique $\varepsilon(\omega)$, entourée par un milieu extérieur de
+fonction diélectrique constante $\varepsilon_m$.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{schemaPlasmons}
+	\caption{Notations employées pour décrire les plasmons de surface localisés.}
+	\label{schemaPlasmons}
+\end{figure}
+Dans l'approximation quasi-statique, l'équation qui décrit ce système est l'équation de Laplace, pour le potentiel électrostatique $\Phi$~:
+\begin{equation}
+\Delta\Phi = 0,
+\end{equation}
+avec $E = -\nabla\Phi$. Les solutions de cette équation sont exprimées en fonction des variables $r$ et $\theta$, ainsi que des polynômes de Legendre. Les conditions aux limites donnent finalement la solution suivante~:
+\begin{equation}
+\Phi = - E_0r\cos \theta + \dfrac{\textbf{p}\cdot \textbf{r}}{4\pi\epsilon_0\epsilon_mr^3},
+\end{equation}
+avec
+\begin{equation}
+\textbf{p}= 4\pi \varepsilon_0 \varepsilon_m a^3 \dfrac{\varepsilon-\varepsilon_m}{\varepsilon+2\varepsilon_m}\textbf{E}.
+\end{equation}
+$\textbf{p}$ est le dipôle induit, qui permet d'introduire la polarisabilité $\alpha$ en posant $\textbf{p} = \varepsilon_0 \varepsilon_m\alpha \textbf{E}$.
+\begin{equation}
+\alpha(\omega) = 4\pi a^3\dfrac{\varepsilon(\omega)-\varepsilon_m}{\varepsilon(\omega)+2\varepsilon_m}.
+\end{equation}
+La polarisabilité est la quantité clé, dans l'approximation quasi-statique, qui permet de décrire la manière dont les particules métalliques interagissent avec la lumière. Remarquons qu'il y a une résonance lorsque $\varepsilon+2\varepsilon_m=0$, ce qui est plus usuellement écrite $\varepsilon_1(\omega) = -2\varepsilon_m$, en supposant que les parties imaginaires sont petites et $\varepsilon_m$ constante. Cette égalité est appelée la \textbf{condition de Fröhlich} pour la sphère, correspondant à l'excitation des résonances plasmon localisées (Localized Surface Plasmon Resonances, LSPR). Physiquement, le nuage électronique excité par l'onde électrique subit une force de rappel par le milieu continu.  L'absorption de la lumière est due au terme de déphasage.\par 
+L'effet de l'environnement apparaît au travers de $\varepsilon_m$, qui déplace la résonance. Par exemple, une même particule d'argent dans l'air $(\varepsilon_m = 1)$ aura une résonance à plus haute énergie que dans la silice ($\varepsilon_m = 1,45$, mais cette valeur typique peut varier en fonction de la densité de la silice considérée).\par  
+On peut définir $\sigma_{dif}$ et $\sigma_{abs}$, les sections efficaces de diffusion ou d'absorption. Elles sont définies comme le rapport entre la puissance diffusée  ou absorbée par la particule et l'irradiance de l'onde incidente. Ces sections efficaces sont parfois normalisées par la section de la particule ($\pi a^2$) pour obtenir les efficacités de diffusion et d'absorption, $Q_{dif}$ et $Q_{abs}$. Dans le cadre de l'approximation quasi-statique, on a~:
+\begin{equation}
+Q_{dif}=\dfrac{k^4}{6\pi}|\alpha|^2 \hspace{2cm} Q_{abs} = k \mathrm{Im}(\alpha),
+\end{equation}
+avec $k=2\pi/\lambda$ le nombre d'onde. Pour des particules plus petites que la longeur d'onde $ a \ll \lambda$, l'absorption domine car $\sigma_{abs} \sim a/\lambda  \ll \sigma_{dif} \sim (a/\lambda)^4$. Pour l'illustrer, $Q_{dif}$ et $Q_{abs}$ ont été calculés pour une particule de 10~nm de rayon, avec un modèle de Drude modélisant l'argent~\cite{yang2015optical} (voir figure~\ref{QvsSize}-a). L'évolution des intensités maximales en fonction de la taille de la particule est présentée sur la figure~\ref{QvsSize}-b. On observe bien une résonance pour les deux facteurs, mais également que $Q_{abs}$ domine pour les petites tailles, tandis que $Q_{dif}$ domine pour les grandes tailles. \par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{Qabs_dif_10nm}\includegraphics[width = 0.5\textwidth]{Q_rayon}
+	\caption{Gauche: $Q_{dif}$ et $Q_{abs}$ calculés pour une particule de rayon 10~nm dont la fonction diélectrique est un modèle de Drude adapté à l'argent~\cite{yang2015optical}. Droite~: évolution des intensité des résonances de $Q_{dif}$ et $Q_{abs}$ en fonction du rayon de la particule.}
+	\label{QvsSize}
+\end{figure}
+
+\paragraph*{Remarque~:} Le cas des particules ellipsoïdales a également été traité dans la littérature~\cite{bohren1983surface}. Il en résulte que la polarisabilité prend une valeur différente suivant l'axe elliptique considéré, au travers du facteur de \og dépolarisation \fg. L'anisotropie de forme permet  ainsi d'observer des résonances à des fréquences différentes. De la même manière, facetter ou tronquer la particule et/ou la mettre en contact avec un substrat brise la symétrie du cas sphérique et donne lieu à des modes de résonances dits \og multipolaires \fg{} à des fréquences spécifiques~\cite{bedeauxbook,lazzari02d,lazzari14b}. Les fréquences dépendent de constantes diélectriques des matériaux mais la nature des modes uniquement de la géométrie de l'objet. Nous rediscuterons de ces effets par la suite.\par 
+\conclusion{La réponse optique d'une particule métallique dépend uniquement de sa polarisabilité dans l'approximation quasi-statique. La section efficace d'absorption domine celle de diffusion.}
+
+	\subsubsection{Au-delà de l'approximation quasi statique}
+\paragraph*{Théorie de Mie~:}
+Dans le paragraphe précédent, nous avons présenté les solutions analytiques existantes pour un cas simple~: une petite particule ($a\ll\lambda$), de forme sphérique ou ellipsoïdale plongée dans un milieu homogène. La taille de la particule permettait de se placer dans le cadre de l'approximation quasi-statique. Comme nous l'avons vu dans la section~C.\ref{sControleBiblio}, les tailles typiques que l'on obtient pour nos particules sont de l'ordre de plusieurs centaines de nanomètres, comparables aux longueurs d'onde dans le visible.\par 
+Dans ces conditions, on peut observer un retard de polarisation (variations du champ au sein de la particule), ainsi que l'émergence de nouveaux modes qui ne sont pas des dipôles (quadrupolaire ou d'ordre supérieur). Mie~\cite{mie1908beitrage} développa une théorie qui implique un développement en série multipolaire de la solution exacte retardée pour une une sphère~\cite{kreibig2013optical, bohren1983surface}. Ce développement en série, pour être calculé, nécessite un traitement informatique.\par 
+\paragraph*{Simulations numériques~:}
+Lorsqu'on s'écarte de la forme sphérique/sphéroïdale, le traitement analytique de type Mie devient impossible. Il existe plusieurs méthodes pour calculer la réponse optique d'un système de géométrie donnée~; elles diffèrent par leur manière d'approcher le problème. Nous en donnons quelques exemples. La méthode DDA (Discret Dipole Approximation) repose sur la division de la structure métallique en une multitude de dipôles qui interagissent entre eux~\cite{draine1994discrete}. La méthode RCWA (Rigorous Coupled Wave Analysis) étudie l'interaction de la lumière avec une surface diffractante (donc périodique)~\cite{moharam1981rigorous}. Elle fait appel à la décomposition de l'espace réciproque en séries de Fourier. On peut également modéliser le système par éléments finis ; séparer l'espace en un maillage discret, et résoudre les équations de l'évolution de l'onde pour chaque boite en fonction de ses voisines~\cite{jin2015finite}.\par 
+Toutes ces méthodes sont des manières d'approcher la solution par des calculs numériques dans un cadre d'hypothèse de travail. Elle impliquent une étude précise de la convergence de la solution, mais également une comparaison, si possible, avec des résultats expérimentaux.\par 
+
+		\subsubsection{Intérêts des systèmes métalliques de taille finie}
+Les particules métalliques peuvent permettre d'augmenter l'efficacité de cellules photovoltaïques~\cite{morawiec2013self, tan2013improved, tan2013micro, schuster2015plasmonic}. Le but est de modifier $\sigma_{dif}$ et $\sigma_{abs}$ dans la cellule~: augmenter la diffusion permet de prolonger le trajet optique dans la cellule et d'augmenter l'absorption par des LSP, qui produisent davantage de paires électrons-trous dans la phase active~\cite{atwater2010plasmonics}.\par 
+Morawiec \textit{et al.}~\cite{morawiec2013self} étudient l'influence de la taille des particules d'argent obtenues par démouillage sur l'efficacité intégrée (sur tout le spectre visible) de diffusion. Les résultats sont présentés sur la figure~\ref{morawiecDiffusionSize}. On peut observer que plus la taille des particules est grande, plus l'efficacité de diffusion augmente.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{morawiecDiffusionSize}
+	\caption{Efficacité de diffusion intégrée sur le spectre optique de particules d'argent obtenues par démouillage, en fonction de leur taille moyenne. Issu de~\cite{morawiec2013self}.}
+	\label{morawiecDiffusionSize}
+\end{figure}
+D'autres voies d'application sont envisageables, comme les vitrages bas-émissifs, qui demandent de l'absorption ou de la réflexion exclusivement dans la gamme infrarouge (IR), ou bien la modification de la coloration d'un vitrage, qui demanderait de l'absorption spécifique dans la gamme visible.\par 
+
+\conclusion{L'interaction de la lumière avec un métal sous forme d'objets dont l'extension spatiale est limitée est différente de celle d'un métal massif. Cette réponse est connue de manière analytique pour des cas simples comme les particules sphériques dans l'approximation quasi-statique, dans un milieu homogène. En revanche, pour des particules de forme complexe, de grande taille ou dans un milieu non-homogène (comme sur un substrat), déterminer la réponse optique nécessite d'employer des méthodes spécifiques de résolution des équations de Maxwell. Ces mêmes paramètres sont également des moyens de contrôle en vue de possibles applications.\par}
+
+	\subsection{Étude de systèmes complexes}
+Nous allons étudier ici l'influence de certaines caractéristiques des particules sur leur réponse optique, lorsqu'elle ne rentrent pas dans le cadre de l'approximation quasi-statique. C'est bien le cas des particules obtenues par démouillage~: elles sont trop grandes pour être considérées comme ponctuelles, elles se situent à l'interface de deux milieux (substrat/air en général) et sont susceptibles d'interagir entre elles. Nous allons étudier ces différents aspects.\par 
+
+		\subsubsection{Particules entre deux milieux diélectriques}
+Royer \textit{et al.}~\cite{royer1987substrate} ont calculé la réponse théorique de particules ellipsoïdales aplaties dans différentes configurations~: dans le vide, dans du quartz ou sur un substrat de quartz. Pour le substrat de quartz, ils considèrent un indice effectif égal à la moyenne des deux indices des milieux homogène. Les résultats sont indiqués dans la figure~\ref{royerResonanceShift}. Le diamètre (ou le grand axe) des particules considéré par le calcul est de 40~nm.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{royerResonanceShift}
+	\caption{Position des pics de LSP de particules d'argent sphéroïdales, en fonction de leur rapport d'aspect R et du substrat. R=1 désigne une sphère et R=0 des disques plats. La ligne pointillée montre un calcul dans le vide, la ligne traitillée montre le calcul dans le quartz et la ligne solide correspond à des particules supportées. Les segments horizontaux montrent les variations expérimentales des positions des LSPR lorsqu'on recouvre des particules supportées par une couche de même indice que le substrat. Issu de~\cite{royer1987substrate}.}
+	\label{royerResonanceShift}
+\end{figure}
+Considérons en premier lieu R = 1 (cas d'une particule sphérique). Dans l'air, le pic de résonance est unique et se situe vers 350~nm. Dans le quartz, le pic de résonance est unique également et se situe vers 400~nm. Lorsque la particule est supportée, même si elle est sphérique, donne lieu à deux résonances en raison d'effets images dans le substrat~\cite{yamaguchi74}.\par 
+Si on déforme la particule en l'aplatissant, dans un milieu homogène, cela donne lieu à deux résonances (au lieu d'une). Un des résonances est décalée vers les faibles longueurs d'onde, tandis que l'autre est décalée vers les grandes longueurs d'onde. Quand la particule est supportée, elle a déjà deux résonances, même dans le cas sphérique (à cause des effets d'image). La déformation écarte encore davantage ces deux résonances.\par 
+Lorsque le substrat est caractérisé par $\varepsilon_{sub}$ et le superstrat\footnote{le superstrat est le milieu se trouvant au dessus de la particule, par opposition au substrat.} par $\varepsilon_{sup}$, l'indice effectif est en général pris comme étant~\cite{morawiec2013self}~:
+\begin{equation}
+\varepsilon_{eff} = \dfrac{\varepsilon_{sub}+\varepsilon_{sup}}{2}
+\end{equation}
+Des calculs réalisés par une méthode d'éléments finis sur des objets plasmoniques indiquent que cette hypothèse donne de bons résultats~\cite{miljkovic2012simulating}.\par 
+Si l'on se ramène au contexte du démouillage, le substrat joue donc un rôle important à deux titres~: à la fois dans l'état final de la structure métallique obtenue, mais aussi dans sa réponse optique. Ce double effet a été étudié par Tanyeli \textit{et al.}~\cite{tanyeli2013effect}. Ils ont procédé à la comparaison du démouillage de l'argent sur différents substrats (cf. section~\ref{sNatureSubstrat}), mais aussi de l'influence du substrat sur les propriétés optiques (voir figure~\ref{tanyeliSubstrateResonance}). Sur cette figure, nous observons que des particules de même taille ne présentent pas de LSPR à la même longueur d'onde lorsque le substrat varie. Notons que la LSPR pour des particules d'argent dont la taille est comprise entre 100 et 150~nm est située aux alentours de 450~nm. Ce pic correspond à celui décrit par Royer \textit{et al.}~\cite{royer1987substrate}, dont la position dépend de la forme de la particule~: à 400~nm lorsque le particule est sphérique, il se déplace vers le rouge lorsqu'elle est aplatie. Notons que ce dernier résultat a été obtenu par calcul pour des particules dont la taille était de 40~nm.\par  
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{tanyeliSubstrateResonance}
+	\caption{Position du pic de LSPR de particules d'argent obtenues par démouillage, en fonction de leur taille moyenne et du substrat. Issu de~\cite{tanyeli2013effect}.}
+	\label{tanyeliSubstrateResonance}
+\end{figure}
+		\subsubsection{Variation de la forme des particules}
+Nous venons de voir que la forme d'une particule influence la position des LSPR. Nous avons étudié le cas de particules éllipsoïdales, mais d'autres formes sont possible. Par exemple, le fait d'avoir des particules de type I (en asticot) ou de type S (sphériques, voir figure~\ref{morawiecShapes}) modifie la réponse optique~\cite{morawiec2013self, tan2013micro}. Murray \textit{et al.}~\cite{murray2007plasmonic} ont étudié des particules aux formes plus régulières, produites par lithographie par faisceau d'électrons (EBL). Ils ont en particulier comparé la réponse de particules en forme de disques, triangulaires ou en bâtonnet, comme représentés sur la figure~\ref{murrayShapeResonance}. Un bâtonnet présente deux pics~: à 450 et 875~nm. Un disque présente une seule résonance à 550~nm. Un triangle présente deux pics à 460 et 575~nm, qui sont décalés vers le rouge (475 et 650~nm) lorsque le triangle est plus gros.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{murrayShapeResonance}
+	\caption{Position du pic de LSP de particules d'argent obtenues par EBL (lithographie par faisceau d'électrons), en fonction de leur forme. Issu de~\cite{murray2007plasmonic}. La barre d'échelle indique 300~nm.}
+	\label{murrayShapeResonance}
+\end{figure}
+Le nombre de pics est influencé par le degré de symétrie du système~: la sphère n'en a qu'un, tandis que le bâtonnet en présente deux (une résonance longitudinale et une résonance transverse). En d'autres termes, la polarisabilité (plus précisément~: le tenseur de polarisabilité) n'est pas isotrope. Si le cas des sphéroïdes a été analytiquement étudié, la recherche de solution pour des particules dont la forme est plus complexe nécessitent des études numériques (et/ou expérimentales).\par 
+Chateau \textit{et al.}~\cite{chateau2015gold} étudient des particules d'or dont la forme est une bipyramide. En modifiant les conditions de synthèse de ces bipyramides, ils parviennent à faire varier leur rapport d'aspect. La position des pics en est modifiée~: plus la taille de l'objet est grande, plus la résonance est décalée vers le rouge. Ce principe peut s'exprimer, en termes généraux~: plus la taille du dipôle est grande, plus son énergie de résonance est faible. Par cette méthode, il parviennent à obtenir des résonances à grande longueur d'onde (1800~nm).\par 
+Notons de plus que les endroits où la surface métallique présente des points anguleux  sont les endroits où le champ électromagnétique peut se trouver exalté~\cite{miljkovic2012simulating} (effet de pointe bien connu en électrostatique). Cet effet est particulièrement intéressant s'il a lieu dans une couche active d'une cellule photovoltaïque~: il permet plus de conversion de lumière en paires électrons-trous.\par 
+
+		\subsubsection{Interaction entre particules et réseaux}
+Jusqu'ici, nous avons implicitement mis de côté les interactions possibles entre particules, qui pourtant peuvent affecter la réponse des objets. Même dans l'approximation quasi-statique, le dipôle excité dans une particule peut modifier le champ local perçu par sa voisine conduisant au premier ordre à un simple décalage fréquentiel par rapport à l'objet isolé~\cite{yamaguchi74}. Nous allons étudier ici la possibilité de ces interactions, et leur effet sur la réponse optique.\par 
+Maier~\cite{maier2007plasmonics} a réalisé des mesures de la position des LSPR sur des chaines de particules d'or de 50~nm de taille. Les résultats sont présentés sur la figure~\ref{maierGoldArrays}. En fonction de la polarisation de l'onde électrique (dans l'alignement des particules ou dans la direction orthogonale), le pic est décalé vers le bleu (mode transverse) ou vers le rouge (mode longitudinal). Cet effet est d'autant plus prononcé que la distance inter-particules est faible. Pour une distance de 100~nm, le décalage est de l'ordre de 5~nm. Si la lumière n'est pas polarisée, le décalage vers le rouge sera le plus conséquent~\cite{kinnan2010plasmon}.\par 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.85\textwidth]{maierGoldArrays}
+	\caption{Position des LSPR de particules d'or sphériques de 50 nm de taille disposées en ligne, en fonction de la distance $d$ qui les sépare. a) Image de la structure, b) mesures expérimentales et ajustement par une dépendance en $d^{-3}$. Issu de~\cite{maier2007plasmonics}.}
+	\label{maierGoldArrays}
+\end{figure}
+D'autres interactions plus prononcées ont été mises en évidence par Zou \textit{et al.}~\cite{zou2004narrow}. En étudiant des systèmes périodiques de particules d'argent, ils expriment la polarisabilité d'une particule de rayon $a$ dans un réseau comme étant~:
+\begin{equation}
+P = \dfrac{-A}{\omega - (\omega_p - \mathrm{Re}(S))+(i\gamma+\mathrm{Im}(S))}
+\end{equation}
+avec $\omega_p$ la pulsation de LSPR d'une particule isolée, $A = \dfrac{1}{2}\omega_pa^3$ et $S$ la \og somme des dipôles
+retardés \fg, qui s'exprime~:
+\begin{equation}
+S = \sum_{i\neq j}\left(\dfrac{(1--ikr_{ij})(3\cos^2\theta_{ij}-1)e^{-ikr_{ij}}}{r_{ij}^3} +\dfrac{k^2\sin^2\theta e^{-ikr_{ij}}}{r_{ij}}\right)
+\end{equation}
+La partie réelle de S détermine le déplacement de la LSPR, tandis que sa partie imaginaire détermine sa largeur. En réalisant des calculs pour des sphères d'argent de 50~nm en réseau, Zou \textit{et al.} obtiennent les réponses représentées sur la figure~\ref{zouLatticeShift}. On observe que les LSPR sont décalées vers le rouge lorsque la distance inter-particules augmente. Ce décalage en longueur d'onde est beaucoup plus important que dans le cas précédent (jusqu'à 200~nm de différence) et malgré des distances qui dépassent largement 100~nm.\par
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{zouLatticeShift}
+	\caption{Position des LSPR de particules d'argent sphériques de 50~nm de taille disposées en réseau hexagonal, en fonction de la distance qui les sépare. L'onde est en incidence normale. Issu de~\cite{zou2004narrow}.}
+	\label{zouLatticeShift}
+\end{figure}
+Enfin, une autre piste est étudiée par Kravets \textit{et al.}~\cite{kravets2008extremely}. Le fait que les particules soient en réseau donne lieu à un phénomène de diffraction. Que ce soit en réflexion ou en transmission, pour une longueur d'onde donnée, le réseau donnera lieu à des interférences constructives dans des directions spécifiques qui dépendent du réseau. Pour un réseau 1D illuminé en incidence normale, en considérant les ordres de diffraction dans le plan d'incidence, les directions et les longueurs d'onde sont reliées par l'équation~:
+\begin{equation}
+\sin\theta_m=\dfrac{m\lambda_m}{n_iP},
+\end{equation}
+avec $P$ la période du réseau, $n_i$ l'indice de l'air ou du substrat, $m$ un entier et $\theta_m$ l'angle auquel l'ordre de diffraction est observé. Les pics principaux sont attendus aux longueurs d'onde $\lambda_{m,air} = P sin \theta_m / m$ et $\lambda_{m,sub} = n_{sub}P sin\theta_m / m$.\par 
+On remarque que si $\lambda_{m,sub} = n_{sub}mP$, alors $\sin \theta_m = 1$~: la direction est confondue avec la surface du substrat. Dans cette configuration où l'ordre diffracté est d'incidence rasante, la lumière peut interagir avec les particules sur un chemin très long et donner lieu à des résonances nouvelles. C'est ce qu'ont observé Kravets \textit{et al.}~\cite{kravets2008extremely} sur des réseaux de nanoparticules d'or synthétisés par EBL (lithographie électronique). Ces résonances dues au réseau lui-même n'apparaissent pas dans l'approximation quasi-statique~\cite{yamaguchi74}.\par 
+ 
+\conclusion{Dans un réseau de particules, la position des LSPR peuvent être déplacées et de nouvelles résonances peuvent apparaître. La distance inter-particules (la période du réseau) est un paramètre déterminant pour savoir comment se déplacent ou se créent les résonances.}
+	\subsection{Conclusion}
+Un métal massif se caractérise par une fonction diélectrique. Lorsque l'on s'intéresse à des particules métalliques, de nouvelles résonances apparaissent, dues à un confinement spatial. Ces résonances sont dépendantes des caractéristiques des particules~:
+\begin{itemize}
+\item leur taille~: plus une particule est grande, plus ses résonances sont décalées vers le rouge. Lorsque la taille devient très importante, de nouveaux modes multipolaires peuvent apparaître~;
+\item leur forme~: si la particule est anisotrope, cela induit également une anisotropie de la
+réponse. Le champ électromagnétique est plus intense dans les zones anguleuses~;
+\item leur environnement~: la réponse d'une particule est liée au milieu dans
+lequel elle se trouve (un substrat, en particulier, induit une brisure de symétrie)~;
+\item des interactions entre particules, particulièrement en réseau~: elles peuvent donner lieu à de nouvelles résonances.
+\end{itemize}
+Ces paramètres offrent autant de leviers afin de contrôler la réponse optique d'un système de particules. En contrepartie, ils rendent également plus complexe la compréhension et la prédiction de cette réponse. Les applications sont nombreuses (cellules photovoltaïques, vitrages).
+
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{biblio}

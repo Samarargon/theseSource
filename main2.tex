@@ -1,0 +1,137 @@
+\documentclass[12pt,french]{report} 
+\usepackage[utf8]{inputenc}          % Les packages `inputenc' et `fontenc'
+\usepackage[T1]{fontenc}             % doivent Ãªtre parmi les 1ers chargÃ©s. 
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}  
+     
+\usepackage{minitoc}
+%\usepackage{french}
+\usepackage{babel}
+\usepackage{lmodern}
+\usepackage{graphicX}
+
+\newcommand {\conclusion }[1]{\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+   #1
+\end{minipage}
+}\end{center}\par}
+
+\usepackage{amsmath,amssymb}
+\usepackage[squaren,Gray]{SIunits}
+\graphicspath{{Figures/}}
+
+\usepackage{titlesec}
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\Alph{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+
+\linespread{1.1}
+\setcounter{secnumdepth}{4}
+\setcounter{minitocdepth}{3}
+\setcounter{tocdepth}{1}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancypagestyle{body}{%
+	\fancyhead{}
+	\fancyhead[R]{Chapitre \thechapter}
+	\fancyhead[L]{\rightmark}
+	\fancyfoot[C]{\thepage}}
+
+\fancypagestyle{Conclusion}{%
+  \fancyhead{} % clear all header fields
+  \fancyhead[L]{\large{\textsc{Conclusion}}}}
+
+
+\fancypagestyle{Introduction}{%
+  \fancyhead{} % clear all header fields
+  \fancyhead[L]{\large{\textsc{Introduction}}}}
+
+
+\usepackage[sectionbib]{chapterbib}
+
+\begin{document}
+%\include{pageDeGarde}
+
+\newpage
+\dominitoc
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre O : Introduction
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter*{Introduction}
+%\pagestyle{Introduction}
+%\include{Introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre 1 : État de l'art
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{body}
+%\chapter{État de l'art}
+
+%\begin{flushleft}
+%\textit{Mais quant au peuple obscur des petits, des insectes,\\
+%Qu’elle les aime ou non, nul ne veut le savoir.\\
+%Poussière d’avortons nés de larves infectes,\\
+%Nous les méprisons trop pour chercher à les voir.\\}
+%\end{flushleft}
+%\begin{flushright}
+%\textbf{Jean Richepin}, \textit{À la gloire des insectes, 1881.}
+%\end{flushright}
+%\include{chapitre_1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre 2 : Méthodes
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Méthodes}
+%\include{chapitre_2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre 3 : Étude in situ
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Les étapes du démouillage et le rôle des grains: apport du suivi \textit{in situ}}
+%\include{chapitre_3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre 4 : Changement d'atmosphère
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{chapter}{3}
+\chapter{L'influence de l'atmosphère sur le démouillage}
+\include{chapitre_4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre 5 : Réponse optique
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{chapter}{4}
+%\pagestyle{fancy}
+\chapter{Réseaux de particules organisées~: optimisation et réponse optique}
+\include{chapitre_5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Chapitre 6 : Conclusion
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\chapter*{Conclusion}
+%\pagestyle{Conclusion}
+%\include{Conclusion}
+%
+
+
+\end{document}
