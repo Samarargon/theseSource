@@ -95,8 +95,54 @@ Par exemple, l’énergie de surface des facettes est relativement isotrope sous
 Notons enfin que Kwon \textit{et al.}~\cite{kwon2003comparison} observaient cette différence de densité de trous, qu’ils assignaient à un changement de mécanisme de formation. Si la densité de trous était importante (cas du cuivre), alors les trous provenaient du sillonnement des joints de grains, tandis que dans l’autre configuration, ils semblaient provenir d’accumulation de lacunes à un joint de grains (cas de l’or). Suite à nos travaux, nous sommes en mesure de proposer un unique mécanisme dépendant de l’atmosphère de recuit, par la variation de l'énergie de surface du métal. Dans cette mesure, le choix du système Ag/SiO$_2$ peut permettre d'appréhender sous un nouvel angle l’étude du démouillage d’autres couches minces polycristallines.\par 
 \section{Influence de l'oxygène sur la propagation}
 		\subsection{Description de notre approche}
+L’une des principales différences induite par la modification de l’atmosphère est la forme des trous : nous observons des dendrites sous vide, mais pas sous oxygène. Au delà de cette observation qualitative, est-il possible de différencier de manière explicite la propagation des trous en fonction de l’atmosphère ? Pour répondre à cette question, nous avons développé un méthode d’analyse spécifique que nous allons décrire maintenant.\par 
+Les images obtenues à un grossissement de x3~000 ne permettent pas l'évolution de la forme du front de démouillage de manière statisfaisante, car la délimitation  obtenue par segmentation n'est pas repérée de façon suffisamment précise. Nous travaillons donc avec des séquences d'images réalisées à un grossissement x10~000 ou x20~000, suivant les cas.\par 
+Notre étude s’est portée en particulier sur la vitesse de propagation locale du front en fonction de sa courbure locale. En effet, la courbure semble varier à première vue suivant l’atmosphère de recuit, notamment à cause de la présence des digitations. Nous allons ici aborder le développement d’une méthode d’analyse construite spécifiquement pour étudier spécifiquement le démouillage sous cet angle.\par 
+
 			\subsubsection{Définition des objets étudiés}
+\paragraph*{La courbure :} La courbure $\kappa$ d’un arc $\mathcal{C}$ dans le plan se définit de plusieurs manières équivalentes~; nous retiendrons pour plus de facilité qu’il s’agit de l’inverse du rayon de courbure $r$, rayon du cercle tangent à l’arc au point considéré. Dans le plan, il est possible de donner un sens à la courbure en fonction de la direction de la concavité de l’arc.\par 
+La courbure d’une surface S dans l’espace peut être définie de plusieurs manières. Dans notre cas, nous référons aux travaux de Taylor~\cite{taylor1992ii}. Nous considérons la courbure moyenne, qui se définit par rapport aux \og courbures principales \fg~:
+\begin{equation}
+\kappa = \dfrac{\kappa_1+\kappa_2}{2}.
+\label{eCourb}
+\end{equation}
+Le schéma présenté sur la figure~\ref{schemaPlans} permet d’illustrer la manière de trouver les courbures principales d’une surface. On définit d’abord le plan tangent à la surface au point considéré. Perpendiculairement à ce plan tangent, tout plan interceptera la surface $\mathcal{S}$ par un arc, dont la courbure est facilement accessible. Les courbures principales sont les courbures maximale et minimale, obtenues dans des plans perpendiculaires entre eux (et perpendiculaires au plan tangent).\par
+Il existe de plus un théorème stipulant que la courbure moyenne ne dépend pas du choix des plans perpendiculaires, tant qu’il sont orthogonaux entre eux ~\cite{taylor1992ii}. Le schéma~\ref{schemaPlansApplique} illustre l’application de ce théorème à la surface d'un domaine d’argent, au niveau du front de démouillage. Nous considérons la courbure dans le plan du substrat, $\kappa_\parallel$ et la courbure perpendiculaire à ce plan, $\kappa_\perp$. Cette hypothèse implique qu’au niveau du front de démouillage, l’angle de contact entre la couche et le substrat est de 90$^\circ$, pour que le plan tangent soit perpendiculaire au substrat. Il est difficile de mesurer cet angle expérimentalement, ce qui nous oblige à simplement accepter cette approximation. C’est par ailleurs ce qui a été implicitement supposé dans les modèles de la littérature~\cite{brandon1966mobility, jiran1990capillary}.\par 
+lorsqu’on observe la couche en vue de dessus, nous accédons uniquement à la courbure $\kappa_\parallel$. Par convention, la courbure sera considérée comme positive si la concavité de l’arc est orientée à l’intérieur du métal. Une particule d’argent aura une courbure positive, tandis qu’un trou dans un milieu continu aura une courbure négative. Sur la figure~\ref{schemaPlansApplique}, les deux courbures sont positives. Sur le schéma~\ref{schemaPlans}, elles sont de signes opposés.\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width = 0.7\textwidth]{schemaPlans}
+\caption{Schéma montrant pour une surface les plans tangent et perpendiculaires. L’interception de la surface par les plans perpendiculaires est représentée par les arcs pointillés, dont les courbures au point considéré sont les courbures principales.}
+\label{schemaPlans}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width = 0.7\textwidth]{schemaPlansApplique}
+\caption{Schéma de l'application de la définition de la courbure à une surface d’un domaine d’argent.}
+\label{schemaPlansApplique}
+\end{figure}
+
+\paragraph*{Remarque~:} La définition de la courbure a été discutée par Taylor~\cite{taylor1992ii}, qui néglige pour des raisons de traitement mathématique le facteur 1/2 dans l’expression~\ref{eCourb}, et qui introduit le concept de \og courbure moyenne pondérée \fg. Cette courbure concerne les surfaces présentant une anisotropie d’énergie, et repose sur des questions énergétiques. La courbure devient alors~:
+\begin{equation}
+\kappa = a_1\kappa_1+a_2\kappa_2
+\end{equation}
+où les facteurs $a_i$ dépendent de l’énergie de surface dans la direction considérée, ainsi que sa variation dans la direction orthogonale. Précisons que par \og direction  \fg, Taylor entend toutes les directions mathématiques possibles, pas seulement les directions correspondant aux faibles indices de Miller. Il ne nous est pas possible d'accéder expérimentalement aux coefficients $a_i$ car l'orientation cristalline de la surface à cette échelle nous est inaccessible. Nous mettons de côté ces raffinements, et nous rediscuterons de cette hypothèse par la suite.\par 
+
+\paragraph*{La vitesse locale~:} Considérons deux images successives, $n$ et $n + 1$ d'une séquence de démouillage. Entre ces deux images, il y a eu une petite évolution du front. Sur chaque point du front l’image $n$, nous pouvons calculer le vecteur normal au front. En propageant ce vecteur jusqu’au front de l’image $n+1$, nous obtenons une distance, qui divisée par la temps d'acquisition, donne la vitesse de propagation. La figure~\ref{schemaCourbure} illustre le principe de cette mesure.\par 
+Ce calcul simple est valable dans le cas où les images sont suffisamment proches. S’il y a trop d’évolution du front entre deux images, les vecteurs normaux de plusieurs points du contour de l’image $n$ risquent de se croiser avant d’atteindre le contour de l’image $n + 1$ ; cela donne des distances surévaluées. Nous veillons donc à prendre une fréquence d’acquisition d’images relativement élevée afin de garder une distance petite entre deux fronts successifs.\par 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width = 0.9\textwidth]{schemaCourbure}
+\caption{Schéma présentant le principe de la mesure de la courbure locale et de la vitesse de propagation en un point du contour d’une image $n$.}
+\label{schemaCourbure}
+\end{figure}
+
 			\subsubsection{Représentations des données et cas modèles}
+Pour chaque point du front sur chaque image, nous obtenons à partir de l'analyse d'images MEB deux valeurs : la courbure locale $\kappa_\parallel$ et la vitesse de propagation $v$. Pour une séquence d’images, nous comptons le nombre de points obtenus par couple de coordonnées $(\kappa_\parallel,v)$. Ceci nous donne un histogramme, que nous choisissons de projeter dans le plan des coordonnées, en attribuant un code couleur à l’intensité.\par 
+Enfin, il est nécessaire de normaliser les données obtenues. En effet, les courbures ne sont pas isoprobables sur le front, et ce déséquilibre peut entraîner une mauvaise interprétation. Deux expériences de pensée permettent d’illustrer ce phénomène.\par 
+Premièrement, considérons un front circulaire se propageant à vitesse constante $v_0$ (c’est-à-dire que la vitesse est indépendante de la courbure). La longueur du front va augmenter au fur et à mesure du temps, ce qui va augmenter le nombre de points considérés sur le front (la distance $d$ entre ces points reste constante dans notre analyse). Ainsi, plus le rayon $r$ du cercle sera grand, plus la quantité de points de coordonnées $(1/r,v_0)$ sera grande. Si l’on ne normalise pas l’histogramme, on pourrait donc croire que la vitesse augmente avec le rayon. Il est bien important de remarquer que la surface du disque va bien croître de manière quadratique avec le temps, mais que nous ne considérons ici que des données locales : un point individuel sur le front, lorsqu’il se déplace, balaye toujours la même surface $d \cdot v_0 \cdot t$ avec $d$ la distance entre points, et $t$ l’intervalle de temps entre deux images successives.\par
 		\subsection{Observations expérimentales~: courbure et vitesse de propagation}
 		\subsection{Discussion}
 			\subsubsection{Détermination de la force motrice du démouillage}
