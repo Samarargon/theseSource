@@ -1,4 +1,4 @@
-\documentclass[12pt,french]{report} 
+\documentclass[12pt,french,twoside,openright]{report} 
 \usepackage[utf8]{inputenc}          % Les packages `inputenc' et `fontenc'
 \usepackage[T1]{fontenc}             % doivent Ãªtre parmi les 1ers chargÃ©s. 
 \usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}  
@@ -42,18 +42,20 @@
 
 \fancypagestyle{Conclusion}{%
   \fancyhead{} % clear all header fields
-  \fancyhead[L]{\large{\textsc{Conclusion}}}}
+  \fancyhead[L]{\large{\textsc{Conclusion}}}
+  \fancyfoot[C]{\thepage}}
 
 
 \fancypagestyle{Introduction}{%
   \fancyhead{} % clear all header fields
-  \fancyhead[L]{\large{\textsc{Introduction}}}}
+  \fancyhead[L]{\large{\textsc{Introduction}}}
+  \fancyfoot[C]{\thepage}}
 
 
 \usepackage[sectionbib]{chapterbib}
 
 \begin{document}
-%\include{pageDeGarde}
+\include{pageDeGarde}
 
 \newpage
 \dominitoc
@@ -63,9 +65,9 @@
 %% Chapitre O : Introduction
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter*{Introduction}
-%\pagestyle{Introduction}
-%\include{Introduction}
+\chapter*{Introduction}
+\pagestyle{Introduction}
+\include{Introduction}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
@@ -73,55 +75,55 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{body}
-%\chapter{État de l'art}
-%
-%\begin{flushleft}
-%\textit{Mais quant au peuple obscur des petits, des insectes,\\
-%Qu’elle les aime ou non, nul ne veut le savoir.\\
-%Poussière d’avortons nés de larves infectes,\\
-%Nous les méprisons trop pour chercher à les voir.\\}
-%\end{flushleft}
-%\begin{flushright}
-%\textbf{Jean Richepin}, \textit{À la gloire des insectes, 1881.}
-%\end{flushright}
-%\newpage
-%\include{chapitre_1}
+\chapter{État de l'art}
+
+\begin{flushleft}
+\textit{Mais quant au peuple obscur des petits, des insectes,\\
+Qu’elle les aime ou non, nul ne veut le savoir.\\
+Poussière d’avortons nés de larves infectes,\\
+Nous les méprisons trop pour chercher à les voir.\\}
+\end{flushleft}
+\begin{flushright}
+\textbf{Jean Richepin}, \textit{À la gloire des insectes, 1881.}
+\end{flushright}
+\newpage
+\include{chapitre_1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% Chapitre 2 : Méthodes
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Méthodes}
-%\begin{flushleft}
-%\textit{L'expérience est donc le privilège de la raison.}
-%\end{flushleft}
-%\begin{flushright}
-%\textbf{Claude Bernard}, \textit{Introduction à l'étude de la médecine expérimentale, 1865.}
-%\end{flushright}
-%\include{chapitre_2}
+\chapter{Méthodes}
+\begin{flushleft}
+\textit{L'expérience est donc le privilège de la raison.}
+\end{flushleft}
+\begin{flushright}
+\textbf{Claude Bernard}, \textit{Introduction à l'étude de la médecine expérimentale, 1865.}
+\end{flushright}
+\include{chapitre_2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% Chapitre 3 : Étude in situ
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Les étapes du démouillage et le rôle des grains: apport du suivi \textit{in situ}}
-%\begin{center}
-%\includegraphics[width=0.4\textwidth]{nu-dans-les-escaliers}
-%\end{center}
-%\begin{flushright}
-%\textbf{Marcel Duchamp}, \textit{Nu descendant un escalier, 1912.}
-%\end{flushright}
-%\newpage
-%\include{chapitre_3}
+\chapter{Les étapes du démouillage et le rôle des grains: apport du suivi \textit{in situ}}
+\begin{center}
+\includegraphics[width=0.4\textwidth]{nu-dans-les-escaliers}
+\end{center}
+\begin{flushright}
+\textbf{Marcel Duchamp}, \textit{Nu descendant un escalier, 1912.}
+\end{flushright}
+\newpage
+\include{chapitre_3}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% Chapitre 4 : Changement d'atmosphère
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{chapter}{3}
+%\setcounter{chapter}{3}
 \chapter{L'influence de l'atmosphère sur le démouillage}
 \begin{flushleft}
 \textit{
@@ -200,11 +202,11 @@ C’était un scarabée. Il eut peur et partit.}
 %% Chapitre 6 : Conclusion
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\chapter*{Conclusion}
+\setcounter{chapter}{6}
+\setcounter{secnumdepth}{-1}
+\chapter{Conclusion}
 \begin{flushleft}
-\textit{All models are wrong, but some are usefull.}
+\textit{All models are wrong, but some are useful.}
 \end{flushleft}
 \begin{flushright}
 \textbf{George Box}, \textit{Robustness in the strategy of scientific model building, 1979.}
